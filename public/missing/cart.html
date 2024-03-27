@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html translate="no" lang="en">
+<head>
+</head>
+<body id="body" class="light-skin no-sidebar  theme-primary sidebar-collapse fixed">
+<div class="wrapper animate-bottom">
+  <div id="loader"></div>
+  {%navbar_main%}
+  <!-- navbar -->
+  <!-- /navbar -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper content-wrapper-50">
+    <div class="container-full">
+      <!-- Main content -->
+      <section class="content-height">
+        <a href="" class="none-link"> <div class="box">
+            <div class="vtabs padding-10">
+              <div style="background: url('../../Asset/imgs/logo.png') no-repeat center center;" class="tabs-vertical side-product shop-cart-image">
+              </div>
+              <div class="box-body">
+                <p><strong class="font-size-20">{%project_name%}</strong></p>
+              </div>
+            </div>
+          </div></a>
+
+        <div class="box">
+            <div class="box-header">
+              <h4 class="font-size-20"><span class="fa fa-location-arrow"></span> deliver to <span class="label-primary label">{%costumer_location_name%}</span> <a href="<?php echo base_url(); ?>Setting?pid=location"><button class="btn btn-icon-circle-medium btn-primary float-right fa fa-pencil"></button></a> </h4>
+            </div>
+            <div class="box-body">
+              <span class="font-size-20">{%costumer_address%}</span>
+            </div>
+          </div>
+<div id="cart_items">
+         <div class="box" id="cart_id_<?php echo $id; ?>">
+            <div class="item-cart-grid">
+              <a href="<?php echo base_url(); ?>item/item?pid={%items_id%}" class="none-link">
+              <div style="background: url('{%item_image%}') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+              </div>
+              </a>
+              <a href="<?php echo base_url(); ?>item/item?pid={%items_id%}" class="none-link">
+              <div class="padding-10">
+                <h4><span class="font-size-20">{%items_title%}</span></h4>
+                <p class="font-size-14">{%items_price%}</p>
+              </div>
+              </a>
+              <div>
+                <div class="float-right padding-10">
+                  <br>
+                  <button type="button" onclick="quantity('add','{%items_id%}')" class="btn btn-primary btn-icon-circle-small fa fa-plus"></button>
+                  <input type="text" id="quantity_input_{%items_id%}" value="{%item_quantity%}" class="btn btn-icon-circle-medium border-black text-center" disabled>
+                  <button type="button" onclick="quantity('minus','{%items_id%}')" class="btn btn-primary btn-icon-circle-small fa fa-minus"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+<div class="box">
+    <div class="box-header">
+      <h4 class="font-size-20"><span class="fa fa-pencil"></span> NOTE </h4>
+    </div>
+    <div class="box-body">
+      <input type="text" name="order_note" id="order_note" class="form-control" placeholder="note..">
+    </div>
+  </div>
+        <div id="refresh" class="box">
+          <div class="box-header">
+            <h4>bill</h4>
+          </div>
+
+          <div class="box-body">
+            <p>quantity <b class="float-right">{%quantity%}</b></p>
+            <p>total <b class="float-right">{%sum_price%}<?php echo lang('LYD'); ?></b></p>
+            <p>delivery <b class="float-right">{%deliver_price%}<?php echo lang('LYD'); ?></b></p>
+            <p>branch total <b class="float-right">{%branch_total%}<?php echo lang('LYD'); ?></b></p>
+          </div>
+        </div>
+
+        <div class="box div-bottom">
+          <div class="box-body">
+          {%order_button%}
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      </section>
+
+    </div>
+  </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <!-- /footer -->
+</div>
+<!-- ./wrapper -->
+<script src="<?php echo base_url(); ?>Asset/assets/vendor_components/dropzone/dropzone.js"></script>
+</body>
+</html>

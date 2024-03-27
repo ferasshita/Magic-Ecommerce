@@ -1,0 +1,956 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/favicon.ico">
+
+    <title>MAGIC - Documentation</title>
+
+	<!-- Bootstrap 4.0-->
+	<link rel="stylesheet" href="../assets/vendor_components/bootstrap/dist/css/bootstrap.css">
+
+	<!-- Bootstrap extend-->
+	<link rel="stylesheet" href="css/bootstrap-extend.css">
+
+	<!-- theme style -->
+	<link rel="stylesheet" href="css/master_style.css">
+
+	<!-- Crypto Tokenizer Admin skins -->
+	<link rel="stylesheet" href="css/skin-color.css">
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+  </head>
+
+<body class="hold-transition light-skin sidebar-mini fixed theme-grey">
+<div class="wrapper">
+
+  <div class="art-bg">
+	  <img src="../images/art1.svg" alt="" class="art-img light-img">
+	  <img src="../images/art2.svg" alt="" class="art-img dark-img">
+  </div>
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo -->
+	  <div class="logo-mini">
+		  <span class="light-logo"><img src="../images/logo-light.png" alt="logo"></span>
+		  <span class="dark-logo"><img src="../images/logo-dark.png" alt="logo"></span>
+	  </div>
+      <!-- logo-->
+      <div class="logo-lg">
+		  <span class="light-logo"><img src="../images/logo-light-text.png" alt="logo"></span>
+	  	  <span class="dark-logo"><img src="../images/logo-dark-text.png" alt="logo"></span>
+	  </div>
+    </a>
+  </header>
+
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar-->
+    <section class="sidebar">
+
+		<div class="user-profile">
+			<div class="ulogo">
+				 <a href="index.html">
+				  <!-- logo for regular state and mobile devices -->
+				  <h2><b>MAGIC</b>Admin</h2>
+				</a>
+			</div>
+        </div>
+
+      <!-- sidebar menu-->
+      <ul class="sidebar-menu" data-widget="tree">
+
+		<li>
+          <a href="#introduction">
+            <i class="ti-more"></i>
+			<span>Introduction</span>
+          </a>
+        </li>
+
+		<li>
+    <a href="#introductionguide">
+    <i class="ti-more"></i>
+    <span>Installation Guide</span>
+    </a>
+    </li>
+
+    <li>
+    <a href="#costume">
+    <i class="ti-more"></i>
+    <span>costume</span>
+    </a>
+    </li>
+
+    <li>
+      <a href="#cart">
+        <i class="ti-more"></i>
+    <span>cart</span>
+      </a>
+    </li>
+
+    <li>
+          <a href="#order">
+            <i class="ti-more"></i>
+    	<span>order</span>
+          </a>
+        </li>
+
+        <li>
+              <a href="#item">
+                <i class="ti-more"></i>
+    			<span>item</span>
+              </a>
+            </li>
+
+            <li>
+            <a href="#other">
+              <i class="ti-more"></i>
+        <span>other</span>
+            </a>
+          </li>
+
+		<li>
+          <a href="#browser">
+            <i class="ti-more"></i>
+			<span>Browser Support</span>
+          </a>
+        </li>
+
+		<li>
+          <a href="#support">
+            <i class="ti-more"></i>
+			<span>Support</span>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="mr-auto">
+					<h3 class="page-title br-0">Documentation</h3>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<section class="content">
+			<div class="box" id="introduction">
+			  <div class="box-header with-border">
+				<h4 class="box-title">Introduction</h4>
+			  </div>
+			  <div class="box-body">
+				<p>MAGIC ecommerce is the best solution to make your own costume modern ecommerce website ..easy to use .. fast to install. This documentation will guide you through installing the CMS and exploring the various components that are bundled with the CMS.</p>
+			  </div>
+			</div>
+
+			<div class="box" id="introductionguide">
+			  <div class="box-header with-border">
+				<h4 class="box-title">Installation Guide</h4>
+			  </div>
+			  <div class="box-body">
+          <p style="color: gray">* When you <b>login</b> to the first time into your CMS, you will be the main admin of website and you can add more admins from <b>control panel > users > Edit/Delete </b>.</p>
+          <ol type="1">
+          <li>First of all, Download the script and extract it on your device.</li>
+          	<li>Open your <b>phpMyAdmin</b> and create new database and call it <b>magic</b>.</li>
+          	<li>Import <b>project.sql</b> to your new database that you created, you can find <b>database.sql</b> from magic CMS folder that you extracted.</li>
+            <li>upload the folder to your host.</li>
+          	<li>open <b>http://[your_project_url]/install</b> and follow the steps.</li>
+          	<li>Login to username: admin and password: admin123.</li>
+          	<li>Enjoy it.</li>
+          </ol>
+			  </div>
+			</div>
+
+			<div class="box" id="pages">
+			  <div class="box-header with-border">
+				<h4 class="box-title">Pages</h4>
+			  </div>
+			  <div class="box-body">
+				<div class="row">
+
+					<div class="col-sm-12 clearfix"><br></div>
+					<div class="col-md-12 col-sm-12">
+						<h4 class="text-danger">Pages</h4>
+						<p class="mb-30">MAGIC ecommerce contain the following pages in admin account.</p>
+
+						<div class="row">
+							<div class="col-sm-3">
+								<ul class="list-unstyled">
+									<li><h4>Costumers</h4></li>
+                  <li>Costumers</li>
+                  <li>Deliveries</li>
+                  <li>Orders</li>
+                  <li>POS</li>
+								</ul>
+							</div><!-- /.col -->
+							<div class="col-sm-3">
+								<ul class="list-unstyled">
+									<li><h4>Product</h4></li>
+                  <li>Products</li>
+                  <li>collections</li>
+                  <li>Inventory</li>
+                  <li>purchase</li>
+                  <li>Costumers</li>
+								</ul>
+							</div><!-- /.col -->
+							<div class="col-sm-3">
+								<ul class="list-unstyled mb-30">
+									<li><h4>Reports</h4></li>
+                  <li>Analytics</li>
+										</ul>
+								<ul class="list-unstyled mb-30">
+									<li><h4>Blogs</h4></li>
+								</ul>
+                <ul class="list-unstyled mb-30">
+                  <li><h4>Editor</h4></li>
+                </ul>
+                <ul class="list-unstyled mb-30">
+                  <li><h4>Control panel</h4></li>
+                </ul>
+							</div><!-- /. col -->
+
+						</div><!-- /.row -->
+					</div>
+
+				  </div>
+			  </div>
+			</div>
+
+      <div class="box" id="costume">
+        <div class="box-header with-border">
+        <h4 class="box-title">Pages</h4>
+        </div>
+        <div class="box-body">
+        <div class="row">
+
+          <div class="col-sm-12 clearfix"><br></div>
+          <div class="col-md-12 col-sm-12">
+            <h4 class="text-danger">Costume Pages</h4>
+            <p class="mb-30">MAGIC ecommerce contain the following pages that can be edited.</p>
+
+            <div class="row">
+              <div class="col-sm-3">
+                <ul class="list-unstyled">
+                  <li><h4>Costume</h4></li>
+                  <li>Cart</li>
+                  <li>Order</li>
+                  <li>Item</li>
+                  <li>Other (src)</li>
+                </ul>
+              </div><!-- /.col -->
+
+            </div><!-- /.row -->
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+			<div class="box" id="cart">
+			  <div class="box-header with-border">
+				<h4 class="box-title">Cart</h4>
+			  </div>
+			  <div class="box-body">
+				<div class="row">
+
+          <div class="col-md-12 col-sm-12">
+             <h4 class="text-green">Function words</h4>
+            <p>In cart page there are certain words that can be used as functions:</p>
+
+            <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+              <thead>
+              <tr>
+                <th style="width: 210px;">Function Word</th>
+                <th>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>{%costumer_address%}</code></td>
+                <td>Display costumer address</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_location_name%}</code></td>
+                <td>Display costumer location name</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_long%}</code></td>
+                <td>Display costumer longitude</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_lat%}</code></td>
+                <td>Display costumer latitude</td>
+              </tr>
+              <tr>
+                <td><code>{%project_name%}</code></td>
+                <td>Display project name</td>
+              </tr>
+              <tr>
+                <td><code>{%navbar_main%}</code></td>
+                <td>Display default costumer navbar</td>
+              </tr>
+              <tr>
+                <td><code>{%order_button%}</code></td>
+                <td>Display order button</td>
+              </tr>
+              <tr>
+                <td><code>{%distance%}</code></td>
+                <td>Display distance between shop and costumer</td>
+              </tr>
+              <tr>
+                <td><code>{%quantity%}</code></td>
+                <td>Display items quantity</td>
+              </tr>
+              <tr>
+                <td><code>{%sum_price%}</code></td>
+                <td>Display total price</td>
+              </tr>
+              <tr>
+                <td><code>{%branch_total%}</code></td>
+                <td>Display branch total (final total)</td>
+              </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+					<div class="col-md-12 col-sm-12">
+					   <h3 class="text-green">Some function words must be in certain <code>div</code> <b>id</b>:</h3>
+             <h4 class="text-green"><code>id="cart_items"</code>:</h4>
+             <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+               <thead>
+               <tr>
+                 <th style="width: 210px;">Function Word</th>
+                 <th>Description</th>
+               </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><code>{%items_id%}</code></td>
+                   <td>Display item ID</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_title%}</code></td>
+                   <td>Display item title</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_description%}</code></td>
+                   <td>Display discription</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_price%}</code></td>
+                   <td>Display price</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_compare_price%}</code></td>
+                   <td>Display compare price</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_available%}</code></td>
+                   <td>Display availablity label</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%product_type%}</code></td>
+                   <td>Display product_type</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%item_quantity%}</code></td>
+                   <td>Display item quantity</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%product_catigory%}</code></td>
+                   <td>Display item catigory</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%collection%}</code></td>
+                   <td>Display item_collection</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%item_image%}</code></td>
+                   <td>Display item image</td>
+                 </tr>
+
+               </tbody>
+             </table>
+					</div>
+
+				  </div>
+			  </div>
+			</div>
+
+      <div class="box" id="order">
+			  <div class="box-header with-border">
+				<h4 class="box-title">Order</h4>
+			  </div>
+			  <div class="box-body">
+				<div class="row">
+
+          <div class="col-md-12 col-sm-12">
+             <h4 class="text-green">Function words</h4>
+            <p>In Order page there are certain words that can be used as functions:</p>
+
+            <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+              <thead>
+              <tr>
+                <th style="width: 210px;">Function Word</th>
+                <th>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>{%order_id%}</code></td>
+                <td>Display order id</td>
+              </tr>
+              <tr>
+                <td><code>{%order_note%}</code></td>
+                <td>Display order note</td>
+              </tr>
+              <tr>
+                <td><code>{%order_date%}</code></td>
+                <td>Display order date</td>
+              </tr>
+              <tr>
+                <td><code>{%time_ago%}</code></td>
+                <td>Display time ago</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_lat%}</code></td>
+                <td>Display costumer latitude</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_long%}</code></td>
+                <td>Display costumer longitude</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_address%}</code></td>
+                <td>Display costumer address</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_name%}</code></td>
+                <td>Display costumer name</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_phone%}</code></td>
+                <td>Display costumer phone</td>
+              </tr>
+              <tr>
+                <td><code>{%costumer_email%}</code></td>
+                <td>Display costumer email</td>
+              </tr>
+              <tr>
+                <td><code>{%project_name%}</code></td>
+                <td>Display project name</td>
+              </tr>
+              <tr>
+                <td><code>{%shop_phone%}</code></td>
+                <td>Display shop phone number</td>
+              </tr>
+              <tr>
+                <td><code>{%navbar_main%}</code></td>
+                <td>Display default navbar</td>
+              </tr>
+              <tr>
+                <td><code>{%distance%}</code></td>
+                <td>Display distance between shop and costumer</td>
+              </tr>
+              <tr>
+                <td><code>{%deliver_price%}</code></td>
+                <td>Display deliver price</td>
+              </tr>
+              <tr>
+                <td><code>{%quantity%}</code></td>
+                <td>Display total quantity</td>
+              </tr>
+              <tr>
+                <td><code>{%sum_price%}</code></td>
+                <td>Display total price</td>
+              </tr>
+              <tr>
+                <td><code>{%branch_total%}</code></td>
+                <td>Display branch total (final total)</td>
+              </tr>
+              <tr>
+                <td><code>{%order_button%}</code></td>
+                <td>Display order button</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+					<div class="col-md-12 col-sm-12">
+					   <h3 class="text-green">Some function words must be in certain <code>div</code> <b>id</b>:</h3>
+             <h4 class="text-green"><code>id="cart_items"</code>:</h4>
+             <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+               <thead>
+               <tr>
+                 <th style="width: 210px;">Function Word</th>
+                 <th>Description</th>
+               </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><code>{%items_id%}</code></td>
+                   <td>Display item ID</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_title%}</code></td>
+                   <td>Display item title</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_description%}</code></td>
+                   <td>Display discription</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_price%}</code></td>
+                   <td>Display price</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_compare_price%}</code></td>
+                   <td>Display compare price</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_available%}</code></td>
+                   <td>Display availablity label</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%product_type%}</code></td>
+                   <td>Display product_type</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%item_quantity%}</code></td>
+                   <td>Display item quantity</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%product_catigory%}</code></td>
+                   <td>Display item catigory</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%collection%}</code></td>
+                   <td>Display item_collection</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%item_image%}</code></td>
+                   <td>Display item image</td>
+                 </tr>
+
+               </tbody>
+             </table>
+					</div>
+
+				  </div>
+			  </div>
+			</div>
+
+      <div class="box" id="item">
+        <div class="box-header with-border">
+        <h4 class="box-title">Item</h4>
+        </div>
+        <div class="box-body">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12">
+             <h4 class="text-green">Function words</h4>
+            <p>In Item page there are certain words that can be used as functions:</p>
+
+            <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+              <thead>
+              <tr>
+                <th style="width: 210px;">Function Word</th>
+                <th>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>{%item_id%}</code></td>
+                <td>Display item id</td>
+              </tr>
+              <tr>
+                <td><code>{%title%}</code></td>
+                <td>Display item title</td>
+              </tr>
+              <tr>
+                <td><code>{%description%}</code></td>
+                <td>Display item description</td>
+              </tr>
+              <tr>
+                <td><code>{%price%}</code></td>
+                <td>Display item price</td>
+              </tr>
+              <tr>
+                <td><code>{%compare_price%}</code></td>
+                <td>Display item compare price</td>
+              </tr>
+              <tr>
+                <td><code>{%product_type%}</code></td>
+                <td>Display product type</td>
+              </tr>
+              <tr>
+                <td><code>{%product_catigory%}</code></td>
+                <td>Display product catigory</td>
+              </tr>
+              <tr>
+                <td><code>{%collection%}</code></td>
+                <td>Display collection</td>
+              </tr>
+              <tr>
+                <td><code>{%quantity%}</code></td>
+                <td>Display item quantity</td>
+              </tr>
+              <tr>
+                <td><code>{%available%}</code></td>
+                <td>Display availablity label</td>
+              </tr>
+              <tr>
+                <td><code>{%final_price%}</code></td>
+                <td>price dispalyed in this format: 100 LYD <sub><s>200 LYD</s></sub></td>
+              </tr>
+              <tr>
+                <td><code>{%cart_button%}</code></td>
+                <td>Display cart button</td>
+              </tr>
+              <tr>
+                <td><code>{%project_name%}</code></td>
+                <td>Display project name</td>
+              </tr>
+              <tr>
+                <td><code>{%navbar_main%}</code></td>
+                <td>Display default navbar</td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-12 col-sm-12">
+             <h3 class="text-green">Some function words must be in certain <code>div</code> <b>id</b>:</h3>
+             <h4 class="text-green"> - <code>id="images_container"</code>:</h4>
+             <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+               <thead>
+               <tr>
+                 <th style="width: 210px;">Function Word</th>
+                 <th>Description</th>
+               </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><code>{%image_id%}</code></td>
+                   <td>Display image ID</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%image_location%}</code></td>
+                   <td>Display image url</td>
+                 </tr>
+               </tbody>
+             </table>
+             <h4 class="text-green"> - <code>id="varient_container"</code>:</h4>
+             <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+               <thead>
+               <tr>
+                 <th style="width: 210px;">Function Word</th>
+                 <th>Description</th>
+               </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><code>{%varient_id%}</code></td>
+                   <td>Display varient ID</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%varient_image%}</code></td>
+                   <td>Display varient image</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%varient_name%}</code></td>
+                   <td>Display varient name</td>
+                 </tr>
+
+               </tbody>
+             </table>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="other">
+        <div class="box-header with-border">
+        <h4 class="box-title">Other</h4>
+        </div>
+        <div class="box-body">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12">
+             <h4 class="text-green">Function words</h4>
+            <p>In Other pages there are certain words that can be used as functions:</p>
+
+            <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+              <thead>
+              <tr>
+                <th style="width: 210px;">Function Word</th>
+                <th>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>{%navbar_main%}</code></td>
+                <td>Display default navbar</td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-12 col-sm-12">
+             <h3 class="text-green">Some function words must be in certain <code>div</code> <b>id</b>:</h3>
+             <h4 class="text-green"> - <code>id="div_items"</code>:</h4>
+             <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+               <thead>
+               <tr>
+                 <th style="width: 210px;">Function Word</th>
+                 <th>Description</th>
+               </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><code>{%items_id%}</code></td>
+                   <td>Display item ID</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_title%}</code></td>
+                   <td>Display item title</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_description%}</code></td>
+                   <td>Display item description</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_price%}</code></td>
+                   <td>Display item price</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_compare_price%}</code></td>
+                   <td>Display item compare price</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%items_available%}</code></td>
+                   <td>Display item availablity label</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%product_type%}</code></td>
+                   <td>Display product type</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%item_quantity%}</code></td>
+                   <td>Display item quantity</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%product_catigory%}</code></td>
+                   <td>Display product catigory</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%collection%}</code></td>
+                   <td>Display collection</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%cart_button%}</code></td>
+                   <td>Display cart button</td>
+                 </tr>
+                 <tr>
+                   <td><code>{%like_button%}</code></td>
+                   <td>Display like button</td>
+                 </tr>
+               </tbody>
+             </table>
+          </div>
+          <div class="col-md-12 col-sm-12">
+             <h4 class="text-green">Get protocols</h4>
+            <p>In any page other than cart, order & item you can use cetain get protocols to search within displayed items:</p>
+            <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
+              <thead>
+              <tr>
+                <th style="width: 210px;">Get value</th>
+                <th>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>?search=</code></td>
+                  <td>Search for items that make there title, discription or tags</td>
+                </tr>
+                <tr>
+                  <td><code>?fav=</code></td>
+                  <td>Search for fav if given value is 1 for example: <code>?fav=1</td>
+                </tr>
+                <tr>
+                  <td><code>?product_catigory=</code></td>
+                  <td>Search for given product catigory</td>
+                </tr>
+                <tr>
+                  <td><code>?vendor=</code></td>
+                  <td>Search for given vendors</td>
+                </tr>
+                <tr>
+                  <td><code>?product_type=</code></td>
+                  <td>Search for given product_type</td>
+                </tr>
+                <tr>
+                  <td><code>?collection=</code></td>
+                  <td>Search for given collection</td>
+                </tr>
+                <tr>
+                  <td><code>?barcode=</code></td>
+                  <td>Search for given barcode</td>
+                </tr>
+</tbody>
+            </table>
+        </div>
+          </div>
+        </div>
+      </div>
+
+
+			<div class="box" id="browser">
+			  <div class="box-header with-border">
+				<h4 class="box-title">Browser Support</h4>
+			  </div>
+			  <div class="box-body">
+				  <div class="callout callout-warning margin-top-20">
+						<h4>Note!</h4>
+						<p>
+							IE10 does not support transitions or animations. The template will function properly but it won't
+							use animations/transitions on IE10.
+						</p>
+					</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<p>Crypto Tokenizer Admin supports the following browsers:</p>
+						<ul>
+							<li><b>IE11+</b></li>
+							<li><b>Edge (latest)</b></li>
+							<li><b>Firefox (latest)</b></li>
+							<li><b>Safari (latest)</b></li>
+							<li><b>Chrome (latest)</b></li>
+							<li><b>Opera (latest)</b></li>
+						</ul>
+					</div>
+				  </div>
+			  </div>
+			</div>
+
+
+			<div class="box" id="support">
+			  <div class="box-header with-border">
+				<h4 class="box-title">Support</h4>
+			  </div>
+			  <div class="box-body">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<p>If you need any help or feel any query don't hasitate just mail me (with licence key) on <strong><a href="mailto:shitaferas195@gmail.com">shitaferas195@gmail.com</a></strong>, i would love to help you, Once again thanks for purchasing the Magic ecommerce, i hope you enjoy it. Thanks</p>
+
+					</div>
+				  </div>
+			  </div>
+			</div>
+
+
+
+
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+        <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+		  <li class="nav-item">
+			<a class="nav-link" href="javascript:void(0)">FAQ</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Purchase Now</a>
+		  </li>
+		</ul>
+    </div>
+	  &copy; 2024 <a href="#">Smart Life</a>. All Rights Reserved.
+  </footer>
+
+</div>
+<!-- ./wrapper -->
+
+
+
+	<!-- jQuery 3 -->
+	<script src="../assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
+
+	<!-- jQuery UI 1.11.4 -->
+	<script src="../assets/vendor_components/jquery-ui/jquery-ui.js"></script>
+
+	<!-- popper -->
+	<script src="../assets/vendor_components/popper/dist/popper.min.js"></script>
+
+	<!-- Bootstrap 4.0-->
+	<script src="../assets/vendor_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	<!-- Slimscroll -->
+	<script src="../assets/vendor_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+	<!-- FastClick -->
+	<script src="../assets/vendor_components/fastclick/lib/fastclick.js"></script>
+
+	<!-- Crypto Tokenizer Admin App -->
+	<script src="js/template.js"></script>
+	<script>
+ $('.sidebar a').click(function () {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 85
+            }, 500);
+            return false;
+        });
+        var lastId, topMenu = $(".sidebar"),
+            topMenuHeight = topMenu.outerHeight(),
+            menuItems = topMenu.find("a"),
+            scrollItems = menuItems.map(function () {
+                var item = $($(this).attr("href"));
+                if (item.length) {
+                    return item;
+                }
+            });
+        $(window).scroll(function () {
+            var fromTop = $(this).scrollTop() + topMenuHeight - 85;
+            var cur = scrollItems.map(function () {
+                if ($(this).offset().top < fromTop) return this;
+            });
+            cur = cur[cur.length - 1];
+            var id = cur && cur.length ? cur[0].id : "";
+            if (lastId !== id) {
+                lastId = id;
+                menuItems.removeClass("active").filter("[href='#" + id + "']").addClass("active");
+            }
+        });
+</script>
+
+
+</body>
+</html>

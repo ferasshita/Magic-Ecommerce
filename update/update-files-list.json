@@ -1,0 +1,14 @@
+{
+  "files": [
+    "index.php",
+    "config/config.php",
+    "public/css/style.css",
+    "public/js/script.js",
+    // Add more file paths as needed
+  ],
+  "folders": [
+    "app/",
+    "public/images/",
+    // Add more folder paths as needed
+  ]
+}

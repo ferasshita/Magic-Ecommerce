@@ -1,0 +1,7 @@
+*frontend
+*add to menu
+*check the another market
+*backend
+*fields of frontend
+*MYSQL
+theme

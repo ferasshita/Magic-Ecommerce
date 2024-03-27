@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html translate="no" lang="en">
+<head>
+</head>
+<body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+<div class="wrapper animate-bottom">
+	<div id="loader"></div>
+	{%navbar_main%}
+	<!-- navbar -->
+	<!-- /navbar -->
+	<!-- Content Wrapper. Contains page content -->
+	<div class="content-wrapper content-wrapper-50">
+		<div class="container-full">
+			<!-- Main content -->
+			<section class="content-height">
+				<div class="box">
+						<div class="box-body">
+							<h4><span class="font-size-20"><span class="float-left">#{%order_id%}</span></span></h4>
+							<br>
+							<p>{%order_date%} {%time_ago%} <a href="tel:{%costumer_phone%}"> <button style="margin-left: 5px" class="btn btn-primary float-right">Call costumer</button></a>
+								<button style="margin-left: 5px" onclick="getLocation({%costumer_lat%},{%costumer_long%}, 32.8752)" class="btn btn-primary float-right">show directions</button>
+								<a href="tel:{%shop_phone%}"> <button style="margin-left: 5px" class="btn btn-primary float-right">Call shop</button></a>
+							</p>
+						</div>
+					</div>
+
+				<div id="cart_items">
+				<a href="item?pid={%items_id%}" class="none-link"> <div class="box">
+						<div class="item-cart-grid">
+							<div style="background: url('{%item_image%}') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+							</div>
+							<div class="padding-10">
+								<h4><span class="font-size-20">{%items_title%}</span></h4>
+								<p class="font-size-14">{%items_price%}</p>
+							</div>
+							<div>
+								<div class="float-right padding-10">
+									<br>
+									<input type="text" value="{%item_quantity%}" class="btn btn-icon-circle-medium border-black text-center" disabled>
+								</div>
+							</div>
+						</div>
+					</div></a>
+			</div>
+			<div class="box">
+			    <div class="box-header">
+			      <h4 class="font-size-20"><span class="fa fa-pencil"></span> NOTE </h4>
+			    </div>
+			    <div class="box-body">
+			      <input type="text" name="order_note" value="{%order_note%}" id="order_note" class="form-control" disabled>
+			    </div>
+			  </div>
+				<div class="box">
+					<div class="box-header">
+						<h4>Bill</h4>
+					</div>
+
+					<div class="box-body">
+
+						<p>quantity <b class="float-right">{%quantity%}</b></p>
+						<p>total <b class="float-right">{%sum_price%} LYD</b></p>
+						<p>delivery <b class="float-right">{%deliver_price%} LYD</b></p>
+						<p>branch_total <b class="float-right">{%branch_total%} LYD</b></p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+			</section>
+
+		</div>
+
+	</div>
+	<div class="div-bottom box">
+		<div class="box-body">
+		{%order_button%}
+			<span class="float-right font-size-22">Total {%branch_total%} LYD</span>
+		</div>
+	</div>
+	<!-- footer -->
+	<!-- /footer -->
+</div>
+<!-- ./wrapper -->
+</body>
+</html>
