@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><?= langs('Errors.pageNotFound') ?></title>
+    <title><?= lang('Errors.pageNotFound') ?></title>
 
     <style>
         div.logo {
@@ -76,7 +76,7 @@
             <?php if (ENVIRONMENT !== 'production') : ?>
                 <?= nl2br(esc($message)) ?>
             <?php else : ?>
-                <?= langs('Errors.sorryCannotFind') ?>
+                <?= lang('Errors.sorryCannotFind') ?>
             <?php endif; ?>
         </p>
     </div>
