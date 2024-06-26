@@ -1,0 +1,134 @@
+CRITICAL - 2024-06-20 20:15:08 --> Undefined variable $image_location
+in APPPATH\Controllers\theme.php on line 209.
+ 1 APPPATH\Controllers\theme.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image_location', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 209)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->order()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 20:16:50 --> Undefined variable $costumer_location_name
+in APPPATH\Views\theme\cart.php on line 51.
+ 1 APPPATH\Views\theme\cart.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_location_name', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(713): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 20:19:22 --> Undefined variable $costumer_location_name
+in APPPATH\Views\theme\cart.php on line 51.
+ 1 APPPATH\Views\theme\cart.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_location_name', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(713): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 20:19:54 --> Undefined variable $costumer_location_name
+in APPPATH\Views\theme\cart.php on line 51.
+ 1 APPPATH\Views\theme\cart.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_location_name', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(714): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 20:19:56 --> Undefined variable $costumer_location_name
+in APPPATH\Views\theme\cart.php on line 51.
+ 1 APPPATH\Views\theme\cart.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_location_name', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(714): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 20:22:03 --> Undefined array key "costumer_phone"
+in APPPATH\Controllers\theme.php on line 600.
+ 1 APPPATH\Controllers\theme.php(600): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "costumer_phone"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 600)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 20:23:21 --> Undefined variable $costumer_location_name
+in APPPATH\Views\theme\cart.php on line 51.
+ 1 APPPATH\Views\theme\cart.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_location_name', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(714): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 20:24:50 --> Undefined variable $accept
+in APPPATH\Views\theme\cart.php on line 312.
+ 1 APPPATH\Views\theme\cart.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accept', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 312)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(715): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 21:07:11 --> Undefined variable $promocode
+in APPPATH\Views\theme\cart.php on line 272.
+ 1 APPPATH\Views\theme\cart.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $promocode', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 272)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(719): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 21:14:00 --> Undefined variable $image_location
+in APPPATH\Controllers\theme.php on line 209.
+ 1 APPPATH\Controllers\theme.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image_location', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 209)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->order()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 21:14:10 --> Undefined variable $image_location
+in APPPATH\Controllers\theme.php on line 209.
+ 1 APPPATH\Controllers\theme.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image_location', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 209)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->order()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 21:14:16 --> Undefined variable $image_location
+in APPPATH\Controllers\theme.php on line 209.
+ 1 APPPATH\Controllers\theme.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image_location', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 209)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->order()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 21:35:18 --> Undefined variable $note
+in APPPATH\Views\theme\cart.php on line 261.
+ 1 APPPATH\Views\theme\cart.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $note', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 261)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(719): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 21:35:19 --> Undefined variable $note
+in APPPATH\Views\theme\cart.php on line 261.
+ 1 APPPATH\Views\theme\cart.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $note', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 261)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(719): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -2,6 +2,8 @@
 <html class="<?php echo view("includes/mode"); ?>" translate="no" lang="en">
 <head>
 	<?php echo view("includes/head_info"); ?>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.x.x/dist/leaflet.css" />
+
 </head>
 <body class="<?php echo view("includes/mode.php"); ?> no-sidebar <?php echo langs('html_dir'); ?> theme-primary sidebar-collapse fixed">
 <div class="wrapper animate-bottom">
@@ -36,6 +38,7 @@
 											<div id="map"></div>
 											<input type="hidden" name="long" id="long">
 											<input type="hidden" name="lat" id="lat">
+											  <script src="https://unpkg.com/leaflet@1.x.x/dist/leaflet.js" ></script>
 											<script>
 												var map = L.map('map').setView([0, 0], 15);
 

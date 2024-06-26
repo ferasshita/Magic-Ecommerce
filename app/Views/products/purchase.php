@@ -69,6 +69,7 @@ foreach ($fetch_product as $postsfetch ) {
 				<th><?php echo langs('item_name'); ?></th>
 				<th><?php echo langs('quantity'); ?></th>
 				<th><?php echo langs('vendor'); ?></th>
+				<th><?php echo langs('date'); ?></th>
 				<th><span class="fa fa-cog"></span></th>
 			</tr>
 		</thead>
@@ -83,6 +84,7 @@ foreach ($fetch_product as $postsfetch ) {
 <td><?php echo $product_name; ?></td>
 <td><?php echo $postsfetch['quantity']; ?></td>
 <td><?php echo $postsfetch['vendor']; ?></td>
+<td><?php echo $postsfetch['date']; ?></td>
 <td>
 <button class="btn btn-danger fa fa-trash" onclick="delete_transaction('product','<?php echo $postsfetch['id']; ?>')"></button>
 <a href="?pid=<?php echo $postsfetch['id']; ?>"><button class="btn btn-info fa fa-pencil"></button></a>

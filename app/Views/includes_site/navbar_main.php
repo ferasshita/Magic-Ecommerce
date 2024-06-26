@@ -1,12 +1,16 @@
 <?php
 $user_id = session('id', null);
-if($user_id != NULL){
+if($user_id != NULL || $_ENV['REGISTER_FORM'] == 'TRUE'){
+	if($user_id == NULL){
+		$request = \Config\Services::request();
+		$user_id=ip2bigint($request->getIPAddress());
+	}
 $page_name = $page;
 $title = $title;
 ?>
 <body class="light-skin sidebar-mini fixed theme-primary">
 <header class="main-header">
-	<div class="d-flex align-items-center logo-box pl-20">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
 		<!-- Logo -->
 		<a href="<?php echo base_url(); ?>" class="logo">
 			<!-- logo-->
@@ -23,7 +27,7 @@ $title = $title;
 		<div class="app-menu">
 			<ul class="header-megamenu nav">
 
-				<li id="cart_box" class="btn-group d-lg-inline-flex">
+				<li id="cart_box" class="btn-group d-lg-inline-flex cart_input_view">
 										<?php
 										$comman_model = new \App\Models\Comman_model();
 										$sum_price_cart = 0;
@@ -37,6 +41,7 @@ $title = $title;
 										foreach ($udata as $postsfetchx) {
 											$price_cart = $postsfetchx['price'];
 											$sale_cart = $postsfetchx['compare_price'];
+											$price_cart=$price_cart*$quantity;
 											$sum_price_cart +=$price_cart;
 											$pricey = price_display($price_cart, $sale_cart, $quantity);
 										}
@@ -55,6 +60,27 @@ $title = $title;
 											</div>
 										</div>
 									</li>
+									<li class="btn-group nav-item cart_button_view">
+						<a href="<?php echo base_url();?>theme/cart" data-provide="search"
+							 class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="<?php echo base_url(); ?>Asset/imgs/main_icons/svg-icon/ecommerce.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+
+					<li class="btn-group nav-item">
+			<a href="<?php echo base_url(); ?>?fav=1" data-provide="saved"
+			 class="waves-effect waves-light nav-link rounded" title="saved">
+			 <span class="fa fa-heart-o aw-nav img-fluid svg-icon"></span>
+			</a>
+			</li>
+
 			</ul>
 		</div>
 		<!-- Button trigger modal -->
@@ -105,7 +131,19 @@ $title = $title;
 
 			</ul>
 		</div>
-		<?php } ?>
+	<?php }else{ ?>
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="<?php echo base_url(); ?>Account/login" style="width:122px;font-size:large;" class="waves-effect waves-light"
+					 title="signup">
+				<?php echo langs('login'); ?>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<?php } ?>
 	</nav>
 </header>
 </body>

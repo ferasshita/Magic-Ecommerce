@@ -11,6 +11,7 @@ public function __construct(){
 			['langs', 'IsLogedin','timefunction','Mode','countrynames', 'functions_zone','app_info', 'emailBody', 'Sendmail']);
 
 			$this->comman_model = new \App\Models\Comman_model();
+			$this->account_model = new \App\Models\Account_model();
 		LoadLang();
 	Checkadmin(base_url());
 }
@@ -68,7 +69,7 @@ public function pos(){
 		 $id = $postsfetch['id'];
 		 $item_id = $postsfetch['item_id'];
 	$uisql = "SELECT * FROM product WHERE id='$item_id'";
-	$data['fetchdatas']=$this->comman_model->get_all_data_by_query($uisql);
+	$data['fetchdatasv']=$this->comman_model->get_all_data_by_query($uisql);
 }
 
 	echo view('costumers/pos',$data);
@@ -79,6 +80,10 @@ public function add_pos(){
 	$out_stock=0;
 	$item = filter_var(htmlspecialchars($this->request->getPost('item')),FILTER_SANITIZE_STRING);
 	$quantity = filter_var(htmlspecialchars($this->request->getPost('quantity')),FILTER_SANITIZE_STRING);
+	if($item==NULL){
+		echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+		return false;
+	}
 	$item_quantity=0;
 	if($quantity == NULL){
 		$quantity=1;
@@ -125,7 +130,8 @@ if($check_cart>0){
 	);
 	$inserted = $this->comman_model->insert_entry("cart", $data);
 }
-echo "item is added";
+echo "<p class='alertGreen'>".langs('done')."</p>";
+
 }
 public function add_delivery(){
 	$id=rand(0,9999999)+time();
@@ -136,17 +142,52 @@ public function add_delivery(){
 	$phone = filter_var(htmlspecialchars($this->request->getPost('phone')),FILTER_SANITIZE_STRING);
 	$vehical_number = filter_var(htmlspecialchars($this->request->getPost('vehical_number')),FILTER_SANITIZE_STRING);
 	$deliver_id = filter_var(htmlspecialchars($this->request->getPost('deliver_id')),FILTER_SANITIZE_STRING);
+
+	if($name==NULL || $email==NULL|| $phone==NULL){
+		echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+		return false;
+	}
+	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		echo "<p class='alertRed'>".langs('invalid_email_address')."</p>";
+		return false;
+	}elseif (!preg_match("/^([a-zA-Z0-9\.]+@+[a-zA-Z]+(\.)+[a-zA-Z]{2,3})$/", $email)) {
+		echo "<p class='alertRed'>".langs('invalid_email_address')."</p>";
+		return false;
+	}elseif ((!preg_match('/[0-9]/', $phone) || strlen($phone) < 6)) {
+		echo "<p class='alertRed'>".langs('invalid_phone_number')."</p>";
+		return false;
+	}
+	if($deliver_id == NULL){
+	$exist_email=$this->comman_model->get_dataCount_where("signup","email",$email);
+	if($exist_email >= 1){
+		echo "<p class='alertRed'>".langs('email_already_exist')."</p>";
+		return false;
+	}
+}
+
 	$license_photo="";
 	$photo="";
 	$passport_photo="";
-	if(isset($_FILE['license_photo'])){
-		$license_photo = file_upload('Asset/upload/license_photo','license_photo','png|jpeg|jpg|ico','');
+	if(isset($_FILES['license_photo'])){
+		$license_photo = file_upload('license_photo','license_photo','png|jpeg|jpg|ico','');
+		if(!filter_var(base_url().$license_photo, FILTER_VALIDATE_URL)){
+			echo "$license_photo";
+		return false;
+		}
 	}
-	if(isset($_FILE['photo'])){
-		$license_photo = file_upload('Asset/upload/deliver','photo','png|jpeg|jpg|ico','');
+	if(isset($_FILES['photo'])){
+		$photo = file_upload('deliver','photo','png|jpeg|jpg|ico','');
+		if(!filter_var(base_url().$photo, FILTER_VALIDATE_URL)){
+			echo "$photo";
+		return false;
+		}
 	}
-	if(isset($_FILE['passport_photo'])){
-		$passport_photo = file_upload('Asset/upload/passport_photo','passport_photo','png|jpeg|jpg|ico','');
+	if(isset($_FILES['passport_photo'])){
+		$passport_photo = file_upload('passport_photo','passport_photo','png|jpeg|jpg|ico','');
+		if(!filter_var(base_url().$passport_photo, FILTER_VALIDATE_URL)){
+			echo "$passport_photo";
+		return false;
+		}
 	}
 	$password = bin2hex(random_bytes(4));
 	$options = array(
@@ -163,49 +204,68 @@ public function add_delivery(){
 			'passport_number' => $passport_number,
 			'email' => $email,
 			'phone' => $phone,
-			'photo' => $photo,
 			'vehical_number' => $vehical_number,
 			'license_photo' => $license_photo,
 			'passport_photo' => $passport_photo,
+			'photo' => $photo,
 			'password' => $password,
 
 		);
 		$inserted = $this->comman_model->insert_entry("deliver", $data);
+
+		$data = array(
+			'id'      => $id,
+			'phone'      => $phone,
+			'username'      => $email,
+			'email'      => $email,
+			'Password'      => $signup_password,
+			'language'      => 'العربية',
+			'account_type'      => 'deliver',
+			'mode'      => 'auto',
+			'account_setup'      => date('d/m/Y'),
+			'user_email_status'      => 'verified',
+		);
+		$this->comman_model->insert_entry("signup",$data);
+
+			$terms_mail = "يتم ارسال هده الرساله لانك سجلت في نظام الصرايتم ارسال هذه الرسالة من قبل تطبيق الصرّاف فقط لتأكيد البريد الإلكتروني ، ولا يتم طلب أي معلومات شخصية أو مالية أو بيانات الحساب بأي شكل من الأشكال ، ويتم مخاطبة المستخدم بإسم المستخدم الذي إختاره عند التسجيل فقط ، ولا يتحمل فريق الصرّاف أي مسئولية عن عدم الإنتباه لأي محاولة تلاعب بالبيانات أو احتيال قد تتم بتمثيل دور الصرّاف وإرسال رسالة إلى بريدك الإلكتروني، فرجاء الإنتباه والتأكد من إسم المستخدم الذي اخترت أنه هو المخاطب به في الرسالة";
+			$mail_body = emailBody($name,base_url().'Account/login'," شكرا للتسجل في النظم وهدة هي بيانات التسجيل الدخول اسم المستخدم:  $name كلمة السر: $password".$name,$terms_mail);
+
+		$result = SendEmail('Delivery login',$email,$mail_body);
 	}else{
 		$data = array(
-			'id' => $id,
 			'name' => $name,
 			'license_number' => $license_number,
 			'passport_number' => $passport_number,
 			'email' => $email,
 			'phone' => $phone,
 			'vehical_number' => $vehical_number,
-			'license_photo' => $license_photo,
-			'passport_photo' => $passport_photo,
-			'password' => $password,
 		);
-		$where=array('id' => $id);
+		$where=array('id' => $deliver_id);
 		$inserted=$this->comman_model->update_entry("deliver",$data,$where);
+		if($license_photo != NULL){
+			$data = array(
+				'license_photo' => $license_photo,
+			);
+			$where=array('id' => $deliver_id);
+			$inserted=$this->comman_model->update_entry("deliver",$data,$where);
+		}
+		if($passport_photo != NULL){
+			$data = array(
+				'passport_photo' => $passport_photo,
+			);
+			$where=array('id' => $deliver_id);
+			$inserted=$this->comman_model->update_entry("deliver",$data,$where);
+		}
+		if($photo != NULL){
+			$data = array(
+				'photo' => $photo,
+			);
+			$where=array('id' => $deliver_id);
+			$inserted=$this->comman_model->update_entry("deliver",$data,$where);
+		}
 	}
 
-	$data = array(
-		'id'      => $id,
-		'phone'      => $phone,
-		'username'      => $email,
-		'email'      => $email,
-		'Password'      => $signup_password,
-		'language'      => 'العربية',
-		'account_type'      => 'deliver',
-		'mode'      => 'auto',
-		'account_setup'      => date('d/m/Y'),
-		'user_email_status'      => 'verified',
-	);
-	$this->comman_model->insert_entry("signup",$data);
 
-		$terms_mail = "يتم ارسال هده الرساله لانك سجلت في نظام الصرايتم ارسال هذه الرسالة من قبل تطبيق الصرّاف فقط لتأكيد البريد الإلكتروني ، ولا يتم طلب أي معلومات شخصية أو مالية أو بيانات الحساب بأي شكل من الأشكال ، ويتم مخاطبة المستخدم بإسم المستخدم الذي إختاره عند التسجيل فقط ، ولا يتحمل فريق الصرّاف أي مسئولية عن عدم الإنتباه لأي محاولة تلاعب بالبيانات أو احتيال قد تتم بتمثيل دور الصرّاف وإرسال رسالة إلى بريدك الإلكتروني، فرجاء الإنتباه والتأكد من إسم المستخدم الذي اخترت أنه هو المخاطب به في الرسالة";
-		$mail_body = emailBody($name,base_url().'Account/login'," شكرا للتسجل في النظم وهدة هي بيانات التسجيل الدخول اسم المستخدم:  $name كلمة السر: $password".$name,$terms_mail);
-
-	$result = SendEmail('Delivery login',$email,$mail_body);
 }
 
 public function delivery(){

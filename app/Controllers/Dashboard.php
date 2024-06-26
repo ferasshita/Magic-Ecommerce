@@ -139,6 +139,10 @@ foreach ($fields as $postsfetchi)
 		$see = filter_var(htmlentities($this->request->getPost('see')),FILTER_SANITIZE_STRING);
 		$blog = filter_var(htmlentities($this->request->getPost('blog')),FILTER_SANITIZE_STRING);
 		$id = filter_var(htmlentities($this->request->getPost('id')),FILTER_SANITIZE_STRING);
+		if($title==NULL || $blog==NULL){
+			echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+			return false;
+		}
 		if(!empty($this->request->getPost('blog_text'))){
 			$blog_text = $_POST['blog_text'];
 		}else{
@@ -147,6 +151,10 @@ foreach ($fields as $postsfetchi)
 		$user_id = $_SESSION['id'];
 		if(!empty($_FILES['image'])) {
 			$blog_img = file_upload('blog', 'image', '', '');
+			if(!filter_var(base_url().$blog_img, FILTER_VALIDATE_URL)){
+				echo "$blog_img";
+			return false;
+			}
 		}else{
 			$blog_img="";
 		}

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html translate="no" lang="en">
+<html class="light-skin" translate="no" lang="en">
 <head>
 </head>
 <body id="body" class="light-skin no-sidebar  theme-primary sidebar-collapse fixed">
@@ -24,7 +24,7 @@
             </div>
           </div></a>
 
-        <div class="box">
+        <div class="box" style="display:{%delivery_info_hide%}">
             <div class="box-header">
               <h4 class="font-size-20"><span class="fa fa-location-arrow"></span> deliver to <span class="label-primary label">{%costumer_location_name%}</span> <a href="<?php echo base_url(); ?>Setting?pid=location"><button class="btn btn-icon-circle-medium btn-primary float-right fa fa-pencil"></button></a> </h4>
             </div>
@@ -32,6 +32,7 @@
               <span class="font-size-20">{%costumer_address%}</span>
             </div>
           </div>
+
 <div id="cart_items">
          <div class="box" id="cart_id_<?php echo $id; ?>">
             <div class="item-cart-grid">
@@ -56,6 +57,94 @@
             </div>
           </div>
 </div>
+<div class="box" style="display:{%register_form_hide%}">
+    <div class="box-header">
+      <h4 class="font-size-20">Form</h4>
+    </div>
+    <div class="box-body">
+      <form action="" method="post">
+        <div class="row">
+          <div class="col-md-6">
+        <div class="form-group">
+          <label>name</label>
+          <input type="text" name="name" id="name" autocomplete="off" placeholder="name" class="form-control">
+        </div>
+      </div>
+      <div class="col-md-6">
+    <div class="form-group">
+      <label>phone</label>
+      <input type="text" name="name" id="name" autocomplete="off" placeholder="name" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-6">
+<div class="form-group">
+  <label>email</label>
+  <input type="text" name="name" id="name" autocomplete="off" placeholder="name" class="form-control">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label>address</label>
+<input type="text" name="name" id="name" autocomplete="off" placeholder="name" class="form-control">
+</div>
+</div>
+<div id="map"></div>
+<input type="hidden" name="long" id="long">
+<input type="hidden" name="lat" id="lat">
+<script>
+var map = L.map('map').setView([0, 0], 15);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+maxZoom: 18,
+}).addTo(map);
+
+var marker = L.marker([0, 0]).addTo(map);
+
+function updateMarker() {
+var center = map.getCenter();
+marker.setLatLng(center);
+
+// Reverse geocoding using Nominatim API
+var url = 'https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=' + center.lat + '&lon=' + center.lng;
+fetch(url)
+.then(response => response.json())
+.then(data => {
+  var address = data.address;
+  var displayAddress = address.road + ', ' + address.city + ', ' + address.country;
+  document.getElementById('address').value = displayAddress;
+
+})
+
+.catch(error => {
+  console.log('Error:', error);
+});
+document.getElementById('long').value = center.lng;
+document.getElementById('lat').value = center.lat;
+}
+
+function onLocationFound(e) {
+var latlng = e.latlng;
+map.setView(latlng, 15);
+marker.setLatLng(latlng);
+updateMarker();
+}
+
+function onLocationError(e) {
+console.log(e.message);
+}
+
+map.on('move', updateMarker);
+
+// Get user's location
+map.locate({ setView: true, maxZoom: 15 });
+map.on('locationfound', onLocationFound);
+map.on('locationerror', onLocationError);
+</script>
+      </div>
+      </form>
+    </div>
+  </div>
 <div class="box">
     <div class="box-header">
       <h4 class="font-size-20"><span class="fa fa-pencil"></span> NOTE </h4>
@@ -64,6 +153,23 @@
       <input type="text" name="order_note" id="order_note" class="form-control" placeholder="note..">
     </div>
   </div>
+  <div class="box">
+      <div class="box-header">
+        <h4 class="font-size-20"><span class="fa fa-pencil"></span> Promotion </h4>
+      </div>
+      <div class="box-body">
+        <form action="" method="get">
+        <div class="input-group mb-3" >
+        <div class="input-group">
+        <input type="text" name="promocode" id="promocode" class="form-control" placeholder="code..">
+        <button class="input-group-addon">
+        <i class="fa fa-home"></i>
+      </button>
+    </div>
+        </div>
+      </form>
+      </div>
+    </div>
         <div id="refresh" class="box">
           <div class="box-header">
             <h4>bill</h4>
@@ -92,10 +198,6 @@
     </div>
   </div>
     </div>
-  </div>
-  <!-- footer -->
-  <!-- /footer -->
-</div>
 <!-- ./wrapper -->
 <script src="<?php echo base_url(); ?>Asset/assets/vendor_components/dropzone/dropzone.js"></script>
 </body>

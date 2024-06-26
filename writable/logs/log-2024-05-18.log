@@ -1,0 +1,11 @@
+CRITICAL - 2024-05-18 16:01:16 --> Undefined array key "extension"
+in APPPATH\Views\editor\editor.php on line 86.
+ 1 APPPATH\Views\editor\editor.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extension"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editor/editor', [], true)
+ 5 APPPATH\Controllers\editor.php(23): view('editor/editor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editor->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

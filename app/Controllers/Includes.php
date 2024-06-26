@@ -84,13 +84,13 @@ class Includes extends Controller {
 			?>
 			 <div class="box">
 					<div class="box-header">
-						<h4><a href="<?php echo base_url();?>theme/order?pid=<?php echo $id; ?>" class="none-link"><span class="font-size-20">#<?php echo $id; ?></span></a>
+						<h4><a href="<?php echo base_url();?>theme/cart?pid=<?php echo $id; ?>" class="none-link"><span class="font-size-20">#<?php echo $id; ?></span></a>
               <?php if(sessionCI('account_type') == "deliver" && $shop_finish == 0){ ?>
 							<button type="button" id="accept_btn<?php echo $id; ?>" onclick="accept_deliver('<?php echo $id; ?>')" class="btn float-right <?php if($accept == '0'){ ?>btn-primary<?php }else{ ?>btn-info<?php } ?>"><?php if($accept == '0'){ ?><?php echo langs('accept'); ?><?php }else{ ?><?php echo langs('cancel'); ?><?php } ?></button>
 <?php } ?>
             </h4>
 					</div>
-				 <a href="<?php echo base_url();?>theme/order?pid=<?php echo $id; ?>" class="none-link">
+				 <a href="<?php echo base_url();?>theme/cart?pid=<?php echo $id; ?>" class="none-link">
 					<div class="box-body">
 						<p><span class="font-size-16"><?php echo $address; ?></span> <small>(<?php echo time_ago($date); ?>)</small></p>
 					</div>
@@ -246,15 +246,18 @@ class Includes extends Controller {
     $id = sessionCI('id');
     $dhsh = date("H");
 
-if($_SESSION['mode'] == "light" || ($_SESSION['mode'] == "auto" && $dhsh>=4&&$dhsh<=18)){
+if(sessionCI('mode') == "light" || (sessionCI('mode') == "auto" && $dhsh>=4&&$dhsh<=18)){
 $mode = "night";
 }else{
 $mode = "light";
 }
+
+   if($id != NULL){
      $update_info_sql = "UPDATE signup SET mode= '$mode' WHERE id= '$id'";
      $update_info=$this->comman_model->run_query($update_info_sql);
+}
+$_SESSION['mode'] = $mode;
 
-         $_SESSION['mode'] = $mode;
 
 echo"yes";
 	}

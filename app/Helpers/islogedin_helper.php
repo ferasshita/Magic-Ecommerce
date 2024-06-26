@@ -47,6 +47,12 @@ function Checkadmin($baseurl){
 	    exit;
 	}
 }
+function Checkdeliver($baseurl){
+	if(sessionCI('account_type') != "deliver"){
+	    header("location: ".$baseurl);
+	    exit;
+	}
+}
 function Checklogin($baseurl){
 if(!isset($_SESSION['id'])){
     header("location: ".$baseurl."dashboard");

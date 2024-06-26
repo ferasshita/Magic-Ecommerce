@@ -1,0 +1,331 @@
+CRITICAL - 2024-06-18 19:19:45 --> Undefined variable $date
+in APPPATH\Views\theme\cart.php on line 298.
+ 1 APPPATH\Views\theme\cart.php(298): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $date', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 298)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(677): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 20:12:34 --> session_start(): Failed to decode session object. Session has been destroyed
+in SYSTEMPATH\Session\Session.php on line 919.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_start(): Failed to decode session object. Session has been destroyed', 'C:\\xampp-2\\htdocs\\market\\system\\Session\\Session.php', 919)
+ 2 SYSTEMPATH\Session\Session.php(919): session_start()
+ 3 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 4 SYSTEMPATH\Config\Services.php(693): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 7 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 9 APPPATH\Helpers\langs_helper.php(3): CodeIgniter\Config\BaseService::__callStatic('session', [])
+10 APPPATH\Controllers\theme.php(14): LoadLang()
+11 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 20:23:45 --> Unmatched '}'
+in APPPATH\Views\theme\cart.php on line 31.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 3 APPPATH\Controllers\theme.php(678): view('theme/cart', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 20:28:08 --> Undefined array key "account_type"
+in APPPATH\Views\includes\navbar_main.php on line 7.
+ 1 APPPATH\Views\includes\navbar_main.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_type"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes/navbar_main.php', [], true)
+ 5 APPPATH\Views\theme\cart.php(11): view('includes/navbar_main.php')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 9 APPPATH\Controllers\theme.php(678): view('theme/cart', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 20:28:24 --> Undefined array key "account_type"
+in APPPATH\Views\includes\navbar_main.php on line 7.
+ 1 APPPATH\Views\includes\navbar_main.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_type"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes/navbar_main.php', [], true)
+ 5 APPPATH\Views\theme\cart.php(11): view('includes/navbar_main.php')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 9 APPPATH\Controllers\theme.php(678): view('theme/cart', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:24:20 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 36.
+ 1 APPPATH\Views\theme\cart.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(678): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:34:18 --> Undefined variable $isOrder
+in APPPATH\Controllers\theme.php on line 567.
+ 1 APPPATH\Controllers\theme.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isOrder', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 567)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:34:23 --> Undefined variable $isOrder
+in APPPATH\Controllers\theme.php on line 567.
+ 1 APPPATH\Controllers\theme.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isOrder', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 567)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:37:00 --> Undefined variable $order_id
+in APPPATH\Controllers\theme.php on line 574.
+ 1 APPPATH\Controllers\theme.php(574): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 574)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:37:51 --> Cannot access offset of type string on string
+in APPPATH\Controllers\theme.php on line 574.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:38:11 --> Cannot access offset of type string on string
+in APPPATH\Controllers\theme.php on line 574.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:38:30 --> Undefined variable $order_id
+in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 598)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:39:19 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 40.
+ 1 APPPATH\Views\theme\cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(678): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:49:36 --> Undefined variable $user_id
+in APPPATH\Controllers\theme.php on line 567.
+ 1 APPPATH\Controllers\theme.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 567)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 21:59:43 --> Undefined variable $sid_loc
+in APPPATH\Controllers\theme.php on line 564.
+ 1 APPPATH\Controllers\theme.php(564): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sid_loc', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 564)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:00:06 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 40.
+ 1 APPPATH\Views\theme\cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(696): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:00:46 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 40.
+ 1 APPPATH\Views\theme\cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(696): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:00:47 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 40.
+ 1 APPPATH\Views\theme\cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(696): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:02:44 --> syntax error, unexpected token "if", expecting "function" or "const"
+in APPPATH\Controllers\theme.php on line 595.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('theme/cart', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('theme/cart')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('theme/cart')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:03:06 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 40.
+ 1 APPPATH\Views\theme\cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(705): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:03:35 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 40.
+ 1 APPPATH\Views\theme\cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(706): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:03:37 --> Undefined variable $costumer_phone
+in APPPATH\Views\theme\cart.php on line 40.
+ 1 APPPATH\Views\theme\cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_phone', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(706): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:13:14 --> Undefined variable $costumer_lat
+in APPPATH\Views\theme\cart.php on line 41.
+ 1 APPPATH\Views\theme\cart.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_lat', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(707): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:14:08 --> Undefined variable $sid
+in APPPATH\Views\theme\cart.php on line 64.
+ 1 APPPATH\Views\theme\cart.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sid', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(710): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:15:45 --> Undefined variable $order_id_btn
+in APPPATH\Views\theme\cart.php on line 304.
+ 1 APPPATH\Views\theme\cart.php(304): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id_btn', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 304)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(712): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:19:09 --> Undefined array key "account_type"
+in APPPATH\Views\theme\cart.php on line 305.
+ 1 APPPATH\Views\theme\cart.php(305): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "account_type"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 305)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(712): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:19:57 --> Undefined variable $order_id_btn
+in APPPATH\Views\theme\cart.php on line 318.
+ 1 APPPATH\Views\theme\cart.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id_btn', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 318)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(712): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:19:58 --> Undefined variable $order_id_btn
+in APPPATH\Views\theme\cart.php on line 318.
+ 1 APPPATH\Views\theme\cart.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id_btn', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 318)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(712): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:20:22 --> syntax error, unexpected double-quoted string "'), start_count()\" class=\"btn ", expecting "," or ";"
+in APPPATH\Views\theme\cart.php on line 318.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 3 APPPATH\Controllers\theme.php(712): view('theme/cart', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:20:53 --> Undefined variable $order_id_btn
+in APPPATH\Views\theme\cart.php on line 318.
+ 1 APPPATH\Views\theme\cart.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id_btn', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 318)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(712): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:23:01 --> Undefined variable $costumer_id
+in APPPATH\Controllers\theme.php on line 578.
+ 1 APPPATH\Controllers\theme.php(578): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 578)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:25:33 --> Undefined variable $isOrder
+in APPPATH\Views\theme\cart.php on line 23.
+ 1 APPPATH\Views\theme\cart.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isOrder', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(714): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-18 22:27:08 --> Undefined variable $costumer_id
+in APPPATH\Views\theme\cart.php on line 64.
+ 1 APPPATH\Views\theme\cart.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_id', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(712): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

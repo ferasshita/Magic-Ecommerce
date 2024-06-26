@@ -1,0 +1,81 @@
+CRITICAL - 2024-05-03 13:09:54 --> Undefined variable $pathh
+in APPPATH\Controllers\Setting.php on line 369.
+ 1 APPPATH\Controllers\Setting.php(369): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pathh', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 369)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 13:34:33 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Setting.php on line 384.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('setting/savetemplate', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('setting/savetemplate')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('setting/savetemplate')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 13:35:05 --> preg_replace(): Argument #4 ($limit) must be of type int, string given
+in APPPATH\Controllers\Setting.php on line 377.
+ 1 APPPATH\Controllers\Setting.php(377): preg_replace('/src="/s', 'src="src/', '<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+{%navbar_main%}
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="theme/item?pid={%items_id%}" class="none-link">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="theme/item?pid={%items_id%}" style="color:black" class="none-link">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+', 'ff')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:11:56 --> preg_replace(): Argument #5 ($count) cannot be passed by reference
+in APPPATH\Controllers\Setting.php on line 377.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:12:15 --> preg_replace(): Argument #5 ($count) cannot be passed by reference
+in APPPATH\Controllers\Setting.php on line 377.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 14:12:27 --> preg_replace(): Argument #5 ($count) cannot be passed by reference
+in APPPATH\Controllers\Setting.php on line 377.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

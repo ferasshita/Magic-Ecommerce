@@ -1,7 +1,7 @@
 //[editor Javascript]
 
 //Project:	Crypto Tokenizer UI Interface & Cryptocurrency Admin Template
-//Primary use:   Used only for the wysihtml5 Editor 
+//Primary use:   Used only for the wysihtml5 Editor
 
 
 //Add text editor
@@ -12,7 +12,6 @@
 	// instance, using default configuration.
 	CKEDITOR.replace('editor1')
 	//bootstrap WYSIHTML5 - text editor
-	$('.textarea').wysihtml5();		
-	
-  });
+	$('.textarea').wysihtml5();
 
+  });

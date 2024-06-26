@@ -1,86 +1,115 @@
 <!DOCTYPE html>
-<html translate="no" lang="en">
+<html class="" translate="no" lang="en">
 <head>
 </head>
-<body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+<body class="light-skin rtl no-sidebar theme-primary sidebar-collapse fixed">
 <div class="wrapper animate-bottom">
 	<div id="loader"></div>
 	{%navbar_main%}
 	<!-- navbar -->
 	<!-- /navbar -->
 	<!-- Content Wrapper. Contains page content -->
-	<div class="content-wrapper content-wrapper-50">
+	<div class="content-wrapper padding-42">
 		<div class="container-full">
-			<!-- Main content -->
-			<section class="content-height">
-				<div class="box">
-						<div class="box-body">
-							<h4><span class="font-size-20"><span class="float-left">#{%order_id%}</span></span></h4>
-							<br>
-							<p>{%order_date%} {%time_ago%} <a href="tel:{%costumer_phone%}"> <button style="margin-left: 5px" class="btn btn-primary float-right">Call costumer</button></a>
-								<button style="margin-left: 5px" onclick="getLocation({%costumer_lat%},{%costumer_long%}, 32.8752)" class="btn btn-primary float-right">show directions</button>
-								<a href="tel:{%shop_phone%}"> <button style="margin-left: 5px" class="btn btn-primary float-right">Call shop</button></a>
-							</p>
-						</div>
+		<!-- Main content -->
+			<style>
+				.image-slide {
+					height: 500px;
+					background-color: #000;
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			</style>
+		<section class="content-height">
+
+					  <!-- Wrapper for slides -->
+			<div class="box">
+				<div style="padding: 0;" class="box-body fix-ped">
+					<!-- Place somewhere in the <body> of your page -->
+						<div id="carousel-example-generic-Controls" class="carousel slide" data-bs-ride="carousel">
+							<div id="images_container" class="carousel-inner" role="listbox">
+
+								<div class="carousel-item active">
+									<img src="{%image_location%}" class="img-fluid image-slide" alt="slide-1">
+								</div>
+
+							</div>
+							<a class="carousel-control-prev" href="#carousel-example-generic-Controls" role="button" data-bs-slide="prev">
+						 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						 <span class="sr-only">Previous</span>
+						 </a>
+						 <a class="carousel-control-next" href="#carousel-example-generic-Controls" role="button" data-bs-slide="next">
+						 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						 <span class="sr-only">Next</span>
+						 </a>
 					</div>
 
-				<div id="cart_items">
-				<a href="item?pid={%items_id%}" class="none-link"> <div class="box">
-						<div class="item-cart-grid">
-							<div style="background: url('{%item_image%}') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
-							</div>
-							<div class="padding-10">
-								<h4><span class="font-size-20">{%items_title%}</span></h4>
-								<p class="font-size-14">{%items_price%}</p>
-							</div>
-							<div>
-								<div class="float-right padding-10">
-									<br>
-									<input type="text" value="{%item_quantity%}" class="btn btn-icon-circle-medium border-black text-center" disabled>
-								</div>
-							</div>
-						</div>
-					</div></a>
+				</div>
+				<div class="box-body">
+					<h2>{%title%} </h2>
+					<p>{%description%}</p>
+				</div>
 			</div>
 			<div class="box">
-			    <div class="box-header">
-			      <h4 class="font-size-20"><span class="fa fa-pencil"></span> NOTE </h4>
-			    </div>
-			    <div class="box-body">
-			      <input type="text" name="order_note" value="{%order_note%}" id="order_note" class="form-control" disabled>
-			    </div>
-			  </div>
-				<div class="box">
-					<div class="box-header">
-						<h4>Bill</h4>
-					</div>
+				<div class="box-header">
+					<h4 class="box-title">
+						التفاصيل
+					</h4>
+				</div>
 
-					<div class="box-body">
+				<div class="box-body">
+					<p class="font-size-20">
+					{%final_price%} {%available%}
+					</p>
+				</div>
 
-						<p>quantity <b class="float-right">{%quantity%}</b></p>
-						<p>total <b class="float-right">{%sum_price%} LYD</b></p>
-						<p>delivery <b class="float-right">{%deliver_price%} LYD</b></p>
-						<p>branch_total <b class="float-right">{%branch_total%} LYD</b></p>
+			</div>
+
+			<div id="varient_container">
+			 <div class="box">
+					<div class="item-cart-grid">
+						<div style="background: url('{%varient_image%}') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+						</div>
+						<div class="padding-10">
+							<h4><span class="font-size-20">{%varient_name%}</span></h4>
+						</div>
+						<div>
+							<div class="float-right padding-10">
+								<br>
+
+						<div class="controls">
+						<fieldset>
+							<input name="variant_id_{%item_id%}" value="{%varient_id%}"id="variant_id_{%item_id%}" type="radio">
+						<label for="variant_id_{%item_id%}"></label>
+						</fieldset>
+						</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-			</section>
-
 		</div>
 
+		</section>
+
 	</div>
-	<div class="div-bottom box">
-		<div class="box-body">
-		{%order_button%}
-			<span class="float-right font-size-22">Total {%branch_total%} LYD</span>
-		</div>
-	</div>
+<br>
+<br>
+<br>
+<br>
 	<!-- footer -->
-	<!-- /footer -->
+		<div class="box div-bottom">
+			<div class="box-body">
+			<span style="display:grid" class="width-100">{%cart_button%} </span>
+			</div>
+		</div>	<!-- /footer -->
+	</div>
 </div>
 <!-- ./wrapper -->
+
+<script src="../Asset/assets/vendor_plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<script src="../Asset/assets/vendor_components/OwlCarousel2/dist/owl.carousel.js"></script>
+<script src="../Asset/assets/vendor_components/flexslider/jquery.flexslider.js"></script>
+<script src="../Asset/js/pages/slider.js"></script>
 </body>
 </html>

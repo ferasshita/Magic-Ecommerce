@@ -31,20 +31,28 @@
 		<?php }else{?>
 <div id="profilePhotodivPreview_photo" style="text-align: center; padding: 50% 100px;" class="dropzone dz-clickable"><?php echo langs('image'); ?></div>
 	<?php	} ?>
-	<input type="file" name="image" id="title" style="display:none" accept="image/*" class="form-control" onchange="profilePhoto(this,'photo');" >
+	<input type="file" name="photo" id="title" style="display:none" accept="image/*" class="form-control" onchange="profilePhoto(this,'photo');" >
 		</label>
+		<div class="row">
+			<div class="col-md-6">
 						<div class="form-group">
-							<label><?php echo langs('name'); ?></label>
+							<label><?php echo langs('name'); ?>*</label>
 							<input type="text" name="name" id="name" value="<?php echo $name; ?>" autocomplete="off" placeholder="<?php echo langs('name'); ?>" class="form-control">
 						</div>
+						</div>
+						<div class="col-md-6">
 						<div class="form-group">
-							<label><?php echo langs('email'); ?></label>
+							<label><?php echo langs('email'); ?>*</label>
 							<input type="text" name="email" id="email" value="<?php echo $email; ?>" autocomplete="off" placeholder="<?php echo langs('email'); ?>" class="form-control">
 						</div>
+						</div>
+						<div class="col-md-6">
 						<div class="form-group">
-							<label><?php echo langs('phone'); ?></label>
+							<label><?php echo langs('phone'); ?>*</label>
 							<input type="text" name="phone" id="phone_no" value="<?php echo $phone; ?>" autocomplete="off" placeholder="<?php echo langs('phone'); ?>" class="form-control">
 						</div>
+						</div>
+					</div>
 	<label>
 
 <?php if($license_photo!=NULL){ ?>
@@ -79,7 +87,7 @@
 							<input type="text" name="vehical_number" id="vehical_number" value="<?php echo $vehical_number; ?>" autocomplete="off" placeholder="<?php echo langs('vehical_number'); ?>" class="form-control">
 						</div>
 
-									<input type="hidden" name="id" value="<?php echo $pid; ?>"
+									<input type="hidden" name="deliver_id" value="<?php echo $pid; ?>"
 						<div class="box-footer">
 							<div class="loadingPosting"></div>
 							<button type="submit" class="btn btn-rounded btn-primary btn-outline" name="post_now">

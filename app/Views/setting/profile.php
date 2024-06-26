@@ -30,6 +30,12 @@
 	<div class="form-group"><label><?php echo langs('delivery_price'); ?></label>
 	<input type="text" name="DELIVERY_PRICE" value="<?php echo $_ENV['DELIVERY_PRICE']; ?>" placeholder="<?php echo langs('delivery_price'); ?>" class="form-control">
 	</div>
+	<div class="form-group"><label><?php echo langs('delivery_type'); ?></label>
+	<select name="DELIVERY_TYPE" class="form-control">
+		<option value="1" <?php if($_ENV['DELIVERY_TYPE']=="1"){echo "selected";} ?>><?php echo langs('per_kelometer'); ?></option>
+		<option value="2" <?php if($_ENV['DELIVERY_TYPE']=="2"){echo "selected";} ?>><?php echo langs('fixed'); ?></option>
+	</select>
+	</div>
 
   <div style="padding-top: 21px;">
 

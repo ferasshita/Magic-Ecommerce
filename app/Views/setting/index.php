@@ -76,10 +76,24 @@
 			<span class="pull-right-container"><i class="fa fa-angle-right pull-right"></i></span>
 		</a>
 	</li>
+	<li>
+		<a href="<?php echo base_url(); ?>setting?pid=excel" class="hover-effect waves-effect waves-light nav-link rounded push-btn">
+			<i class="fa fa-file"></i>
+			<span><?php echo lang('Excel'); ?></span>
+			<span class="pull-right-container"><i class="fa fa-angle-right pull-right"></i></span>
+		</a>
+	</li>
 		<li>
 			<a href="<?php echo base_url(); ?>setting?pid=password" class="hover-effect waves-effect waves-light nav-link rounded push-btn">
 				<i class="fa fa-lock"></i>
 				<span><?php echo langs('password'); ?></span>
+				<span class="pull-right-container"><i class="fa fa-angle-right pull-right"></i></span>
+			</a>
+		</li>
+		<li>
+			<a href="<?php echo base_url(); ?>setting?pid=templete" class="hover-effect waves-effect waves-light nav-link rounded push-btn">
+				<i class="fa fa-image"></i>
+				<span><?php echo langs('theme'); ?></span>
 				<span class="pull-right-container"><i class="fa fa-angle-right pull-right"></i></span>
 			</a>
 		</li>
@@ -144,6 +158,15 @@
 											<span class="pull-right-container"><i class="fa fa-angle-right pull-right"></i></span>
 										</a>
 									</li>
+									<?php if($_SESSION['account_type'] == "admin"){ ?>
+									<li>
+										<a href="<?php echo base_url(); ?>setting?pid=update" class="hover-effect waves-effect waves-light nav-link rounded push-btn">
+											<i class="fa fa-warning"></i>
+											<span>update</span>
+											<span class="pull-right-container"><i class="fa fa-angle-right pull-right"></i></span>
+										</a>
+									</li>
+									<?php } ?>
 								</ul>
 							</div>
 

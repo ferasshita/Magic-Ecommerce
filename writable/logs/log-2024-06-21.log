@@ -1,0 +1,11 @@
+CRITICAL - 2024-06-21 17:27:31 --> Undefined variable $page
+in APPPATH\Views\includes\head_info.php on line 3.
+ 1 APPPATH\Views\includes\head_info.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\head_info.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\head_info.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes/head_info', [], true)
+ 5 APPPATH\Controllers\Home.php(86): view('includes/head_info')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

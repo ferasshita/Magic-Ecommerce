@@ -85,6 +85,9 @@ $title = $title; ?>
 							<a class="dropdown-item" href="<?php echo base_url(); ?>Setting?pid=language"><i
 										class="fa fa-language"></i> <?php echo langs('language'); ?></a>
 							<div class='dropdown-divider'></div>
+							<a class="dropdown-item" href="<?php echo base_url(); ?>deliver/report"><i
+										class="fa fa-file"></i> <?php echo langs('reports'); ?></a>
+							<div class='dropdown-divider'></div>
 							<a class="dropdown-item" accesskey="m" href="javascript:void(0)" onclick="mode()"><i
 										class="fa fa-adjust"></i> <?php echo langs('mode'); ?></a>
 							<div class="dropdown-divider"></div>
@@ -185,6 +188,13 @@ $title = $title; ?>
 												</li>
 
 												<li>
+													<a href="<?php echo base_url(); ?>discount">
+													<i class="ti-more"></i>
+													<span><?php echo langs('discount'); ?></span>
+													</a>
+												</li>
+
+												<li>
 													<a href="<?php echo base_url(); ?>products/purchase">
 													<i class="ti-more"></i>
 													<span><?php echo langs('purchase'); ?></span>
@@ -224,8 +234,30 @@ $title = $title; ?>
 													<span><?php echo langs('blog'); ?></span>
 												</a>
 											</li>
+<?php
+$htmlFiles = glob("src/*.html");
+
+if ($htmlFiles) {
+  // Extract filenames with extension
+  $fileNames = array_map(function($file) {
+    return pathinfo($file, PATHINFO_BASENAME);
+  }, $htmlFiles);
+
+  // Display comma-separated list with extension
+  $file_display = implode(",", $fileNames);
+} else {
+		$filename = "src/page.html";
+
+$handle = fopen($filename, 'w');
+
+fwrite($handle, '');
+
+fclose($handle);
+$file_display="page.html";
+}
+?>
 											<li>
-												<a href="<?php echo base_url(); ?>editor/edit?folder=&page=	<?php $dir = scandir('src');echo $dir[3]; ?>">
+												<a href="<?php echo base_url(); ?>editor/edit?folder=&page=<?php echo $file_display; ?>">
 													<img src="<?php echo base_url(); ?>Asset/imgs/main_icons/svg-icon/sidebar-menu/apps.svg"
 														 class="svg-icon" alt="">
 													<span><?php echo langs('editor'); ?></span>

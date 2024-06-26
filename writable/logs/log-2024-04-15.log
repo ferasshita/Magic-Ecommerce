@@ -1,0 +1,6 @@
+CRITICAL - 2024-04-15 07:12:02 --> Class "App\Controllers\ZipArchive" not found
+in APPPATH\Controllers\update.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update_functions()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,2446 @@
+CRITICAL - 2024-06-26 17:57:01 --> Undefined variable $html
+in APPPATH\Helpers\functions_zone_helper.php on line 379.
+ 1 APPPATH\Helpers\functions_zone_helper.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 379)
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar rtl theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex cart_input_view">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item cart_button_view">
+						<a href="http://localhost/market/public/" data-provide="search"
+							 class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+
+					<li class="btn-group nav-item">
+			<a href="http://localhost/market/public/?fav=1" data-provide="saved"
+			 class="waves-effect waves-light nav-link rounded" title="saved">
+			 <span class="fa fa-heart-o aw-nav img-fluid svg-icon"></span>
+			</a>
+			</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="http://localhost/market/public/Account/login" style="width:122px;font-size:large;" class="waves-effect waves-light"
+					 title="signup">
+				تسجيل دخول				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content">
+        <div class="box">
+          <div style="padding:0" class="box-header">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="بحث..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+  </div>
+  </div>
+      </div>
+      </form>
+      <div class="row" id="catigories_display">
+        <div class="col-4">
+          <a href="http://localhost/market/public/home/page/?collection={%catigories_id%}">
+<div class="box catigory-box">
+          <div style="background: url(\'{%catigories_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="box-body">
+             </div>
+         </div>
+       </a>
+        </div>
+      </div>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/../../theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/../../theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%} {%items_available%}</span> </h4>
+            <h4><span>{%final_price%}</span></h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">اطلب</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>
+  <script>
+    var array = [{%items%}];
+    var edited = document.getElementById(\'div_items\').innerHTML;
+    document.getElementById(\'div_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+        const edited_a = edited.replace(/{%items_id%}/g, data.id);
+        const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+        const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+        const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+        const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+        const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+        const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+        const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+        const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+        const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+        const edited_k = edited_j.replace(/{%cart_button%}/g, data.cart_button);
+        const edited_l = edited_k.replace(/{%like_button%}/g, data.like_button);
+        const edited_m = edited_l.replace(/{%items_image%}/g, data.item_image);
+        const edited_n = edited_m.replace(/{%final_price%}/g, data.final_price);
+
+        $(\'#div_items\').append(edited_n);
+        });
+  if(array == \'\'){
+    document.getElementById(\'div_items\').innerHTML = \'\';
+  }
+    </script>
+    ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:57:32 --> Undefined variable $catigories_array
+in APPPATH\Helpers\functions_zone_helper.php on line 406.
+ 1 APPPATH\Helpers\functions_zone_helper.php(406): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catigories_array', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 406)
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar rtl theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex cart_input_view">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item cart_button_view">
+						<a href="http://localhost/market/public/" data-provide="search"
+							 class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+
+					<li class="btn-group nav-item">
+			<a href="http://localhost/market/public/?fav=1" data-provide="saved"
+			 class="waves-effect waves-light nav-link rounded" title="saved">
+			 <span class="fa fa-heart-o aw-nav img-fluid svg-icon"></span>
+			</a>
+			</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="http://localhost/market/public/Account/login" style="width:122px;font-size:large;" class="waves-effect waves-light"
+					 title="signup">
+				تسجيل دخول				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content">
+        <div class="box">
+          <div style="padding:0" class="box-header">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="بحث..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+  </div>
+  </div>
+      </div>
+      </form>
+      <div class="row" id="catigories_display">
+        <div class="col-4">
+          <a href="http://localhost/market/public/home/page/?collection={%catigories_id%}">
+<div class="box catigory-box">
+          <div style="background: url(\'{%catigories_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="box-body">
+             </div>
+         </div>
+       </a>
+        </div>
+      </div>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/../../theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/../../theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%} {%items_available%}</span> </h4>
+            <h4><span>{%final_price%}</span></h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">اطلب</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>
+  <script>
+    var array = [{%items%}];
+    var edited = document.getElementById(\'div_items\').innerHTML;
+    document.getElementById(\'div_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+        const edited_a = edited.replace(/{%items_id%}/g, data.id);
+        const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+        const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+        const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+        const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+        const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+        const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+        const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+        const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+        const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+        const edited_k = edited_j.replace(/{%cart_button%}/g, data.cart_button);
+        const edited_l = edited_k.replace(/{%like_button%}/g, data.like_button);
+        const edited_m = edited_l.replace(/{%items_image%}/g, data.item_image);
+        const edited_n = edited_m.replace(/{%final_price%}/g, data.final_price);
+
+        $(\'#div_items\').append(edited_n);
+        });
+  if(array == \'\'){
+    document.getElementById(\'div_items\').innerHTML = \'\';
+  }
+    </script>
+    
+    <script>
+      var array = [{%catigories_array%}];
+      var edited = document.getElementById(\'catigories_display\').innerHTML;
+      document.getElementById(\'catigories_display\').innerHTML=\'\';
+    array.forEach((data)=>{
+
+      const edited_a = edited.replace(/{%catigories_id%}/g, data.id);
+      const edited_b = edited_a.replace(/{%catigories_title%}/g, data.title);
+      const edited_c = edited_b.replace(/{%catigories_description%}/g, data.description);
+      const edited_d = edited_c.replace(/{%catigories_image%}/g, data.description);
+
+    $(\'#catigories_display\').append(edited_d);
+    });
+    if(array == \'\'){
+      document.getElementById(\'catigories_display\').innerHTML = \'\';
+    }
+      </script>
+      ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:57:47 --> Undefined variable $html
+in APPPATH\Helpers\functions_zone_helper.php on line 409.
+ 1 APPPATH\Helpers\functions_zone_helper.php(409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 409)
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar rtl theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex cart_input_view">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item cart_button_view">
+						<a href="http://localhost/market/public/" data-provide="search"
+							 class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+
+					<li class="btn-group nav-item">
+			<a href="http://localhost/market/public/?fav=1" data-provide="saved"
+			 class="waves-effect waves-light nav-link rounded" title="saved">
+			 <span class="fa fa-heart-o aw-nav img-fluid svg-icon"></span>
+			</a>
+			</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="http://localhost/market/public/Account/login" style="width:122px;font-size:large;" class="waves-effect waves-light"
+					 title="signup">
+				تسجيل دخول				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content">
+        <div class="box">
+          <div style="padding:0" class="box-header">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="بحث..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+  </div>
+  </div>
+      </div>
+      </form>
+      <div class="row" id="catigories_display">
+        <div class="col-4">
+          <a href="http://localhost/market/public/home/page/?collection={%catigories_id%}">
+<div class="box catigory-box">
+          <div style="background: url(\'{%catigories_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="box-body">
+             </div>
+         </div>
+       </a>
+        </div>
+      </div>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/../../theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/../../theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%} {%items_available%}</span> </h4>
+            <h4><span>{%final_price%}</span></h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">اطلب</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>
+  <script>
+    var array = [{%items%}];
+    var edited = document.getElementById(\'div_items\').innerHTML;
+    document.getElementById(\'div_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+        const edited_a = edited.replace(/{%items_id%}/g, data.id);
+        const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+        const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+        const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+        const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+        const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+        const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+        const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+        const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+        const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+        const edited_k = edited_j.replace(/{%cart_button%}/g, data.cart_button);
+        const edited_l = edited_k.replace(/{%like_button%}/g, data.like_button);
+        const edited_m = edited_l.replace(/{%items_image%}/g, data.item_image);
+        const edited_n = edited_m.replace(/{%final_price%}/g, data.final_price);
+
+        $(\'#div_items\').append(edited_n);
+        });
+  if(array == \'\'){
+    document.getElementById(\'div_items\').innerHTML = \'\';
+  }
+    </script>
+    
+    <script>
+      var array = [{%catigories_array%}];
+      var edited = document.getElementById(\'catigories_display\').innerHTML;
+      document.getElementById(\'catigories_display\').innerHTML=\'\';
+    array.forEach((data)=>{
+
+      const edited_a = edited.replace(/{%catigories_id%}/g, data.id);
+      const edited_b = edited_a.replace(/{%catigories_title%}/g, data.title);
+      const edited_c = edited_b.replace(/{%catigories_description%}/g, data.description);
+      const edited_d = edited_c.replace(/{%catigories_image%}/g, data.description);
+
+    $(\'#catigories_display\').append(edited_d);
+    });
+    if(array == \'\'){
+      document.getElementById(\'catigories_display\').innerHTML = \'\';
+    }
+      </script>
+      ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 19:05:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO car...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO car...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO car...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO car...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO car...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-26 19:05:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, 10, )
+			')
+ 2 APPPATH\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, 10, )
+			')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 19:05:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO car...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO car...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO car...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO car...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO car...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-26 19:05:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, 10, )
+			')
+ 2 APPPATH\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, 10, )
+			')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 19:07:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO car...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO car...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO car...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO car...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO car...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-26 19:07:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, )
+			')
+ 2 APPPATH\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, )
+			')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 19:12:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO car...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO car...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO car...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO car...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO car...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-26 19:12:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, 10, )
+			')
+ 2 APPPATH\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 1721118563, \'1\', undefined9, 10, )
+			')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 19:15:26 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO car...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO car...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO car...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO car...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO car...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-26 19:15:26 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 0, \'1\', 9, 8)
+			')
+ 2 APPPATH\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 0, \'1\', 9, 8)
+			')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:15:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:15:46 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 259.
+ 1 APPPATH\Controllers\theme.php(259): htmlspecialchars(null, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 19:15:46 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO car...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO car...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO car...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO car...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO car...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-26 19:15:46 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 0, \'1\', 9, 8)
+			')
+ 2 APPPATH\Controllers\theme.php(286): App\Models\Comman_model->run_query('INSERT INTO cart
+			(user_id, item_id, quantity, variants)
+			VALUES
+			(001, 0, \'1\', 9, 8)
+			')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:17:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:17:38 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 259.
+ 1 APPPATH\Controllers\theme.php(259): htmlspecialchars(null, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:17:38 --> Undefined variable $quantity
+in APPPATH\Controllers\theme.php on line 284.
+ 1 APPPATH\Controllers\theme.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $quantity', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 284)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:18:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:18:24 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 259.
+ 1 APPPATH\Controllers\theme.php(259): htmlspecialchars(null, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:18:24 --> Undefined variable $variants
+in APPPATH\Controllers\theme.php on line 285.
+ 1 APPPATH\Controllers\theme.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $variants', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:18:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:18:38 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 259.
+ 1 APPPATH\Controllers\theme.php(259): htmlspecialchars(null, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:18:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:18:40 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:18:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:18:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:18:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:18:49 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:19:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:13 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:19:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:21 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:19:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:26 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:19:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:35 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:19:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:19:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:19:40 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:21:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:21:18 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:21:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:21:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:21:23 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:21:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:21:23 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:21:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:21:25 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:21:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:21:26 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 813.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:22:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:22:45 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:22:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:22:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:22:49 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:22:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:22:49 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:22:51 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:22:51 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:24:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:24:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:24:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:24:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:24:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:27:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:27:28 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:27:28 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:27:28 --> Unclosed '{' on line 25
+in APPPATH\Views\theme\cart.php on line 444.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 3 APPPATH\Controllers\theme.php(797): view('theme/cart', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:27:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:27:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:27:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:27:48 --> Undefined array key "variants"
+in APPPATH\Views\theme\cart.php on line 76.
+ 1 APPPATH\Views\theme\cart.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "variants"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 76)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(797): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:28:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:28:05 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:28:05 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:28:05 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\theme\cart.php on line 116.
+ 1 APPPATH\Views\theme\cart.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(797): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:28:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:28:35 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:28:35 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:28:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:28:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:14 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:14 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:20 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:24 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:24 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:25 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:25 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:29 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:29 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:30:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:30:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:32 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:31:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:35 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:31:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:35 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:31:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:31:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:31:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:37 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:31:37 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:31:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:31:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:32:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_sum_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 328.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_sum_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_sum_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 328.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_sum_cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 APPPATH\Controllers\theme.php(598): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:32:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 598.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:33:42 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:33:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:33:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\theme::$comman_model is deprecated in APPPATH\Controllers\theme.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\theme->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:33:49 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\theme.php on line 814.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$comman_model is deprecated in APPPATH\Controllers\Home.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 APPPATH\Controllers\Home.php(103): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 APPPATH\Controllers\Home.php(107): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 APPPATH\Controllers\Home.php(108): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 APPPATH\Controllers\Home.php(110): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 APPPATH\Controllers\Home.php(111): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 APPPATH\Controllers\Home.php(112): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 APPPATH\Controllers\Home.php(113): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:33:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$comman_model is deprecated in APPPATH\Controllers\Home.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 APPPATH\Controllers\Home.php(103): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 APPPATH\Controllers\Home.php(107): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 APPPATH\Controllers\Home.php(108): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 APPPATH\Controllers\Home.php(110): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 APPPATH\Controllers\Home.php(111): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 APPPATH\Controllers\Home.php(112): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 APPPATH\Controllers\Home.php(113): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:19 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$comman_model is deprecated in APPPATH\Controllers\Home.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 APPPATH\Controllers\Home.php(103): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 APPPATH\Controllers\Home.php(107): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 APPPATH\Controllers\Home.php(108): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 APPPATH\Controllers\Home.php(110): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 APPPATH\Controllers\Home.php(111): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 APPPATH\Controllers\Home.php(112): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 APPPATH\Controllers\Home.php(113): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:34:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$comman_model is deprecated in APPPATH\Controllers\Home.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 APPPATH\Controllers\Home.php(103): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 APPPATH\Controllers\Home.php(107): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 APPPATH\Controllers\Home.php(108): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 APPPATH\Controllers\Home.php(110): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 APPPATH\Controllers\Home.php(111): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 APPPATH\Controllers\Home.php(112): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 APPPATH\Controllers\Home.php(113): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:00 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$comman_model is deprecated in APPPATH\Controllers\Home.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 APPPATH\Controllers\Home.php(103): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 APPPATH\Controllers\Home.php(107): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 APPPATH\Controllers\Home.php(108): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 108.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 APPPATH\Controllers\Home.php(110): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 APPPATH\Controllers\Home.php(111): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 111.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 APPPATH\Controllers\Home.php(112): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 112.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 APPPATH\Controllers\Home.php(113): htmlentities(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Home.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-06-26 19:35:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Includes::$comman_model is deprecated in APPPATH\Controllers\Includes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Includes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 19:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-26 21:25:23 --> syntax error, unexpected variable "$location", expecting "," or ";"
+in APPPATH\Controllers\theme.php on line 928.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('theme/item', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('theme/item')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('theme/item')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 21:38:34 --> Call to undefined function App\Controllers\isUrl()
+in APPPATH\Controllers\products.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_collection()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 21:39:23 --> Call to undefined function App\Controllers\isUrl()
+in APPPATH\Controllers\products.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_collection()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 21:40:04 --> Call to undefined function App\Controllers\isUrl()
+in APPPATH\Controllers\products.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_collection()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 21:42:52 --> Call to undefined function App\Controllers\isUrl()
+in APPPATH\Controllers\products.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_collection()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 21:43:29 --> Undefined constant "FILTER_FLAG_ALLOW_FRAGMENT"
+in APPPATH\Helpers\functions_zone_helper.php on line 333.
+ 1 APPPATH\Controllers\products.php(224): isUrl('<p class="error_msg">يجب ان يكون امتداد الصورة jpg ,jpeg او png </p>')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_collection()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 21:46:57 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\products.php on line 230.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('products/add_collection', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('products/add_collection')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('products/add_collection')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 21:47:10 --> unlink(&lt;p class=&quot;error_msg&quot;&gt;يجب ان يكون امتداد الصورة jpg ,jpeg او png &lt;/p&gt;): No such file or directory
+in APPPATH\Controllers\products.php on line 226.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(&lt;p class=&quot;error_msg&quot;&gt;يجب ان يكون امتداد الصورة jpg ,jpeg او png &lt;/p&gt;): No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\products.php', 226)
+ 2 APPPATH\Controllers\products.php(226): unlink('<p class="error_msg">يجب ان يكون امتداد الصورة jpg ,jpeg او png </p>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_collection()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 22:19:24 --> require_once(C:\xampp-2\htdocs\market\app\third_party/phpexcel/vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Helpers\excel_helper.php on line 2.
+ 1 APPPATH\Helpers\excel_helper.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp-2\\htdocs\\market\\app\\third_party/phpexcel/vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\excel_helper.php', 2)
+ 2 APPPATH\Helpers\excel_helper.php(2): require_once()
+ 3 SYSTEMPATH\Common.php(667): include_once('C:\\xampp-2\\htdocs\\market\\app\\Helpers\\excel_helper.php')
+ 4 APPPATH\Controllers\Setting.php(10): helper([...])
+ 5 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Setting->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 22:27:31 --> Undefined variable $id
+in APPPATH\Controllers\Setting.php on line 391.
+ 1 APPPATH\Controllers\Setting.php(391): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 391)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 22:28:46 --> Undefined variable $id
+in APPPATH\Controllers\Setting.php on line 413.
+ 1 APPPATH\Controllers\Setting.php(413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 413)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 22:29:24 --> Undefined variable $sid
+in APPPATH\Controllers\Setting.php on line 413.
+ 1 APPPATH\Controllers\Setting.php(413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sid', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 413)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 22:30:00 --> Undefined variable $_FILE
+in APPPATH\Helpers\excel_helper.php on line 6.
+ 1 APPPATH\Helpers\excel_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_FILE', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\excel_helper.php', 6)
+ 2 APPPATH\Controllers\Setting.php(434): excel_upload('temp', 'products', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 22:30:31 --> Undefined variable $_FILE
+in APPPATH\Helpers\excel_helper.php on line 6.
+ 1 APPPATH\Helpers\excel_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_FILE', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\excel_helper.php', 6)
+ 2 APPPATH\Controllers\Setting.php(434): excel_upload('temp', 'products', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 22:30:34 --> Undefined variable $_FILE
+in APPPATH\Helpers\excel_helper.php on line 6.
+ 1 APPPATH\Helpers\excel_helper.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_FILE', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\excel_helper.php', 6)
+ 2 APPPATH\Controllers\Setting.php(434): excel_upload('temp', 'products', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 22:30:43 --> mysqli_sql_exception: Table 'market.products' doesn't exist in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp-2\htdocs\market\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp-2\htdocs\market\app\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('products', Array)
+#6 C:\xampp-2\htdocs\market\app\Controllers\Setting.php(434): excel_upload('temp', 'products', Array)
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+#8 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#9 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-26 22:30:43 --> Table 'market.products' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`id`, `user_id`, `title`, `price`, `compare_price`, `description`, `track_quantity`, `out_stock`, `barcode`, `shipping_weight`, `product_catigory`, `product_type`, `vendor`, `collection`, `tags`) VALUES (:id:, :user_id:, :title:, :price:, :compare_price:, :description:, :track_quantity:, :out_stock:, :barcode:, :shipping_weight:, :product_catigory:, :product_type:, :vendor:, :collection:, :tags:)', [...], false)
+ 2 APPPATH\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('products', [...])
+ 4 APPPATH\Controllers\Setting.php(434): excel_upload('temp', 'products', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 22:31:00 --> mysqli_sql_exception: Column 'vendor' cannot be null in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp-2\htdocs\market\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp-2\htdocs\market\app\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('product', Array)
+#6 C:\xampp-2\htdocs\market\app\Controllers\Setting.php(434): excel_upload('temp', 'product', Array)
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+#8 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#9 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-26 22:31:00 --> Column 'vendor' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`id`, `user_id`, `title`, `price`, `compare_price`, `description`, `track_quantity`, `out_stock`, `barcode`, `shipping_weight`, `product_catigory`, `product_type`, `vendor`, `collection`, `tags`) VALUES (:id:, :user_id:, :title:, :price:, :compare_price:, :description:, :track_quantity:, :out_stock:, :barcode:, :shipping_weight:, :product_catigory:, :product_type:, :vendor:, :collection:, :tags:)', [...], false)
+ 2 APPPATH\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('product', [...])
+ 4 APPPATH\Controllers\Setting.php(434): excel_upload('temp', 'product', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 22:32:05 --> mysqli_sql_exception: Column 'collection' cannot be null in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp-2\htdocs\market\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp-2\htdocs\market\app\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('product', Array)
+#6 C:\xampp-2\htdocs\market\app\Controllers\Setting.php(434): excel_upload('temp', 'product', Array)
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+#8 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#9 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-26 22:32:05 --> Column 'collection' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`id`, `user_id`, `title`, `price`, `compare_price`, `description`, `track_quantity`, `out_stock`, `barcode`, `shipping_weight`, `product_catigory`, `product_type`, `vendor`, `collection`, `tags`) VALUES (:id:, :user_id:, :title:, :price:, :compare_price:, :description:, :track_quantity:, :out_stock:, :barcode:, :shipping_weight:, :product_catigory:, :product_type:, :vendor:, :collection:, :tags:)', [...], false)
+ 2 APPPATH\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('product', [...])
+ 4 APPPATH\Controllers\Setting.php(434): excel_upload('temp', 'product', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-26 22:32:39 --> mysqli_sql_exception: Column 'collection' cannot be null in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp-2\htdocs\market\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp-2\htdocs\market\app\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('product', Array)
+#6 C:\xampp-2\htdocs\market\app\Controllers\Setting.php(434): excel_upload('temp', 'product', Array)
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+#8 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#9 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-26 22:32:39 --> Column 'collection' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`id`, `user_id`, `title`, `price`, `compare_price`, `description`, `track_quantity`, `out_stock`, `barcode`, `shipping_weight`, `product_catigory`, `product_type`, `vendor`, `collection`, `tags`) VALUES (:id:, :user_id:, :title:, :price:, :compare_price:, :description:, :track_quantity:, :out_stock:, :barcode:, :shipping_weight:, :product_catigory:, :product_type:, :vendor:, :collection:, :tags:)', [...], false)
+ 2 APPPATH\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Helpers\excel_helper.php(43): App\Models\Comman_model->insert_entry('product', [...])
+ 4 APPPATH\Controllers\Setting.php(434): excel_upload('temp', 'product', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Saveexcel()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 23:04:47 --> Undefined variable $item_id
+in APPPATH\Controllers\products.php on line 301.
+ 1 APPPATH\Controllers\products.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\products.php', 301)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_product()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 23:05:03 --> Undefined variable $item_id
+in APPPATH\Controllers\products.php on line 301.
+ 1 APPPATH\Controllers\products.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\products.php', 301)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_product()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 23:14:16 --> Undefined variable $costumer_address
+in APPPATH\Views\theme\cart.php on line 59.
+ 1 APPPATH\Views\theme\cart.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $costumer_address', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php', 59)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 5 APPPATH\Controllers\theme.php(797): view('theme/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

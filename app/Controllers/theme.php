@@ -14,6 +14,80 @@ public function __construct(){
 		LoadLang();
 
 }
+public function add_costumer(){
+	if($_ENV['REGISTER_FORM'] == 'TRUE'){
+	$name = filter_var(htmlentities($this->request->getPost('name')),FILTER_SANITIZE_STRING);
+	$email = filter_var(htmlentities($this->request->getPost('email')),FILTER_SANITIZE_STRING);
+	$phone = filter_var(htmlentities($this->request->getPost('phone')),FILTER_SANITIZE_STRING);
+	$address = filter_var(htmlentities($this->request->getPost('address')),FILTER_SANITIZE_STRING);
+	$long = filter_var(htmlentities($this->request->getPost('long')),FILTER_SANITIZE_STRING);
+	$lat = filter_var(htmlentities($this->request->getPost('lat')),FILTER_SANITIZE_STRING);
+
+	function getData($url,$dataArray){
+		$ch = curl_init();
+		$data = http_build_query($dataArray);
+		$getUrl = $url."?".$data;
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+		curl_setopt($ch, CURLOPT_URL, $getUrl);
+		curl_setopt($ch, CURLOPT_TIMEOUT, 80);
+		$response = curl_exec($ch);
+		if(curl_error($ch)){
+			return 'Request Error:' . curl_error($ch);
+		}else{
+			return json_decode($response,true);
+		}
+		curl_close($ch);
+	}
+
+	if($_ENV['CAPTCHA'] == "TRUE"){
+		$urlGoogleCaptcha = 'https://www.google.com/recaptcha/api/siteverify';
+		$checkkey = $_ENV['GOOGLE_CAPTCHA_SECRET_KEY'];
+		$recaptchaSecretKey = $checkkey;
+		$verficationResponse = $this->request->getPost('recaptchaResponses');
+		$dataArray = [
+			'secret'=>$recaptchaSecretKey,
+			'response'=>$verficationResponse
+		];
+		$recaptchaResonse = getData($urlGoogleCaptcha,$dataArray);
+		if(is_array($recaptchaResonse))
+		{
+			if($recaptchaResonse['success'] == 1)
+			{}else{
+				//google returns false;
+				echo "<p class='alertRed'>".json_encode(['msg'=>'Google reCaptcha Error'])."</p>";
+				return false;
+			}
+		}else{
+			//issue in curl request
+			echo "<p class='alertRed'>".json_encode(['msg'=>'Error with google'])."</p>";
+			return false;
+		}
+	}
+	if($name == null || $email == null || $phone == null || $long == null || $lat == null || $address == null){
+		echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+		return false;
+	}elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		echo "<p class='alertRed'>".langs('invalid_email_address')."</p>";
+		return false;
+	}elseif ((!preg_match('/[0-9]/', $phone) || strlen($phone) < 6)) {
+		echo "<p class='alertRed'>".langs('invalid_phone_number')."</p>";
+		return false;
+	}
+
+	$data = array(
+		'name'      => $name,
+		'email'	=>	$email,
+		'phone'	=>	$phone,
+		'address'	=>	$address,
+		'long'	=>	$long,
+		'lat'	=>	$lat,
+	);
+	$insert_post_toDBi = $this->comman_model->insert_entry("costumers",$data);
+	echo "<p class='alertGreen'>".langs('done')."</p>";
+}
+}
 public function order(){
 	///check login
 	if(isset($_COOKIE['id']) && !isset($_SESSION['username'])){
@@ -62,6 +136,8 @@ foreach ($location as $postsfetch) {
 	$html= preg_replace('/{%costumer_long%}/s', $postsfetch['long'], $html);
 	$html= preg_replace('/{%costumer_address%}/s', $postsfetch['address'], $html);
 	$distance = number_format(calculateDistance($postsfetch['lat'], $postsfetch['long'], $_ENV['LAT'], $_ENV['LONG']), 1);
+	$distance = str_replace(",", "", $distance);
+
 }
 
 $uisql = "SELECT * FROM signup WHERE id= '".$user_id."'";
@@ -141,7 +217,11 @@ $html= preg_replace('/{%navbar_main%}/s', view('includes_site/navbar_main'), $ht
 
 
 $html= preg_replace('/{%distance%}/s', $distance, $html);
-$deliver_price = $distance*$_ENV['DELIVERY_PRICE'];
+if($_ENV['DELIVERY_TYPE'] == "1"){
+	$deliver_price = $distance*$_ENV['DELIVERY_PRICE'];
+}elseif($_ENV['DELIVERY_TYPE'] == "2"){
+	$deliver_price = $_ENV['DELIVERY_PRICE'];
+}
 $html= preg_replace('/{%deliver_price%}/s', $deliver_price, $html);
 
 $html= preg_replace('/{%quantity%}/s', $quantity_val, $html);
@@ -178,6 +258,7 @@ $html= preg_replace('/{%branch_total%}/s', $branch_total, $html);
 public function add_cart(){
 	$item_id = htmlspecialchars($this->request->getPost('item_id'), ENT_QUOTES);
 	$variant = filter_var(htmlentities($this->request->getPost('variant')),FILTER_SANITIZE_STRING);
+	$variant = str_replace("undefined", "", $variant);
 if($variant == NULL){
 	$variant =0;
 }
@@ -186,10 +267,9 @@ if($item_id == NULL){
 }
 	$sid = sessionCI('id');
 	if($sid == NULL){
-		echo 3;
-		return false;
+		$sid=ip2bigint($this->request->getIPAddress());
 	}
-	$uisql = "SELECT id FROM cart WHERE item_id= '$item_id' AND order_id='0'";
+	$uisql = "SELECT id FROM cart WHERE item_id= '$item_id' AND order_id='0' AND user_id='$sid'";
 	$udata=$this->comman_model->get_all_data_by_query($uisql);
 	$item_exist = count($udata);
 	$uisql = "SELECT user_id FROM product WHERE id= '$item_id'";
@@ -199,12 +279,14 @@ if($item_id == NULL){
 	}
 
 	if($item_exist < 1) {
-		$iptdbsqli = "INSERT INTO cart
-			(user_id, item_id, quantity, variants)
-			VALUES
-			($sid, $item_id, '1', $variant)
-			";
-		$insert_post_toDBi = $this->comman_model->run_query($iptdbsqli);
+		$data = array(
+			'user_id'      => $sid,
+			'item_id'	=>	$item_id,
+			'quantity'	=>	'1',
+			'variants'	=>	$variant,
+		);
+		$insert_post_toDBi = $this->comman_model->insert_entry("cart",$data);
+
 		if ($insert_post_toDBi){
 			echo 1;
 		}
@@ -226,32 +308,6 @@ public function give_deliver()
 		$udata=$this->comman_model->get_all_data_by_query($uisql);
 		$item_exist = count($udata);
 
-$location= 0;
-		$uisql = "SELECT location FROM orders WHERE id= '$id'";
-		$udata=$this->comman_model->get_all_data_by_query($uisql);
-		foreach ($udata as $postsfetch) {
-			$location = $postsfetch['location'];
-		}
-
-		$uisql = "SELECT item_id, quantity FROM cart WHERE order_id='$id'";
-		$udata=$this->comman_model->get_all_data_by_query($uisql);
-		foreach ($udata as $postsfetch) {
-			$item_id = $postsfetch['item_id'];
-			$quantity_val = $postsfetch['quantity'];
-			$uisql = "SELECT * FROM product WHERE id= '$item_id'";
-			$udata=$this->comman_model->get_all_data_by_query($uisql);
-			foreach ($udata as $postsfetchi) {
-				$pricer = $postsfetchi['price'];
-			}}
-		$deliver_price = $_ENV['DELIVERY_PRICE'];
-		$uisql = "SELECT * FROM locations WHERE id= '".$location."'";
-		$location=$this->comman_model->get_all_data_by_query($uisql);
-		foreach ($location as $postsfetch) {;
-			$distance = number_format(calculateDistance($postsfetch['lat'], $postsfetch['long'], $_ENV['LAT'], $_ENV['LONG']), 1);
-		}
-		$deliver_price = $distance*$deliver_price;
-		$update_info_sql = "UPDATE orders SET deliver_bill='$deliver_price', shop_bill='$sum_price' WHERE id= '$id'";
-			$update_info=$this->comman_model->run_query($update_info_sql);
 		if($item_exist < 1) {
 			$update_info_sql = "UPDATE orders SET shop_finish='1' WHERE id= '$id' AND shop_finish='0'";
 			$update_info=$this->comman_model->run_query($update_info_sql);
@@ -271,6 +327,9 @@ public function add_sum_cart()
 		$id = filter_var(htmlspecialchars($this->request->getPost('id')), FILTER_SANITIZE_STRING);
 		$result = filter_var(htmlspecialchars($this->request->getPost('result')), FILTER_SANITIZE_STRING);
 		$sid = sessionCI('id');
+		if($sid == NULL){
+			$sid=ip2bigint($this->request->getIPAddress());
+		}
 
 		if($result > 0) {
 			$update_info_sql = "UPDATE cart SET quantity='$result' WHERE item_id= '$id' AND order_id='0' AND user_id='$sid'";
@@ -315,6 +374,9 @@ public function add_sum_cart()
 		$item_id = filter_var(htmlspecialchars($this->request->getPost('id')), FILTER_SANITIZE_STRING);
 
 		$sid = sessionCI('id');
+		if($sid == NULL){
+			$sid=ip2bigint($this->request->getIPAddress());
+		}
 		$uisql = "SELECT id FROM item_like WHERE item_id= '$item_id'";
 		$udata=$this->comman_model->get_all_data_by_query($uisql);
 		$item_exist = count($udata);
@@ -339,9 +401,12 @@ public function add_sum_cart()
 	}
 public function add_order(){
 	$sid = sessionCI('id');
-
+	if($sid == NULL){
+    $sid=ip2bigint($this->request->getIPAddress());
+  }
 	$order_id_field = filter_var(htmlspecialchars($this->request->getPost('order_id')), FILTER_SANITIZE_STRING);
 	$order_note = filter_var(htmlspecialchars($this->request->getPost('order_note')), FILTER_SANITIZE_STRING);
+	$promocode = filter_var(htmlspecialchars($this->request->getPost('promocode')), FILTER_SANITIZE_STRING);
 	$pos_check=0;
 if($order_id_field == NULL && sessionCI('account_type') == "admin"){
 	$order_id_field = rand(0,99999);
@@ -360,6 +425,78 @@ $location =0;
 	foreach ($udata as $postsfetch) {
 		$location = $postsfetch['id'];
 	}
+	if($_ENV['REGISTER_FORM'] == 'TRUE' && sessionCI('id')==NULL){
+	$name = filter_var(htmlentities($this->request->getPost('name')),FILTER_SANITIZE_STRING);
+	$email = filter_var(htmlentities($this->request->getPost('email')),FILTER_SANITIZE_STRING);
+	$phone = filter_var(htmlentities($this->request->getPost('phone')),FILTER_SANITIZE_STRING);
+	$address = filter_var(htmlentities($this->request->getPost('address')),FILTER_SANITIZE_STRING);
+	$long = filter_var(htmlentities($this->request->getPost('long')),FILTER_SANITIZE_STRING);
+	$lat = filter_var(htmlentities($this->request->getPost('lat')),FILTER_SANITIZE_STRING);
+
+	function getData($url,$dataArray){
+		$ch = curl_init();
+		$data = http_build_query($dataArray);
+		$getUrl = $url."?".$data;
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+		curl_setopt($ch, CURLOPT_URL, $getUrl);
+		curl_setopt($ch, CURLOPT_TIMEOUT, 80);
+		$response = curl_exec($ch);
+		if(curl_error($ch)){
+			return 'Request Error:' . curl_error($ch);
+		}else{
+			return json_decode($response,true);
+		}
+		curl_close($ch);
+	}
+
+	if($_ENV['CAPTCHA'] == "TRUE"){
+		$urlGoogleCaptcha = 'https://www.google.com/recaptcha/api/siteverify';
+		$checkkey = $_ENV['GOOGLE_CAPTCHA_SECRET_KEY'];
+		$recaptchaSecretKey = $checkkey;
+		$verficationResponse = $this->request->getPost('recaptchaResponses');
+		$dataArray = [
+			'secret'=>$recaptchaSecretKey,
+			'response'=>$verficationResponse
+		];
+		$recaptchaResonse = getData($urlGoogleCaptcha,$dataArray);
+		if(is_array($recaptchaResonse))
+		{
+			if($recaptchaResonse['success'] == 1)
+			{}else{
+				//google returns false;
+				echo "<p class='alertRed'>".json_encode(['msg'=>'Google reCaptcha Error'])."</p>";
+				return false;
+			}
+		}else{
+			//issue in curl request
+			echo "<p class='alertRed'>".json_encode(['msg'=>'Error with google'])."</p>";
+			return false;
+		}
+	}
+	if($name == null || $email == null || $phone == null || $address == null){
+		echo langs('please_fill_required_fields');
+		return false;
+	}elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		echo langs('invalid_email_address');
+		return false;
+	}elseif ((!preg_match('/[0-9]/', $phone) || strlen($phone) < 6)) {
+		echo langs('invalid_phone_number');
+		return false;
+	}
+
+	$data = array(
+		'name'      => $name,
+		'email'	=>	$email,
+		'phone'	=>	$phone,
+		'address'	=>	$address,
+		'long'	=>	$long,
+		'lat'	=>	$lat,
+		'ip'	=> ip2bigint($this->request->getIPAddress()),
+	);
+	$insert_post_toDBi = $this->comman_model->insert_entry("costumers",$data);
+}
 	if($pos_check == 23){
 		$location = 0;
 		$accept = $sid;
@@ -399,6 +536,7 @@ $location =0;
 			'accept'	=>	$accept,
 			'shop_finish'	=>	$shop_finish,
 			'note'	=>	$order_note,
+			'discount_code'	=>	$promocode,
 			'pos'	=>	$pos_value,
 		);
 		$insert_post_toDBi = $this->comman_model->insert_entry("orders",$data);
@@ -446,186 +584,218 @@ $location =0;
 	}
 }
 public function cart(){
-	if(isset($_COOKIE['id']) && !isset($_SESSION['username'])){
-	return redirect()->to(base_url()."dashboard");
-	}
+
 	$data['pid'] = $this->request->getGet('pid');
 	$pid = $data['pid'];
 	$sid = sessionCI('id');
+	$data['user_id'] = sessionCI('id');
 	$order_location = '';
 	$data['page'] = "cart";
 	$data['title'] = "cart";
 	$data['order_location'] ="";
+	$data['discount_code'] = "";
+
+	$promocode=filter_var(htmlentities($this->request->getGet('promocode')), FILTER_SANITIZE_STRING);
+$data['discount_code']=$promocode;
+	if($sid == NULL){
+    $sid=ip2bigint($this->request->getIPAddress());
+  }else{
+		$data['sid'] = $sid;
+	}
+	if($pid!=NULL && (sessionCI('account_type') == 'admin' || sessionCI('account_type') == 'deliver')){
+$sid_loc="";
+}else{
+	$sid_loc = " AND user_id= '$sid'";
+}
+
+  $order_location = '';
+
+$costumer_id='';
+$data['discount_type']='';
+$data['discount_value_x']='';
+$data['discount_value_y']='';
+$data['discount_value_z']='';
+$data['minimum_purchase']='';
+	$time_st=time();
+
+
+	$data['date']="";
+	$data['costumer_location_name']="default";
+	$data['accept'] ="";
+	$data['note'] = "";
+	$data['shop_finish'] = "";
+
+$data['pos']=0;
+
+	$uisql = "SELECT * FROM orders WHERE id='$pid' $sid_loc AND id!='0'";
+	$udata = $this->comman_model->get_all_data_by_query($uisql);
+	$data['isOrder'] = count($udata);
+	foreach ($udata as $postsfetch) {
+		$order_location = $postsfetch['location'];
+		$costumer_id = $postsfetch['user_id'];
+		$data['date'] = $postsfetch['date'];
+		$data['accept'] = $postsfetch['accept'];
+		$data['note'] = $postsfetch['note'];
+		$data['shop_finish'] = $postsfetch['shop_finish'];
+		$data['discount_code'] = $postsfetch['discount_code'];
+		$data['pos'] = $postsfetch['pos'];
+		$data['costumer_id']=$costumer_id;
+	}
+	$uisql = "SELECT type,x,y,z,minimum_purchase FROM discount WHERE code='$promocode' OR code='".$data['discount_code']."' AND $time_st <= CAST(to_date AS DATE)";
+	$udata = $this->comman_model->get_all_data_by_query($uisql);
+	foreach ($udata as $postsfetch) {
+		$data['discount_type']=$postsfetch['type'];
+		$data['discount_value_x']=$postsfetch['x'];
+		$data['discount_value_y']=$postsfetch['y'];
+		$data['discount_value_z']=$postsfetch['z'];
+		$data['minimum_purchase']=$postsfetch['minimum_purchase'];
+
+	}
+	$data['costumer_long']='';
+$data['costumer_lat']='';
+  		if($pid != NULL && $data['isOrder'] > 0){
+				$uisql = "SELECT * FROM signup WHERE id= '".$costumer_id."'";
+				$costumer=$this->comman_model->get_all_data_by_query($uisql);
+				$costumer_count=count($costumer);
+					foreach ($costumer as $postsfetch) {
+						$data['costumer_name'] = $postsfetch['username'];
+						$data['costumer_phone']=$postsfetch['phone'];
+						$data['costumer_email']=$postsfetch['email'];
+						}
+		if($costumer_count ==0){
+		$uisql = "SELECT * FROM costumers WHERE ip= '".$costumer_id."'";
+		$costumer=$this->comman_model->get_all_data_by_query($uisql);
+			foreach ($costumer as $postsfetch) {
+				$data['costumer_name'] = $postsfetch['name'];
+				$data['costumer_phone']=$postsfetch['phone'];
+				$data['costumer_email']=$postsfetch['email'];
+				$data['costumer_lat']=$postsfetch['lat'];
+				$data['costumer_long']=$postsfetch['long'];
+				$data['costumer_address']=$postsfetch['address'];
+				}
+		}
+
+  			$data["order_id"] = $pid;
+				$data["page_name"] = "Order #$pid";
+  			$data["order_id_btn"] = $pid;
+  		}else{
+				$costumer_id = $sid;
+					$data['costumer_id'] = $sid;
+  			$data["order_id"] = '0';
+  			$data["page_name"] = "Cart";
+				$data["order_id_btn"] = '';
+  		}
+			$order_id=$data["order_id"];
+  		//$data["page_name"]["name"] = $page_name;
+  		if($order_location == NULL){
+  			$order_location_sql = 'AND my_location = 1';
+  		}else{
+  			$order_location_sql = "AND id='$order_location'";
+  		}
+  		$distance=0;
+  	$uisql = "SELECT * FROM locations WHERE user_id= '$costumer_id' $order_location_sql";
+  	$udata=$this->comman_model->get_all_data_by_query($uisql);
+    $count_cos_info=count($udata);
+  	foreach ($udata as $postsfetch) {
+  		$data['costumer_address']=$postsfetch['address'];
+  		$data['costumer_location_name']=$postsfetch['location_name'];
+  		$data['costumer_long']=$postsfetch['long'];
+  	$data['costumer_lat']=$postsfetch['lat'];
+  }
+
+if($data['costumer_lat'] !=NULL && $data['costumer_long'] !=NULL){
+	$distance = number_format(calculateDistance($postsfetch['lat'], $postsfetch['long'], $_ENV['LAT'], $_ENV['LONG']), 1);
+	$distance = str_replace(",", "", $distance);
+}
+
+  	$quantity = 0;
+  	$quantity_val = 0;
+  	$item_data ="";
+  	$sum_price =0;
+  	$uisql = "SELECT item_id, quantity,date FROM cart WHERE user_id= '$costumer_id' AND order_id='".$data["order_id"]."' ORDER BY date DESC";
+  	$xdata=$this->comman_model->get_all_data_by_query($uisql);
+  	foreach ($xdata as $postsfetch) {
+  		$item_id = $postsfetch['item_id'];
+  		$quantity = $postsfetch['quantity'];
+  		$date = time_ago(strtotime($postsfetch['date']));
+  		$uisql = "SELECT * FROM product WHERE id= '$item_id' ";
+  		$ydata=$this->comman_model->get_all_data_by_query($uisql);
+  	foreach ($ydata as $postsfetchi) {
+  		$id = $postsfetchi['id'];
+  		$title = $postsfetchi['title'];
+  		$description = $postsfetchi['description'];
+  		$price = $postsfetchi['price'];
+  		$compare_price = $postsfetchi['compare_price'];
+  		$product_type = $postsfetchi['product_type'];
+  		$product_catigory = $postsfetchi['product_catigory'];
+  		$collection = $postsfetchi['collection'];
+  		$number = $postsfetchi['number'];
+      $image_location ="";
+
+      if($data['discount_type'] == 2 && $data['discount_value_y'] == $title){
+      $price = $price-($price*($data['discount_value_x']/100));
+    }
+
+  		$quantity_val += $quantity;
+  		$sum_price += $price*$quantity;
+      if($data['discount_type'] == 0){
+        if($title == $data['discount_value_x'] && $data['discount_value_z'] <= $quantity){
+        $uisql = "SELECT * FROM product WHERE title='".$data['discount_value_y']."'";
+        $ydata=$this->comman_model->get_all_data_by_query($uisql);
+      foreach ($ydata as $postsfetchz) {
+        $id = $postsfetchz['id'];
+        $title = $postsfetchz['title'];
+        $description = $postsfetchz['description'];
+        $price = $postsfetchz['price'];
+        $compare_price = $postsfetchz['compare_price'];
+        $product_type = $postsfetchz['product_type'];
+        $product_catigory = $postsfetchz['product_catigory'];
+        $collection = $postsfetchz['collection'];
+        $number = $postsfetchz['number'];
+        if($number > 0){
+          $available = "<span class=\"label-success font-size-14 label\">".langs('available')."</span>";
+        }else{
+          $available = "<span class=\"label-danger font-size-14 label\">".langs('not_available')."</span>";
+        }
+        $image_location ="";
+        $quantity = $quantity/$data['discount_value_z'];
+        $quantity_val += $quantity;
+      }}
+  	}}}
+
+
+  	$data['distance']=$distance;
+    if($data['discount_type'] == 3 && $sum_price >= $data['minimum_purchase']){
+      $deliver_price = 0;
+    }else{
+			if($_ENV['DELIVERY_TYPE'] == "1"){
+				$deliver_price = $distance*$_ENV['DELIVERY_PRICE'];
+			}elseif($_ENV['DELIVERY_TYPE'] == "2"){
+				$deliver_price = $_ENV['DELIVERY_PRICE'];
+			}
+    }
+  	$data['deliver_price']=$deliver_price;
+
+  	$data['quantity']=$quantity_val;
+  	$data['sum_price']=$sum_price;
+    $branch_total = $sum_price+$deliver_price;
+
+    if($data['discount_type'] == 1 && $sum_price >= $data['minimum_purchase']){
+      $branch_total = $branch_total-($branch_total*($data['discount_value_x']/100));
+    }
+
+  	$data['branch_total']=$branch_total;
+
+
+  $uisql = "SELECT id FROM cart WHERE user_id= '$costumer_id' AND order_id='".$order_id."'";
+  $udata = $this->comman_model->get_all_data_by_query($uisql);
+  $data['isCart'] = count($udata);
+
 if(file_exists('src/cart.html')){
 	$html = file_get_contents('src/cart.html');
 }else{
-	$html = file_get_contents('missing/cart.html');
+echo view('theme/cart',$data);
 }
-
-	echo view("includes_site/head_info", $data);
-
-$date = "";
-	$uisql = "SELECT location, date FROM orders WHERE user_id= '$sid' AND id='$pid' AND id!='0'";
-	$udata = $this->comman_model->get_all_data_by_query($uisql);
-	$isOrder = count($udata);
-	foreach ($udata as $postsfetch) {
-		$order_location = $postsfetch['location'];
-		$date = $postsfetch['date'];
-	}
-		if($pid != NULL && $isOrder > 0){
-			$order_id = $pid;
-			$page_name = "Order #$pid";
-		}else{
-			$order_id = '0';
-			$page_name = "Cart";
-		}
-		$data["page_name"]["name"] = $page_name;
-		if($order_location == NULL){
-			$order_location_sql = 'AND my_location = 1';
-		}else{
-			$order_location_sql = "AND id='$order_location'";
-		}
-		$distance=0;
-	$uisql = "SELECT * FROM locations WHERE user_id= '$sid' $order_location_sql";
-	$udata=$this->comman_model->get_all_data_by_query($uisql);
-	foreach ($udata as $postsfetch) {
-		$html= preg_replace('/{%costumer_address%}/s', $postsfetch['address'], $html);
-		$html= preg_replace('/{%costumer_location_name%}/s', $postsfetch['location_name'], $html);
-		$html= preg_replace('/{%costumer_long%}/s', $postsfetch['long'], $html);
-	$html= preg_replace('/{%costumer_lat%}/s', $postsfetch['lat'], $html);
-
-$distance = number_format(calculateDistance($postsfetch['lat'], $postsfetch['long'], $_ENV['LAT'], $_ENV['LONG']), 1);
-
-}
-$html= preg_replace('/{%project_name%}/s', $_ENV['PROJECT_NAME'], $html);
-$html= preg_replace('/{%navbar_main%}/s', view('includes_site/navbar_main'), $html);
-
-$html .= "
-<script>
-	var array = [{%items%}];
-	var edited = document.getElementById('cart_items').innerHTML;
-	document.getElementById('cart_items').innerHTML='';
-array.forEach((data)=>{
-
-	const edited_a = edited.replace(/{%items_id%}/g, data.id);
-	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
-	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
-	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
-	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
-	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
-	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
-	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
-	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
-	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
-	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
-
-$('#cart_items').append(edited_k);
-});
-if(array == ''){
-	document.getElementById('body').innerHTML = '<div class=\"post loading-info\" style=\"min-width: 99%;\"><p style=\"color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;\">".langs('your_cart_is_empty')."</p></div>';
-}
-	</script>
-	";
-
-	if($pid == NULL){
-		$order_id_btn = rand(0,999999);
-	}
-	$d1 = strtotime("$date +2 minutes");
-	$d2 = (($d1)-time())/60;
-
-	$html= preg_replace('/{%order_button%}/s', "<button type=\"button\" id=\"order_button\" onclick=\"order('".$order_id_btn."'), start_count()\" class=\"btn ".($isOrder > 0 ?" btn-info": " btn-primary") ."\"".($d2 < 0 ? " disabled": "").">".($isOrder > 0 ? "cancel_order":"order")."</button><span id=\"timer\"></span>", $html);
-
-			$html .= "<script>
-				function start_count() {
-					var date = \"".$date."\";
-					if (date == \"\") {
-						var countDownDatea = new Date().getTime();
-					}else{
-						var countDownDatea = Date.parse(date);
-					}
-					var countDownDate = countDownDatea + 60000 + 60000;
-					var x = setInterval(function() {
-						var now = new Date().getTime();
-						var distance = countDownDate - now;
-						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
-						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-							$(\"#timer\").text(minutes + \":\" + seconds);
-							if (distance < 0) {
-								clearInterval(x);
-								$(\"#order_button\").attr(\"disabled\", \"true\");
-								$(\"#timer\").text(\"\");
-							}
-					}, 1000);
-				}
-			</script>";
-		if($isOrder > 0){
-			if($d2 > 0){
-		$html .= "
-		<span>
-						<script>start_count()</script>
-		 </span>";
-}
-	 }
-
-	$quantity = 0;
-	$quantity_val = 0;
-	$item_data ="";
-	$sum_price =0;
-	$uisql = "SELECT item_id, quantity,date FROM cart WHERE user_id= '$sid' AND order_id='".$order_id."' ORDER BY date DESC";
-	$xdata=$this->comman_model->get_all_data_by_query($uisql);
-	foreach ($xdata as $postsfetch) {
-		$item_id = $postsfetch['item_id'];
-		$quantity = $postsfetch['quantity'];
-		$date = time_ago(strtotime($postsfetch['date']));
-		$uisql = "SELECT * FROM product WHERE id= '$item_id'";
-		$ydata=$this->comman_model->get_all_data_by_query($uisql);
-	foreach ($ydata as $postsfetchi) {
-		$id = $postsfetchi['id'];
-		$title = $postsfetchi['title'];
-		$description = $postsfetchi['description'];
-		$price = $postsfetchi['price'];
-		$compare_price = $postsfetchi['compare_price'];
-		$product_type = $postsfetchi['product_type'];
-		$product_catigory = $postsfetchi['product_catigory'];
-		$collection = $postsfetchi['collection'];
-		$number = $postsfetchi['number'];
-		if($number > 0){
-			$available = "<span class=\"label-success font-size-14 label\">".langs('available')."</span>";
-		}else{
-			$available = "<span class=\"label-danger font-size-14 label\">".langs('not_available')."</span>";
-		}
-		$uisql = "SELECT location FROM image WHERE product_id= '$item_id'";
-		$ydata=$this->comman_model->get_all_data_by_query($uisql);
-		foreach ($ydata as $postsfetchx) {
-			$image_location = base_url().$postsfetchx['location'];
-		}
-		$quantity_val += $quantity;
-		$sum_price += $price*$quantity;
-
-		$item_data.= "{id:'".$id."',title:'".$title."', description:'".$description."', price:'".$price."', compare_price:'".$compare_price."', available:'".$available."', product_type:'".$product_type."','item_quantity':".$quantity.",'product_catigory':'".$product_catigory."','collection':'".$collection."','item_image':'".$image_location."'},";
-	}}
-	$html= preg_replace('/{%items%}/s', $item_data, $html);
-
-	$html= preg_replace('/{%distance%}/s', $distance, $html);
-	$deliver_price = $distance*$_ENV['DELIVERY_PRICE'];
-	$html= preg_replace('/{%deliver_price%}/s', $deliver_price, $html);
-
-	$html= preg_replace('/{%quantity%}/s', $quantity_val, $html);
-	$html= preg_replace('/{%sum_price%}/s', $sum_price, $html);
-	$branch_total = $sum_price+$deliver_price;
-
-	$html= preg_replace('/{%branch_total%}/s', $branch_total, $html);
-
-
-$uisql = "SELECT id FROM cart WHERE user_id= '$sid' AND order_id='".$order_id."'";
-$udata = $this->comman_model->get_all_data_by_query($uisql);
-$data['isCart'] = count($udata);
-
-echo $html;
-
-	echo view("includes_site/endJScodes", $data);
-
 
 }
 public function item()
@@ -636,8 +806,12 @@ public function item()
 	$data['page'] = "item";
 		$data['title'] = $data['page'];
 
-	$sid = sessionCI('id');
-	$pid = filter_var(htmlentities($this->request->getGet('pid')),FILTER_SANITIZE_STRING);
+		$sid = sessionCI('id');
+	  if($sid == NULL){
+	     $request = \Config\Services::request();
+	    $sid=ip2bigint($request->getIPAddress());
+	  }
+			$pid = filter_var(htmlentities($this->request->getGet('pid')),FILTER_SANITIZE_STRING);
 $data['pid'] = $pid;
 if(file_exists('src/item.html')){
 	$html = file_get_contents('src/item.html');
@@ -744,11 +918,14 @@ $variant_data="";
 
 	$html= preg_replace('/{%image%}/s', $image_data, $html);
 		$html= preg_replace('/{%variant%}/s', $variant_data, $html);
-		$cart_button = "<button ".(NULL == $sid ? 'disabled':'')." id=\"add_cart_$item_id\" onclick=\"addCart('$item_id')\" class=\"btn ".($cart_item < 1 ? 'btn-primary' : 'btn-info')."\">".($cart_item < 1 ? langs('add_cart') : langs('added_cart'))."</button>";
+		$cart_button = "<button ".(NULL == $sid ? 'disabled':'')." aria-label='Add cart' id=\"add_cart_$item_id\" onclick=\"addCart('$item_id')\" class=\"btn ".($cart_item < 1 ? 'btn-primary' : 'btn-info')."\">".($cart_item < 1 ? langs('add_cart') : langs('added_cart'))."</button>";
+
 		$html= preg_replace('/{%cart_button%}/s', $cart_button, $html);
 
 
 		$html= preg_replace('/{%project_name%}/s', $_ENV['PROJECT_NAME'], $html);
+
+		echo "<meta property=\"og:image\" content=\"$location\">";
 		$html= preg_replace('/{%navbar_main%}/s', view('includes_site/navbar_main'), $html);
 		echo $html;
 

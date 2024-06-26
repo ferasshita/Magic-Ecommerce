@@ -54,7 +54,7 @@ foreach ($fetchdatas as $postsfetch ) {
 <div id="refresh">
 	<div class="box">
 		<div class="box-header">
-			<h3><?php echo langs('bill'); ?>	<button onclick="order('<?php echo rand(0,9999); ?>')" class="btn btn-secondary buttons-html5">close order</button></h3>
+			<h3><?php echo langs('bill'); ?>	<button onclick="order('')" class="btn btn-secondary buttons-html5"><?php echo langs('close_bill'); ?></button></h3>
 
 		</div>
 		<div class="box-body">
@@ -73,17 +73,23 @@ foreach ($fetchdatas as $postsfetch ) {
 		<tbody>
 <?php
 $serial = 0;
-	$total = 0;
-foreach ($fetchdata as $postsfetch ) {
+$total = 0;
+$comman_model = new \App\Models\Comman_model();
+$uisql = "SELECT * FROM cart WHERE order_id='0' AND user_id='".$_SESSION['id']."'";
+$fetchdata=$comman_model->get_all_data_by_query($uisql);
+ foreach ($fetchdata as $postsfetch ) {
+	 $id = $postsfetch['id'];
+	 $item_id = $postsfetch['item_id'];
 	$id = $postsfetch['id'];
 $quantity = $postsfetch['quantity'];
 $serial++;
-foreach ($fetchdatas as $postsfetchi ) {
+$uisql = "SELECT * FROM product WHERE id='$item_id'";
+$fetchdata=$comman_model->get_all_data_by_query($uisql);
+foreach ($fetchdata as $postsfetchi ) {
 	$title = $postsfetchi['title'];
 	$price = $postsfetchi['price'];
 	$total_price = $price*$quantity;
 $total += $total_price;
-}
 ?>
 <tr id="tr_<?php echo $id; ?>">
 <td><?php echo $serial; ?></td>
@@ -95,7 +101,7 @@ $total += $total_price;
 <button class="btn btn-danger fa fa-trash" onclick="delete_transaction('cart','<?php echo $id; ?>')"></button>
 </td>
 </tr>
-<?php } ?>
+<?php }} ?>
 </tbody>
 <tfoot>
 	<tr>

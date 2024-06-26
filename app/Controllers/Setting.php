@@ -8,7 +8,7 @@ class Setting extends Controller {
 public function __construct(){
 
 	helper(
-			['langs', 'IsLogedin','timefunction','Mode','countrynames', 'functions_zone','app_info']);
+			['langs', 'IsLogedin','timefunction','Mode','countrynames', 'functions_zone','app_info','excel']);
 
 			$this->comman_model = new \App\Models\Comman_model();
 		LoadLang();
@@ -105,7 +105,8 @@ public function Saveprofile(){
 	LoadLang();
 	Checkadmin(base_url());
 
-	$DELIVERY_PRICE = filter_var(htmlentities($this->request->getPost('DELIVERY_PRICE')),FILTER_SANITIZE_INT);
+	$DELIVERY_PRICE = filter_var(htmlentities($this->request->getPost('DELIVERY_PRICE')),FILTER_SANITIZE_STRING);
+	$DELIVERY_TYPE = filter_var(htmlentities($this->request->getPost('DELIVERY_TYPE')),FILTER_SANITIZE_INT);
 	$phone = filter_var(htmlentities($this->request->getPost('phone')),FILTER_SANITIZE_STRING);
 	$app_url = filter_var(htmlentities($this->request->getPost('app_url')),FILTER_SANITIZE_STRING);
 	$app_name = filter_var(htmlentities($this->request->getPost('app_name')),FILTER_SANITIZE_STRING);
@@ -184,6 +185,11 @@ public function Saveprofile(){
 		$fileContent = preg_replace(
 			'/(DELIVERY_PRICE\s*=\s*)(.*)/',
 			'DELIVERY_PRICE = "' . $DELIVERY_PRICE .'"',
+				$fileContent
+		);
+		$fileContent = preg_replace(
+			'/(DELIVERY_TYPE\s*=\s*)(.*)/',
+			'DELIVERY_TYPE = "' . $DELIVERY_TYPE .'"',
 				$fileContent
 		);
 		$fileContent = preg_replace(
@@ -326,6 +332,7 @@ echo "<p class='error_msg'>".langs('invalid_email_address')."</p>";
  }
 }
 
+
 public function Savelanguage(){
 	LoadLang();
 	$sid=$_SESSION['id'];
@@ -343,6 +350,144 @@ public function Savelanguage(){
 		echo"<span class='success_msg'>".langs('changes_saved_seccessfully')."</span>";
 	} else {
 		echo"<span class='error_msg'>".langs('errorSomthingWrong')."</span>";
+	}
+}
+
+public function Saveexcel(){
+
+	LoadLang();
+	$general_current_pass_var = filter_var(htmlentities($this->request->getPost('general_current_pass')),FILTER_SANITIZE_STRING);
+  // =============================[ Save Edit profile settings ]==============================
+
+
+$sid=$_SESSION['id'];
+
+	if(!empty($_FILES['temp'])) {
+	$image = addslashes(file_get_contents($_FILES['temp']['tmp_name']));
+	$image_name = addslashes($_FILES['temp']['name']);
+	$image_size = getimagesize($_FILES['temp']['tmp_name']);
+
+	$post_fileName = $_FILES['temp']["name"];
+	$post_fileTmpLoc = $_FILES['temp']["tmp_name"];
+	$post_fileType = $_FILES['temp']["type"];
+	$post_fileSize = $_FILES['temp']["size"];
+	$post_fileErrorMsg = $_FILES['temp']["error"];
+	$post_kaboom = explode(".", $post_fileName);
+	$post_fileExt = end($post_kaboom);
+	$post_fileName = "temp.".$post_fileExt;
+
+	if (!$post_fileTmpLoc) {
+		echo  '<p class="error_msg">'.langs('errorPost_n2').'</p>';
+	}else{
+
+			//================[ if image format not supported ]================
+			if (!preg_match("/.(xls|xlsx)$/i", $post_fileName) ) {
+				$location = '<p class="error_msg">'.langs('errorPost_n4').'</p>';
+				unlink($post_fileTmpLoc);
+			} else {
+				//================[ if an error was found ]================
+				if ($post_fileErrorMsg == 1) {
+					echo '<p class="error_msg">'.langs('errorPost_n5').'</p>';
+				}else{
+
+					$array = array(
+						'user_id' => $sid,
+						'title' => '&!0',
+						'price' => '&!1',
+						'compare_price' => '&!2',
+						'description' => '&!3',
+						'track_quantity' => '&!4',
+						'out_stock' => '&!5',
+						'barcode' => '&!6',
+						'shipping_weight' => '&!7',
+						'product_catigory' => '&!8',
+						'product_type' => '&!9',
+						'vendor' => '&!10',
+						'collection' => '&!11',
+						'tags' => '&!12',
+);
+
+excel_upload('temp','product',$array);
+
+					echo"<span class='success_msg'>".langs('changes_saved_seccessfully')."</span>";
+
+			}}}
+		}
+
+}
+public function Savetemplate(){
+	LoadLang();
+	$general_current_pass_var = filter_var(htmlentities($this->request->getPost('general_current_pass')),FILTER_SANITIZE_STRING);
+  // =============================[ Save Edit profile settings ]==============================
+
+	// =============================[ Save Edit profile settings ]==============================
+	if(!empty($_FILES['temp'])) {
+	$image = addslashes(file_get_contents($_FILES['temp']['tmp_name']));
+	$image_name = addslashes($_FILES['temp']['name']);
+	$image_size = getimagesize($_FILES['temp']['tmp_name']);
+
+	$post_fileName = $_FILES['temp']["name"];
+	$post_fileTmpLoc = $_FILES['temp']["tmp_name"];
+	$post_fileType = $_FILES['temp']["type"];
+	$post_fileSize = $_FILES['temp']["size"];
+	$post_fileErrorMsg = $_FILES['temp']["error"];
+	$post_kaboom = explode(".", $post_fileName);
+	$post_fileExt = end($post_kaboom);
+	$post_fileName = "temp.".$post_fileExt;
+
+	if (!$post_fileTmpLoc) {
+		echo  '<p class="error_msg">'.langs('errorPost_n2').'</p>';
+	}else{
+
+			//================[ if image format not supported ]================
+			if (!preg_match("/.(zip)$/i", $post_fileName) ) {
+				$location = '<p class="error_msg">'.langs('errorPost_n4').'</p>';
+				unlink($post_fileTmpLoc);
+			} else {
+				//================[ if an error was found ]================
+				if ($post_fileErrorMsg == 1) {
+					echo '<p class="error_msg">'.langs('errorPost_n5').'</p>';
+				}else{
+
+					move_uploaded_file($_FILES['temp']["tmp_name"], "src/" .$post_fileName);
+					echo"<span class='success_msg'>".langs('changes_saved_seccessfully')."</span>";
+
+			}}}
+
+		 // Zip file name
+ $filename = "src/".$post_fileName;
+
+ $zip = new \ZipArchive;
+
+ $res = $zip->open($filename);
+
+ if ($res === true) {
+
+// Unzip path
+		 $path = "src";
+
+		 // Extract file
+		 $zip->extractTo($path);
+		 $zip->close();
+
+ } else {
+
+		 echo "failed to update $filename!";
+ }
+
+//edit
+$path = "src";
+$files = scandir($path);
+$files = array_diff(scandir($path), array('.','..'));
+foreach ($files as $files) {
+	if(is_dir("src/".$files)){
+		rename("src/".$files, $files);
+	}
+}
+
+ unlink("src/".$post_fileName);
+						}else{
+							echo"<span class='error_msg'>".langs('errorSomthingWrong')."</span>";
 	}
 }
 

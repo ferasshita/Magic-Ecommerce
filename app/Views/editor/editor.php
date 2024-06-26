@@ -122,7 +122,7 @@ foreach ($htmlFiles as $file) {
 	//$file = "../src/$folder_name/$filename.$file_extension";
 	//$url = $pathInfo['dirname'] . '/' . $pathInfo['basename'];
 	$name = ucfirst($filename);
-	$pa_val = "{name:'$name', file:'$file', title:'$name',  url: '$url?edit=edit', folder:'$folder_name'},";
+  $pa_val = "{name:'$name', file:'$file', title:'$name',  url: '$url?edit=edit', folder:'$folder_name'},";
 
 }
 //replace files list from html with the dynamic list from demo folder

@@ -1,0 +1,44 @@
+CRITICAL - 2024-04-29 16:03:45 --> Undefined variable $accept
+in APPPATH\Controllers\Setting.php on line 372.
+ 1 APPPATH\Controllers\Setting.php(372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accept', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 372)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-29 16:04:20 --> Undefined variable $update_info
+in APPPATH\Controllers\Setting.php on line 388.
+ 1 APPPATH\Controllers\Setting.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $update_info', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 388)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-29 16:05:19 --> Undefined variable $accept
+in APPPATH\Controllers\Setting.php on line 372.
+ 1 APPPATH\Controllers\Setting.php(372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accept', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 372)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-29 16:12:57 --> Undefined variable $accept
+in APPPATH\Controllers\Setting.php on line 394.
+ 1 APPPATH\Controllers\Setting.php(394): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accept', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 394)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-29 16:28:10 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Setting.php on line 408.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Setting/Savetemplate', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Setting/Savetemplate')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Setting/Savetemplate')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-29 16:35:12 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Setting.php on line 408.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('setting/savetemplate', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('setting/savetemplate')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('setting/savetemplate')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

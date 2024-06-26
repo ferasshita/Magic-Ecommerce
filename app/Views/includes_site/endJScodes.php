@@ -89,6 +89,7 @@ function quantity(sum,id){
 				$('#cart_id_'+id).hide();
 			}
 			$("#refresh").load(location.href + " #refresh");
+			$("#cart_box").load(location.href + " #cart_box");
 
 		}
 	});
@@ -114,14 +115,19 @@ function count_table(table_name,column,value,sid){
   });
 }
 function addCart(id){
-	if(!document.getElementById("variant_id_"+id)){
+
+		//var variant_input = $(".variant_id_"+id+");
+		const checkboxes = $("input[name='variant_id_"+id+"']:checked");
+
+	if($('#varient_container').css('display') == 'none'){
 		var variant = "";
 	}else{
-		var variant = document.getElementById("variant_id_"+id).value;
+		checkboxes.each(function() {
+      const value = $(this).val();
+      variant +=  value+", ";
+    });
 	}
-	if($('#varient_container').hide()){
-		variant = "";
-	}
+
 		$.ajax({
 			type:'POST',
 			url:'<?php echo base_url(); ?>theme/add_cart',
@@ -141,6 +147,7 @@ function addCart(id){
 				}else{
 					alert('you need to login first');
 				}
+
 				$("#cart_box").load(location.href + " #cart_box");
 			}
 		});
@@ -190,10 +197,30 @@ function order(order_id){
 	}else{
 		var order_note = document.getElementById("order_note").value;
 	}
+	if(!document.getElementById("promocode")){
+		var promocode = "";
+	}else{
+		var promocode = document.getElementById("promocode").value;
+	}
+	if(!document.getElementById("name")){
+		var name = "";
+		var phone = "";
+		var email = "";
+		var address = "";
+		var long = "";
+		var lat = "";
+	}else{
+		var name = document.getElementById("name").value;
+		var phone = document.getElementById("phone_no").value;
+		var email = document.getElementById("email").value;
+		var address = document.getElementById("address").value;
+		var long = document.getElementById("long").value;
+		var lat = document.getElementById("lat").value;
+	}
 	$.ajax({
 		type:'POST',
 		url:'<?php echo base_url(); ?>theme/add_order',
-		data:{'order_id':order_id,'order_note':order_note},
+		data:{'order_id':order_id,'order_note':order_note, 'promocode':promocode, 'name':name, 'phone':phone, 'email':email, 'address':address, 'long':long, 'lat':lat},
 		beforeSend: function(){
 			$('#order_button').html('<span class="fa fa-refresh fa-fw fa-spin"></span>');
 		},
@@ -203,10 +230,12 @@ function order(order_id){
 				$('#order_button').removeClass('btn-primary');
 				$('#order_button').addClass('btn-info');
 			}else if(done == 2){
-				$('#order_button').html('<?php echo langs('order'); ?>');
+				$('#order_button').html('<?php echo langs('add_order'); ?>');
 				$('#order_button').removeClass('btn-info');
 				$('#order_button').addClass('btn-primary');
 			}else{
+				$('#order_button').html('<?php echo langs('add_order'); ?>');
+				$('#timer').hide();
 				alert(done);
 			}
 			$("#cart_box").load(location.href + " #cart_box");

@@ -1,0 +1,344 @@
+CRITICAL - 2024-05-30 14:23:23 --> Undefined array key "extension"
+in APPPATH\Views\editor\editor.php on line 86.
+ 1 APPPATH\Views\editor\editor.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extension"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editor/editor', [], true)
+ 5 APPPATH\Controllers\editor.php(23): view('editor/editor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editor->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 14:42:07 --> Undefined array key "extension"
+in APPPATH\Views\editor\editor.php on line 86.
+ 1 APPPATH\Views\editor\editor.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extension"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editor/editor', [], true)
+ 5 APPPATH\Controllers\editor.php(23): view('editor/editor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editor->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 16:58:09 --> Undefined array key "extension"
+in APPPATH\Views\editor\editor.php on line 86.
+ 1 APPPATH\Views\editor\editor.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extension"', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\editor\\editor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('editor/editor', [], true)
+ 5 APPPATH\Controllers\editor.php(23): view('editor/editor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Editor->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 16:59:14 --> Undefined array key 3
+in APPPATH\Views\includes\navbar_main.php on line 228.
+ 1 APPPATH\Views\includes\navbar_main.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php', 228)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes/navbar_main', [], true)
+ 5 APPPATH\Views\setting\index.php(17): view('includes/navbar_main')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\setting\\index.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('setting/index', [], true)
+ 9 APPPATH\Controllers\Setting.php(43): view('setting/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:10:41 --> rename(src/assets,assets): Access is denied (code: 5)
+in APPPATH\Controllers\Setting.php on line 413.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(src/assets,assets): Access is denied (code: 5)', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Setting.php', 413)
+ 2 APPPATH\Controllers\Setting.php(413): rename('src/assets', 'assets')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->Savetemplate()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/css.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/css.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/css.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('css', 'vendor.css')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'logo.png')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/style.css.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/style.css.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/style.css.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('style.css')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'banner-img.png')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'banner-img3.png')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item1.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'banner-img4.png')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/js.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/js.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/js.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('js', 'jquery-1.11.0.min.js')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/js.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/js.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/js.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('js', 'plugins.js')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/js.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/js.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/js.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('js', 'script.js')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item2.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item3.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item4.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item7.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item9.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item8.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item10.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item11.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item12.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item13.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item14.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item15.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:07 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item16.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'banner-img2.png')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item5.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'item6.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'blog1.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'blog2.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'blog3.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'insta1.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'insta2.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'insta3.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'insta4.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'insta5.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'insta6.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:30:08 --> file_get_contents(src/images.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 57.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/images.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 57)
+ 2 APPPATH\Controllers\Home.php(57): file_get_contents('src/images.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('images', 'background-img.png')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

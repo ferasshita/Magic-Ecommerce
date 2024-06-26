@@ -37,17 +37,17 @@
 												echo "<img src=\"".base_url().$postsfetch['location']."\" class=\"col-md-3\" oncontextmenu=\"delete_transaction('product','".$postsfetch['id']."')\">";
 											} ?>
 						<div class="form-group">
-							<label><?php echo langs('title'); ?></label>
+							<label><?php echo langs('title'); ?>*</label>
 							<input type="text" name="title" id="title" value="<?php echo $title; ?>" autocomplete="off" placeholder="<?php echo langs('title'); ?>" class="form-control">
 						</div>
 						<div class="form-group">
 							<label><?php echo langs('description'); ?></label>
-							<textarea class="form-control" name="description" placeholder="<?php echo langs('description'); ?>..." rows="10" cols="80"><?php echo $description; ?></textarea>
+							<textarea name="description" id="editor1" placeholder="<?php echo langs('description'); ?>..." rows="10" cols="80"><?php echo $description; ?></textarea>
 						</div>
 						<div class="row">
 							<div class="col-lg-6">
 						<div class="form-group">
-							<label><?php echo langs('price'); ?></label>
+							<label><?php echo langs('price'); ?>*</label>
 							<input type="text" name="price" id="price_f" value="<?php echo $price; ?>" autocomplete="off" placeholder="<?php echo langs('price'); ?>" class="form-control">
 						</div>
 						</div>
@@ -257,11 +257,18 @@ $serial++;
 <td><?php echo $serial; ?></td>
 <td><?php echo $postsfetch['title']; ?></td>
 <td><?php echo $postsfetch['price']; ?></td>
-<td><?php echo $postsfetch['status']; ?></td>
+<td><?php echo $postsfetch['number']; ?></td>
 <td><?php echo $postsfetch['vendor']; ?></td>
 <td><?php echo $postsfetch['barcode']; ?></td>
 <td>
+	<?php
+	$this->comman_model = new \App\Models\Comman_model();
+	$uisql = "SELECT id FROM cart WHERE item_id='".$postsfetch['id']."'";
+	$udata=$this->comman_model->get_all_data_by_query($uisql);
+$count_cart_item = count($udata);
+	if($count_cart_item == 0){ ?>
 	<button class="btn btn-danger fa fa-trash" onclick="delete_transaction('product','<?php echo $postsfetch['id']; ?>')"></button>
+<?php } ?>
 	<a href="?pid=<?php echo $postsfetch['id']; ?>"><button class="btn btn-info fa fa-pencil"></button></a>
 </td>
 </tr>
@@ -312,8 +319,24 @@ $serial++;
 		});
 	});
 </script>
+
 <!-- endJS -->
 <?php echo view("includes/endJScodes"); ?>
+<script>
+// Add an event listener to the form submit event
+document.getElementById("postingToDB").addEventListener("submit", function(event) {
+    // Get the CKEditor instance
+    var editor = CKEDITOR.instances.editor1;
+
+    // Update the editor content (forces it to update the underlying form field)
+    editor.updateElement();
+});
+
+</script>
+
+<script src="<?php echo base_url(); ?>Asset/assets/vendor_components/ckeditor/ckeditor.js"></script>
+<script src="<?php echo base_url(); ?>Asset/assets/vendor_plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js"></script>
+<script src="<?php echo base_url(); ?>Asset/js/pages/editor.js"></script>
 <!-- /endJS -->
 </body>
 </html>

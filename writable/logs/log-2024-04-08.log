@@ -1,0 +1,66 @@
+CRITICAL - 2024-04-08 23:47:01 --> Undefined array key "update"
+in APPPATH\Language\arabic.php on line 703.
+ 1 APPPATH\Language\arabic.php(703): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "update"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 703)
+ 2 APPPATH\Views\setting\index.php(151): langs('update')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\setting\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('setting/index', [], true)
+ 6 APPPATH\Controllers\Setting.php(43): view('setting/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Setting->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-08 23:49:42 --> require(config.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\update.php on line 19.
+ 1 APPPATH\Controllers\update.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(config.php): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\update.php', 19)
+ 2 APPPATH\Controllers\update.php(19): require()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-08 23:50:22 --> require(): http:// wrapper is disabled in the server configuration by allow_url_include=0
+in APPPATH\Controllers\update.php on line 19.
+ 1 APPPATH\Controllers\update.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(): http:// wrapper is disabled in the server configuration by allow_url_include=0', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\update.php', 19)
+ 2 APPPATH\Controllers\update.php(19): require()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-08 23:50:49 --> require(update/config.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\update.php on line 19.
+ 1 APPPATH\Controllers\update.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(update/config.php): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\update.php', 19)
+ 2 APPPATH\Controllers\update.php(19): require()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-08 23:51:37 --> require(C:\xampp-2\htdocs\market\app\update/config.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\update.php on line 19.
+ 1 APPPATH\Controllers\update.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xampp-2\\htdocs\\market\\app\\update/config.php): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\update.php', 19)
+ 2 APPPATH\Controllers\update.php(19): require()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-08 23:51:53 --> require(C:\xampp-2\htdocs\market\app\controllers/update/config.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\update.php on line 19.
+ 1 APPPATH\Controllers\update.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xampp-2\\htdocs\\market\\app\\controllers/update/config.php): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\update.php', 19)
+ 2 APPPATH\Controllers\update.php(19): require()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-08 23:53:15 --> fopen(version.txt): Failed to open stream: No such file or directory
+in APPPATH\Controllers\update.php on line 30.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(version.txt): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\update.php', 30)
+ 2 APPPATH\Controllers\update.php(30): fopen('version.txt', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-08 23:56:23 --> Class "App\Controllers\ZipArchive" not found
+in APPPATH\Controllers\update.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\update->update_functions()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\update))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

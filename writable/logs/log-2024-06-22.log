@@ -1,0 +1,1914 @@
+CRITICAL - 2024-06-22 17:07:08 --> syntax error, unexpected variable "$array_search"
+in APPPATH\Helpers\functions_zone_helper.php on line 330.
+ 1 APPPATH\Controllers\Home.php(25): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 17:08:02 --> syntax error, unexpected variable "$array_search"
+in APPPATH\Helpers\functions_zone_helper.php on line 330.
+ 1 APPPATH\Controllers\Home.php(25): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 17:09:04 --> syntax error, unexpected variable "$array_search"
+in APPPATH\Helpers\functions_zone_helper.php on line 329.
+ 1 APPPATH\Controllers\Home.php(25): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 17:09:06 --> syntax error, unexpected variable "$array_search"
+in APPPATH\Helpers\functions_zone_helper.php on line 329.
+ 1 APPPATH\Controllers\Home.php(25): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 17:09:17 --> syntax error, unexpected variable "$array_search"
+in APPPATH\Helpers\functions_zone_helper.php on line 329.
+ 1 APPPATH\Controllers\Home.php(25): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 17:09:18 --> syntax error, unexpected variable "$array_search"
+in APPPATH\Helpers\functions_zone_helper.php on line 329.
+ 1 APPPATH\Controllers\Home.php(25): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 17:09:32 --> Undefined variable $search
+in APPPATH\Helpers\functions_zone_helper.php on line 389.
+ 1 APPPATH\Helpers\functions_zone_helper.php(389): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 389)
+ 2 APPPATH\Controllers\Home.php(119): magicCodeReplace('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="100د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="http://localhost/market/public/Account/login" style="width:100px;font-size:large;" class="waves-effect waves-light"
+					 title="signup">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [{id:\'1726161172\',title:\'dlkfld\', description:\'dlkdl\', price:\'100\', compare_price:\'\', available:\'<span class="label-danger font-size-14 label">غير متاح</span>\', product_type:\'\',\'item_quantity\':1,\'product_catigory\':\'\',\'collection\':\'0\',\'item_image\':\'\'},];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>sfsfs jskfsl
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <script>
+    var array = [{%items%}];
+    var edited = document.getElementById(\'div_items\').innerHTML;
+    document.getElementById(\'div_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+        const edited_a = edited.replace(/{%items_id%}/g, data.id);
+        const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+        const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+        const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+        const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+        const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+        const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+        const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+        const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+        const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+        const edited_k = edited_j.replace(/{%cart_button%}/g, data.cart_button);
+        const edited_l = edited_k.replace(/{%like_button%}/g, data.like_button);
+        const edited_m = edited_l.replace(/{%items_image%}/g, data.item_image);
+
+        $(\'#div_items\').append(edited_m);
+        });
+  if(array == \'\'){
+    document.getElementById(\'div_items\').innerHTML = \'\';
+  }
+    </script>
+    ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 20:53:15 --> syntax error, unexpected token ";"
+in APPPATH\Helpers\functions_zone_helper.php on line 254.
+ 1 APPPATH\Controllers\Setting.php(10): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Setting->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:40:35 --> A non-numeric value encountered
+in APPPATH\Helpers\functions_zone_helper.php on line 252.
+ 1 APPPATH\Helpers\functions_zone_helper.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 252)
+ 2 APPPATH\Controllers\Home.php(108): cartFunctions('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0LYD" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+		<div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">
+				<!-- User Account-->
+				<li class="dropdown user user-menu">
+
+					<a href="javascript:void(0)" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown"
+					   title="User">
+						<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/user.svg"
+							 class="rounded svg-icon" alt=""/>
+					</a>
+					<ul class="dropdown-menu animated flipInX">
+						<!-- User image -->
+						<li class="user-header bg-img"
+							style="background-image: url(http://localhost/market/public/Asset/imgs/user-info.jpg)"
+							data-overlay="3">
+							<div class="flexbox align-self-center">
+								<img loading="lazy" src="http://localhost/market/public/Asset/imgs/Currency_img/2705.png"
+									 class="float-left rounded-circle" alt="User">
+								<h4 class="user-name align-self-center">
+									<p><span>feras</span><br>
+										<small>lskdlsk@jdjd.kdk</small>
+								</h4>
+							</div>
+						</li>
+						<!-- Menu Body -->
+						<li class="user-body">
+							<a class="dropdown-item" href="http://localhost/market/public/Setting"><i
+										class="fa fa-cog"></i>General</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="http://localhost/market/public/Setting?pid=language"><i
+										class="fa fa-language"></i> Language</a>
+							<div class=\'dropdown-divider\'></div>
+							<a class="dropdown-item" accesskey="m" href="javascript:void(0)" onclick="mode()"><i
+										class="fa fa-adjust"></i> Mode</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" style="color:red;"
+							  accesskey="l" onclick="return confirm(\'Are you sure to logout from the system?\')"
+							   href="http://localhost/market/public/Account/logout"><i
+										class="ion-log-out"></i> Logout</a>
+
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">your cart is empty</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:41:36 --> A non-numeric value encountered
+in APPPATH\Helpers\functions_zone_helper.php on line 253.
+ 1 APPPATH\Helpers\functions_zone_helper.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 253)
+ 2 APPPATH\Controllers\Home.php(108): cartFunctions('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0LYD" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+		<div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">
+				<!-- User Account-->
+				<li class="dropdown user user-menu">
+
+					<a href="javascript:void(0)" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown"
+					   title="User">
+						<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/user.svg"
+							 class="rounded svg-icon" alt=""/>
+					</a>
+					<ul class="dropdown-menu animated flipInX">
+						<!-- User image -->
+						<li class="user-header bg-img"
+							style="background-image: url(http://localhost/market/public/Asset/imgs/user-info.jpg)"
+							data-overlay="3">
+							<div class="flexbox align-self-center">
+								<img loading="lazy" src="http://localhost/market/public/Asset/imgs/Currency_img/2705.png"
+									 class="float-left rounded-circle" alt="User">
+								<h4 class="user-name align-self-center">
+									<p><span>feras</span><br>
+										<small>lskdlsk@jdjd.kdk</small>
+								</h4>
+							</div>
+						</li>
+						<!-- Menu Body -->
+						<li class="user-body">
+							<a class="dropdown-item" href="http://localhost/market/public/Setting"><i
+										class="fa fa-cog"></i>General</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="http://localhost/market/public/Setting?pid=language"><i
+										class="fa fa-language"></i> Language</a>
+							<div class=\'dropdown-divider\'></div>
+							<a class="dropdown-item" accesskey="m" href="javascript:void(0)" onclick="mode()"><i
+										class="fa fa-adjust"></i> Mode</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" style="color:red;"
+							  accesskey="l" onclick="return confirm(\'Are you sure to logout from the system?\')"
+							   href="http://localhost/market/public/Account/logout"><i
+										class="ion-log-out"></i> Logout</a>
+
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">your cart is empty</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:41:59 --> A non-numeric value encountered
+in APPPATH\Helpers\functions_zone_helper.php on line 252.
+ 1 APPPATH\Helpers\functions_zone_helper.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 252)
+ 2 APPPATH\Controllers\Home.php(108): cartFunctions('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0LYD" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+		<div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">
+				<!-- User Account-->
+				<li class="dropdown user user-menu">
+
+					<a href="javascript:void(0)" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown"
+					   title="User">
+						<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/user.svg"
+							 class="rounded svg-icon" alt=""/>
+					</a>
+					<ul class="dropdown-menu animated flipInX">
+						<!-- User image -->
+						<li class="user-header bg-img"
+							style="background-image: url(http://localhost/market/public/Asset/imgs/user-info.jpg)"
+							data-overlay="3">
+							<div class="flexbox align-self-center">
+								<img loading="lazy" src="http://localhost/market/public/Asset/imgs/Currency_img/2705.png"
+									 class="float-left rounded-circle" alt="User">
+								<h4 class="user-name align-self-center">
+									<p><span>feras</span><br>
+										<small>lskdlsk@jdjd.kdk</small>
+								</h4>
+							</div>
+						</li>
+						<!-- Menu Body -->
+						<li class="user-body">
+							<a class="dropdown-item" href="http://localhost/market/public/Setting"><i
+										class="fa fa-cog"></i>General</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="http://localhost/market/public/Setting?pid=language"><i
+										class="fa fa-language"></i> Language</a>
+							<div class=\'dropdown-divider\'></div>
+							<a class="dropdown-item" accesskey="m" href="javascript:void(0)" onclick="mode()"><i
+										class="fa fa-adjust"></i> Mode</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" style="color:red;"
+							  accesskey="l" onclick="return confirm(\'Are you sure to logout from the system?\')"
+							   href="http://localhost/market/public/Account/logout"><i
+										class="ion-log-out"></i> Logout</a>
+
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">your cart is empty</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:42:00 --> A non-numeric value encountered
+in APPPATH\Helpers\functions_zone_helper.php on line 252.
+ 1 APPPATH\Helpers\functions_zone_helper.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 252)
+ 2 APPPATH\Controllers\Home.php(108): cartFunctions('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0LYD" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+		<div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">
+				<!-- User Account-->
+				<li class="dropdown user user-menu">
+
+					<a href="javascript:void(0)" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown"
+					   title="User">
+						<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/user.svg"
+							 class="rounded svg-icon" alt=""/>
+					</a>
+					<ul class="dropdown-menu animated flipInX">
+						<!-- User image -->
+						<li class="user-header bg-img"
+							style="background-image: url(http://localhost/market/public/Asset/imgs/user-info.jpg)"
+							data-overlay="3">
+							<div class="flexbox align-self-center">
+								<img loading="lazy" src="http://localhost/market/public/Asset/imgs/Currency_img/2705.png"
+									 class="float-left rounded-circle" alt="User">
+								<h4 class="user-name align-self-center">
+									<p><span>feras</span><br>
+										<small>lskdlsk@jdjd.kdk</small>
+								</h4>
+							</div>
+						</li>
+						<!-- Menu Body -->
+						<li class="user-body">
+							<a class="dropdown-item" href="http://localhost/market/public/Setting"><i
+										class="fa fa-cog"></i>General</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="http://localhost/market/public/Setting?pid=language"><i
+										class="fa fa-language"></i> Language</a>
+							<div class=\'dropdown-divider\'></div>
+							<a class="dropdown-item" accesskey="m" href="javascript:void(0)" onclick="mode()"><i
+										class="fa fa-adjust"></i> Mode</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" style="color:red;"
+							  accesskey="l" onclick="return confirm(\'Are you sure to logout from the system?\')"
+							   href="http://localhost/market/public/Account/logout"><i
+										class="ion-log-out"></i> Logout</a>
+
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">your cart is empty</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:42:26 --> A non-numeric value encountered
+in APPPATH\Helpers\functions_zone_helper.php on line 252.
+ 1 APPPATH\Helpers\functions_zone_helper.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 252)
+ 2 APPPATH\Controllers\Home.php(108): cartFunctions('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0LYD" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+		<div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">
+				<!-- User Account-->
+				<li class="dropdown user user-menu">
+
+					<a href="javascript:void(0)" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown"
+					   title="User">
+						<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/user.svg"
+							 class="rounded svg-icon" alt=""/>
+					</a>
+					<ul class="dropdown-menu animated flipInX">
+						<!-- User image -->
+						<li class="user-header bg-img"
+							style="background-image: url(http://localhost/market/public/Asset/imgs/user-info.jpg)"
+							data-overlay="3">
+							<div class="flexbox align-self-center">
+								<img loading="lazy" src="http://localhost/market/public/Asset/imgs/Currency_img/2705.png"
+									 class="float-left rounded-circle" alt="User">
+								<h4 class="user-name align-self-center">
+									<p><span>feras</span><br>
+										<small>lskdlsk@jdjd.kdk</small>
+								</h4>
+							</div>
+						</li>
+						<!-- Menu Body -->
+						<li class="user-body">
+							<a class="dropdown-item" href="http://localhost/market/public/Setting"><i
+										class="fa fa-cog"></i>General</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="http://localhost/market/public/Setting?pid=language"><i
+										class="fa fa-language"></i> Language</a>
+							<div class=\'dropdown-divider\'></div>
+							<a class="dropdown-item" accesskey="m" href="javascript:void(0)" onclick="mode()"><i
+										class="fa fa-adjust"></i> Mode</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" style="color:red;"
+							  accesskey="l" onclick="return confirm(\'Are you sure to logout from the system?\')"
+							   href="http://localhost/market/public/Account/logout"><i
+										class="ion-log-out"></i> Logout</a>
+
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">your cart is empty</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:46:49 --> A non-numeric value encountered
+in APPPATH\Helpers\functions_zone_helper.php on line 252.
+ 1 APPPATH\Helpers\functions_zone_helper.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 252)
+ 2 APPPATH\Controllers\Home.php(108): cartFunctions('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0LYD" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+		<div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">
+				<!-- User Account-->
+				<li class="dropdown user user-menu">
+
+					<a href="javascript:void(0)" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown"
+					   title="User">
+						<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/user.svg"
+							 class="rounded svg-icon" alt=""/>
+					</a>
+					<ul class="dropdown-menu animated flipInX">
+						<!-- User image -->
+						<li class="user-header bg-img"
+							style="background-image: url(http://localhost/market/public/Asset/imgs/user-info.jpg)"
+							data-overlay="3">
+							<div class="flexbox align-self-center">
+								<img loading="lazy" src="http://localhost/market/public/Asset/imgs/Currency_img/2705.png"
+									 class="float-left rounded-circle" alt="User">
+								<h4 class="user-name align-self-center">
+									<p><span>feras</span><br>
+										<small>lskdlsk@jdjd.kdk</small>
+								</h4>
+							</div>
+						</li>
+						<!-- Menu Body -->
+						<li class="user-body">
+							<a class="dropdown-item" href="http://localhost/market/public/Setting"><i
+										class="fa fa-cog"></i>General</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="http://localhost/market/public/Setting?pid=language"><i
+										class="fa fa-language"></i> Language</a>
+							<div class=\'dropdown-divider\'></div>
+							<a class="dropdown-item" accesskey="m" href="javascript:void(0)" onclick="mode()"><i
+										class="fa fa-adjust"></i> Mode</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" style="color:red;"
+							  accesskey="l" onclick="return confirm(\'Are you sure to logout from the system?\')"
+							   href="http://localhost/market/public/Account/logout"><i
+										class="ion-log-out"></i> Logout</a>
+
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">your cart is empty</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:47:05 --> A non-numeric value encountered
+in APPPATH\Controllers\theme.php on line 780.
+ 1 APPPATH\Controllers\theme.php(780): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 780)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:47:21 --> A non-numeric value encountered
+in APPPATH\Controllers\theme.php on line 781.
+ 1 APPPATH\Controllers\theme.php(781): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 781)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:47:23 --> A non-numeric value encountered
+in APPPATH\Controllers\theme.php on line 781.
+ 1 APPPATH\Controllers\theme.php(781): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 781)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:47:36 --> A non-numeric value encountered
+in APPPATH\Controllers\theme.php on line 781.
+ 1 APPPATH\Controllers\theme.php(781): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 781)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:48:30 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\theme.php on line 705.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('theme/cart', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('theme/cart')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('theme/cart')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:49:09 --> syntax error, unexpected double-quote mark, expecting "," or ";"
+in APPPATH\Controllers\theme.php on line 705.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('theme/cart', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('theme/cart')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('theme/cart')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:49:11 --> syntax error, unexpected double-quote mark, expecting "," or ";"
+in APPPATH\Controllers\theme.php on line 705.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('theme/cart', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('theme/cart')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('theme/cart')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:49:19 --> Undefined variable $postsfetch
+in APPPATH\Controllers\theme.php on line 705.
+ 1 APPPATH\Controllers\theme.php(705): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsfetch', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 705)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:49:33 --> A non-numeric value encountered
+in APPPATH\Controllers\theme.php on line 781.
+ 1 APPPATH\Controllers\theme.php(781): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 781)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:50:44 --> A non-numeric value encountered
+in APPPATH\Controllers\theme.php on line 780.
+ 1 APPPATH\Controllers\theme.php(780): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 780)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 21:51:41 --> A non-numeric value encountered
+in APPPATH\Controllers\theme.php on line 779.
+ 1 APPPATH\Controllers\theme.php(779): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 779)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:24:00 --> Undefined array key "discount"
+in APPPATH\Language\arabic.php on line 705.
+ 1 APPPATH\Language\arabic.php(705): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "discount"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 705)
+ 2 APPPATH\Views\discount\index.php(23): langs('discount')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:24:24 --> Undefined array key "free_product"
+in APPPATH\Language\arabic.php on line 719.
+ 1 APPPATH\Language\arabic.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "free_product"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 719)
+ 2 APPPATH\Views\discount\index.php(51): langs('free_product')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:24:54 --> Undefined array key "limit_of_times"
+in APPPATH\Language\arabic.php on line 720.
+ 1 APPPATH\Language\arabic.php(720): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "limit_of_times"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 720)
+ 2 APPPATH\Views\discount\index.php(96): langs('limit_of_times')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:25:23 --> Undefined array key "limit"
+in APPPATH\Language\arabic.php on line 721.
+ 1 APPPATH\Language\arabic.php(721): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "limit"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 721)
+ 2 APPPATH\Views\discount\index.php(97): langs('limit')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:25:35 --> syntax error, unexpected single-quoted string "limit", expecting ")"
+in APPPATH\Language\arabic.php on line 30.
+ 1 APPPATH\Controllers\discount.php(14): LoadLang()
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\discount->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:25:42 --> Undefined array key "from_expire_date"
+in APPPATH\Language\arabic.php on line 722.
+ 1 APPPATH\Language\arabic.php(722): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "from_expire_date"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 722)
+ 2 APPPATH\Views\discount\index.php(102): langs('from_expire_date')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:26:16 --> Undefined array key "from_expire_date"
+in APPPATH\Language\arabic.php on line 722.
+ 1 APPPATH\Language\arabic.php(722): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "from_expire_date"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 722)
+ 2 APPPATH\Views\discount\index.php(102): langs('from_expire_date')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:26:17 --> Undefined array key "from_expire_date"
+in APPPATH\Language\arabic.php on line 722.
+ 1 APPPATH\Language\arabic.php(722): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "from_expire_date"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 722)
+ 2 APPPATH\Views\discount\index.php(102): langs('from_expire_date')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:26:22 --> Undefined array key "to_expire_date"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "to_expire_date"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\index.php(107): langs('to_expire_date')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:26:34 --> Undefined array key "to_expire_date"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "to_expire_date"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\index.php(107): langs('to_expire_date')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:26:36 --> Undefined array key "to_expire_date"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "to_expire_date"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\index.php(107): langs('to_expire_date')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:26:50 --> Undefined array key "discount_percent"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "discount_percent"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\index.php(56): langs('discount_percent')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:27:00 --> Undefined array key "discount_percent"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "discount_percent"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\index.php(56): langs('discount_percent')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:27:03 --> Undefined array key "minimum_purchase"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "minimum_purchase"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\index.php(60): langs('minimum_purchase')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 6 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:27:21 --> Undefined variable $product
+in APPPATH\Views\discount\index.php on line 70.
+ 1 APPPATH\Views\discount\index.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/index', [], true)
+ 5 APPPATH\Controllers\discount.php(77): view('discount/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:34:55 --> syntax error, unexpected token ":", expecting ")"
+in APPPATH\Language\arabic.php on line 18.
+ 1 APPPATH\Controllers\discount.php(14): LoadLang()
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\discount->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:38:56 --> Undefined variable $html
+in APPPATH\Views\includes\navbar_main.php on line 250.
+ 1 APPPATH\Views\includes\navbar_main.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php', 250)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes/navbar_main.php', [], true)
+ 5 APPPATH\Views\costumers\costumers.php(11): view('includes/navbar_main.php')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\costumers.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('costumers/costumers', [], true)
+ 9 APPPATH\Controllers\costumers.php(53): view('costumers/costumers', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\costumers->costumers()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\costumers))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-22 22:39:18 --> Undefined variable $file_display
+in APPPATH\Views\includes\navbar_main.php on line 256.
+ 1 APPPATH\Views\includes\navbar_main.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_display', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php', 256)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes\\navbar_main.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes/navbar_main.php', [], true)
+ 5 APPPATH\Views\costumers\costumers.php(11): view('includes/navbar_main.php')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\costumers.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('costumers/costumers', [], true)
+ 9 APPPATH\Controllers\costumers.php(53): view('costumers/costumers', [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\costumers->costumers()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\costumers))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -36,6 +36,33 @@ Create your own ecommerce with Magic ecommerce, easy to install and fast to use 
 - POS.
 - Detailed reports.
 - Purchases and inventory.
+- Discount system.
+- Promotion and affiliate marketing system.
+- Non-signup orders.
+- Add products by excel.
+- Costumers account system.
+
+## Gallery
+
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(11).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(12).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(13).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(14).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(15).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(16).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(17).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(18).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(19).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(20).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(21).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(22).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(23).png?raw=true)
+![Screenshot](https://github.com/ferasshita/Gallery/blob/main/E-commerce/Screenshot%20(24).png?raw=true)
+
+## System requirements
+
+1. <=PHP8.
+2. extensions: gd, intl.
 
 <!-- Installation -->
 ## Installation

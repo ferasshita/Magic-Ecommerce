@@ -1,9 +1,9 @@
 <?php
-require_once APPPATH. "third_party/phpexcel/vendor/autoload.php";
+require_once APPPATH. "ThirdParty/phpexcel/vendor/autoload.php";
 function excel_upload($file,$table_name,$array){
 $comman_model = new \App\Models\Comman_model();
 
-  $excel_import = $_FILE[$file]['tmp_name'];
+  $excel_import = $_FILES[$file]['tmp_name'];
   $file_mimes = array('text/x-comma-separated-values', 'text/comma-separated-values', 'application/octet-stream', 'application/vnd.ms-excel', 'application/x-csv', 'text/x-csv', 'text/csv', 'application/csv', 'application/excel', 'application/vnd.msexcel', 'text/plain', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 
   if(isset($_FILES[$file]['name']) && in_array($_FILES[$file]['type'], $file_mimes)) {

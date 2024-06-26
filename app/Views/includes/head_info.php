@@ -14,7 +14,7 @@ $title = $title;
 <link rel="canonical" href="<?php echo base_url(); ?>" />
 
 <link rel='shortcut icon' type='image/x-icon' href='<?php echo base_url(); ?>Asset/imgs/logo.ico' />
-<link rel="stylesheet" href="<?php echo base_url(); ?>Asset/css/style.css" />
+
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Asset/css/font-awesome-4.5.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="<?php echo base_url();?>Asset/css/vendors_css.css">

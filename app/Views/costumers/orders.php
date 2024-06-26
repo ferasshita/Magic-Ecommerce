@@ -17,7 +17,20 @@
 			<!-- Main content -->
 			<section class="content">
 
-
+				<div class="box">
+					<div class="box-body">
+						<form action="<?php echo base_url(); ?>theme/cart" method="get">
+					      <div style="padding:10px" class="input-group mb-3" >
+					      <div class="input-group">
+					      <input type="text" name="pid" value="" id="pid" class="form-control" placeholder="بحث..">
+					      <button class="input-group-addon">
+					      <span class="fa fa-search"></span>
+					    </button>
+					  </div>
+					      </div>
+					      </form>
+					</div>
+					</div>
 
 <div id="refresh">
 	<div class="box">
@@ -85,7 +98,7 @@
 <?php } ?>
 	<td><?php echo $postsfetch['date']; ?></td>
 	<td>
-	<a href="<?php echo base_url(); ?>theme/order?pid=<?php echo $postsfetch['id']; ?>"><button class="btn btn-info fa fa-pencil"></button></a>
+	<a href="<?php echo base_url(); ?>theme/cart?pid=<?php echo $postsfetch['id']; ?>"><button class="btn btn-info fa fa-pencil"></button></a>
 	</td>
 	</tr>
 			<?php } ?>

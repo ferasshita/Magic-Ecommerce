@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar rtl theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+{%navbar_main%}
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content">
+        <div class="box">
+          <div style="padding:0" class="box-header">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="بحث..">
+      <button aria-label='Search' class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+  </div>
+  </div>
+      </div>
+      </form>
+      <div style="overflow: auto;  white-space: nowrap;" id="catigories_display">
+        <div class="col-4 catigory-div">
+          <a href="../../?collection={%catigories_id%}" class="none-link">
+<div class="box catigory-box">
+          <div style="background: url('{%catigories_image%}') no-repeat center center;height: 100% !important;width: 97% !important;" loading="lazy" class="box-body">
+             </div>
+         </div>
+       </a>
+        </div>
+      </div>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="../../theme/item?pid={%items_id%}" class="none-link">
+       <div style="background: url('{%items_image%}') no-repeat center center;height: 100% !important;width: 97% !important;" loading="lazy" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="../../theme/item?pid={%items_id%}" style="color:black" class="none-link">
+          <h4><span class="font-size-20">{%items_title%} {%items_available%}</span> </h4>
+            <h4><span>{%final_price%}</span></h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="../../theme/cart"><span style="display:grid" class="width-100"><button aria-label="order" class="btn btn-primary">اطلب</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>

@@ -22,18 +22,19 @@ if(isset($tags)){
 <link rel="canonical" href="<?php echo base_url(); ?>" />
 <meta name="theme-color" content="auto">
 
-<meta property="og:url" content="<?php echo base_url(); ?>" />
+<meta property="og:title" content="<?php if($page_name){echo $page_name;}else{echo $title;} ?>">
+<meta property="og:description" content="<?php echo descrition(); ?>">
 <meta property="og:type" content="ecommerce" />
-<meta property="og:title" content="<?php if($page_name){echo $page_name;}else{echo $title;} ?>" />
-<meta property="og:description" content="<?php echo descrition(); ?>" />
+<meta property="og:url" content="<?php echo base_url(); ?>">
 
 <link rel='shortcut icon' type='image/x-icon' href='<?php echo base_url(); ?>Asset/imgs/logo.ico' />
-<link rel="stylesheet" href="<?php echo base_url(); ?>Asset/css/style.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Asset/css/font-awesome-4.5.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="<?php echo base_url();?>Asset/css/vendors_css.css">
+<link rel="stylesheet" href="<?php echo base_url();?>Asset/css/style.css">
+<link rel="stylesheet" href="<?php echo base_url();?>Asset/css/skin_color.css">
 
-
+  <base href="<?php echo base_url(); ?>src">
 <script src="<?php echo base_url(); ?>Asset/js_back/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>Asset/js/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>Asset/js_back/jquery.form.min.js"></script>

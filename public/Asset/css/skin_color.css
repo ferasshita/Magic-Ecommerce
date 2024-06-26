@@ -8,6 +8,7 @@ File: scss
 /*Theme Colors*/
 /*Theme Colors For Dark*/
 /*---light skin---*/
+
 .light-skin .main-header li.user-header {
   background-color: #ffffff; }
 .light-skin .main-header .navbar .sidebar-toggle {
@@ -129,6 +130,7 @@ File: scss
 .light-skin #loader {
 background-color: #fff;
 }
+
 .control-sidebar + .control-sidebar-bg {
   background-color: #ffffff; }
 
@@ -935,5 +937,7 @@ body.dark-skin {
   .dark-skin #bitcoin-timeline g text tspan {
     color: #8a99b5 !important;
     fill: #8a99b5 !important; }
+    .light-skin a {
+       color: #475f7b; }
 
 /*# sourceMappingURL=skin_color.css.map */

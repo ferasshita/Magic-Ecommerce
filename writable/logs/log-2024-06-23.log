@@ -1,0 +1,678 @@
+CRITICAL - 2024-06-23 19:32:41 --> syntax error, unexpected variable "$promocode", expecting "function" or "const"
+in APPPATH\Controllers\Home.php on line 97.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 19:56:13 --> Undefined array key "description"
+in APPPATH\Controllers\products.php on line 262.
+ 1 APPPATH\Controllers\products.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\products.php', 262)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\products->add_product()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\products))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-23 20:06:57 --> mysqli_sql_exception: Unknown column 'deal' in 'field list' in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `di...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 C:\xampp-2\htdocs\market\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...', Array, false)
+#4 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp-2\htdocs\market\app\Controllers\discount.php(128): App\Models\Comman_model->insert_entry('discount', Array)
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\discount->add_discount()
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+#8 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-23 20:06:57 --> Unknown column 'deal' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `discount` (`user_id`, `type`, `deal`, `from_date`, `to_date`, `code`, `limit`, `minimum_purchase`, `x`, `y`, `z`) VALUES (:user_id:, :type:, :deal:, :from_date:, :to_date:, :code:, :limit:, :minimum_purchase:, :x:, :y:, :z:)', [...], false)
+ 2 APPPATH\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\discount.php(128): App\Models\Comman_model->insert_entry('discount', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->add_discount()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-23 20:07:30 --> mysqli_sql_exception: Unknown column 'deal' in 'field list' in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `di...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 C:\xampp-2\htdocs\market\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...', Array, false)
+#4 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp-2\htdocs\market\app\Controllers\discount.php(128): App\Models\Comman_model->insert_entry('discount', Array)
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\discount->add_discount()
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+#8 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-23 20:07:30 --> Unknown column 'deal' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `discount` (`user_id`, `type`, `deal`, `from_date`, `to_date`, `code`, `limit`, `minimum_purchase`, `x`, `y`, `z`) VALUES (:user_id:, :type:, :deal:, :from_date:, :to_date:, :code:, :limit:, :minimum_purchase:, :x:, :y:, :z:)', [...], false)
+ 2 APPPATH\Models\Comman_model.php(40): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\discount.php(128): App\Models\Comman_model->insert_entry('discount', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->add_discount()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 20:14:12 --> Undefined array key "promotion"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "promotion"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\promocode.php(21): langs('promotion')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\promocode.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/promocode', [], true)
+ 6 APPPATH\Controllers\discount.php(34): view('discount/promocode', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->promocode()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 20:14:38 --> Undefined array key "order_id"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\discount\promocode.php(66): langs('order_id')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\discount\\promocode.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('discount/promocode', [], true)
+ 6 APPPATH\Controllers\discount.php(34): view('discount/promocode', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\discount->promocode()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\discount))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 20:26:19 --> Undefined variable $price
+in APPPATH\Views\costumers\pos.php on line 92.
+ 1 APPPATH\Views\costumers\pos.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $price', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\pos.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\pos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('costumers/pos', [], true)
+ 5 APPPATH\Controllers\costumers.php(74): view('costumers/pos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\costumers->pos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\costumers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 20:27:32 --> Undefined variable $total_price
+in APPPATH\Views\costumers\pos.php on line 94.
+ 1 APPPATH\Views\costumers\pos.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_price', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\pos.php', 94)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\pos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('costumers/pos', [], true)
+ 5 APPPATH\Controllers\costumers.php(74): view('costumers/pos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\costumers->pos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\costumers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 20:27:53 --> syntax error, unexpected token "foreach"
+in APPPATH\Views\costumers\pos.php on line 79.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('costumers/pos', [], true)
+ 3 APPPATH\Controllers\costumers.php(74): view('costumers/pos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\costumers->pos()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\costumers))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 20:35:10 --> Undefined variable $price
+in APPPATH\Views\costumers\pos.php on line 99.
+ 1 APPPATH\Views\costumers\pos.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $price', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\pos.php', 99)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\costumers\\pos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('costumers/pos', [], true)
+ 5 APPPATH\Controllers\costumers.php(74): view('costumers/pos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\costumers->pos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\costumers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:01:58 --> Undefined variable $compare
+in APPPATH\Helpers\functions_zone_helper.php on line 412.
+ 1 APPPATH\Helpers\functions_zone_helper.php(412): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compare', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 412)
+ 2 APPPATH\Controllers\Home.php(111): magicCodeReplace('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20 cart_input_view">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="http://localhost/market/public/Account/login" style="width:100px;font-size:large;" class="waves-effect waves-light"
+					 title="signup">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="search..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%final_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">order</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>
+  <script>
+    var array = [{%items%}];
+    var edited = document.getElementById(\'div_items\').innerHTML;
+    document.getElementById(\'div_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+        const edited_a = edited.replace(/{%items_id%}/g, data.id);
+        const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+        const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+        const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+        const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+        const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+        const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+        const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+        const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+        const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+        const edited_k = edited_j.replace(/{%cart_button%}/g, data.cart_button);
+        const edited_l = edited_k.replace(/{%like_button%}/g, data.like_button);
+        const edited_m = edited_l.replace(/{%items_image%}/g, data.item_image);
+        const edited_n = edited_m.replace(/{%final_price%}/g, data.item_image);
+
+        $(\'#div_items\').append(edited_n);
+        });
+  if(array == \'\'){
+    document.getElementById(\'div_items\').innerHTML = \'\';
+  }
+    </script>
+    ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:09:13 --> Undefined array key "register"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "register"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\includes_site\navbar_main.php(134): langs('register')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes_site\\navbar_main.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes_site/navbar_main', [], true)
+ 6 APPPATH\Helpers\functions_zone_helper.php(108): view('includes_site/navbar_main')
+ 7 APPPATH\Controllers\Home.php(100): cartFunctions('<html>
+<head>
+  <style>
+    @media (max-width: 767px) {
+    .btn{
+      font-size: small;
+    }}
+    </style>
+  </head>
+  <body class="light-skin no-sidebar rtl theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+{%navbar_main%}
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+  <form action="" method="get">
+      <div style="padding:10px" class="input-group mb-3" >
+      <div class="input-group">
+      <input type="text" name="search" value="" id="search" class="form-control" placeholder="بحث..">
+      <button class="input-group-addon">
+      <span class="fa fa-search"></span>
+    </button>
+  </div>
+      </div>
+      </form>
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%} {%items_available%}</span> </h4>
+            <h4><span>{%final_price%}</span></h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+
+</div>
+<div class="box div-bottom">
+  <div class="box-body">
+  <a href="http://localhost/market/public/home/page/../../theme/cart"><span style="display:grid" class="width-100"><button class="btn btn-primary">اطلب</button></span></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+ </html>
+', '', '')
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:11:12 --> file_get_contents(src/theme.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/theme.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 61)
+ 2 APPPATH\Controllers\Home.php(61): file_get_contents('src/theme.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('theme', 'item')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:17:00 --> Undefined array key "info"
+in APPPATH\Language\arabic.php on line 727.
+ 1 APPPATH\Language\arabic.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "info"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 727)
+ 2 APPPATH\Views\theme\cart.php(171): langs('info')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 6 APPPATH\Controllers\theme.php(809): view('theme/cart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:17:37 --> Undefined array key "try"
+in APPPATH\Language\arabic.php on line 730.
+ 1 APPPATH\Language\arabic.php(730): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "try"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 730)
+ 2 APPPATH\Views\theme\cart.php(277): langs('try')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 6 APPPATH\Controllers\theme.php(809): view('theme/cart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:17:51 --> Undefined array key "delivery"
+in APPPATH\Language\arabic.php on line 731.
+ 1 APPPATH\Language\arabic.php(731): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 731)
+ 2 APPPATH\Views\theme\cart.php(292): langs('delivery')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 6 APPPATH\Controllers\theme.php(809): view('theme/cart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:18:18 --> Undefined array key "brach_total"
+in APPPATH\Language\arabic.php on line 731.
+ 1 APPPATH\Language\arabic.php(731): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brach_total"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 731)
+ 2 APPPATH\Views\theme\cart.php(293): langs('brach_total')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 6 APPPATH\Controllers\theme.php(809): view('theme/cart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:18:29 --> Undefined array key "branch_total"
+in APPPATH\Language\arabic.php on line 731.
+ 1 APPPATH\Language\arabic.php(731): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "branch_total"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 731)
+ 2 APPPATH\Views\theme\cart.php(293): langs('branch_total')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 6 APPPATH\Controllers\theme.php(809): view('theme/cart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:49:12 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\deliver\report.php on line 2.
+ 1 APPPATH\Views\deliver\report.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 5 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:49:35 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\deliver\report.php on line 2.
+ 1 APPPATH\Views\deliver\report.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 5 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:50:16 --> Undefined variable $data
+in APPPATH\Views\deliver\report.php on line 4.
+ 1 APPPATH\Views\deliver\report.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 5 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 21:50:36 --> Undefined property: CodeIgniter\View\View::$comman_model
+in APPPATH\Views\deliver\report.php on line 36.
+ 1 APPPATH\Views\deliver\report.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$comman_model', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 5 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-23 21:51:21 --> mysqli_sql_exception: Unknown column 'value' in 'field list' in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT value FR...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value FR...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value FR...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(61): CodeIgniter\Database\BaseConnection->query('SELECT value FR...')
+#4 C:\xampp-2\htdocs\market\app\Views\deliver\report.php(38): App\Models\Comman_model->get_all_data_by_query('SELECT value FR...')
+#5 C:\xampp-2\htdocs\market\system\View\View.php(228): include('C:\\xampp-2\\htdo...')
+#6 C:\xampp-2\htdocs\market\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp-2\htdocs\market\system\Common.php(1190): CodeIgniter\View\View->render('deliver/report', Array, true)
+#8 C:\xampp-2\htdocs\market\app\Controllers\deliver.php(26): view('deliver/report', Array)
+#9 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\deliver->report()
+#10 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+#11 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-06-23 21:51:21 --> Unknown column 'value' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(61): CodeIgniter\Database\BaseConnection->query('SELECT value FROM payment WHERE user_id= \'1726854054\'')
+ 2 APPPATH\Views\deliver\report.php(38): App\Models\Comman_model->get_all_data_by_query('SELECT value FROM payment WHERE user_id= \'1726854054\'')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 6 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-23 21:51:50 --> mysqli_sql_exception: Unknown column 'value' in 'field list' in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT value FR...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value FR...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value FR...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(61): CodeIgniter\Database\BaseConnection->query('SELECT value FR...')
+#4 C:\xampp-2\htdocs\market\app\Views\deliver\report.php(38): App\Models\Comman_model->get_all_data_by_query('SELECT value FR...')
+#5 C:\xampp-2\htdocs\market\system\View\View.php(228): include('C:\\xampp-2\\htdo...')
+#6 C:\xampp-2\htdocs\market\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp-2\htdocs\market\system\Common.php(1190): CodeIgniter\View\View->render('deliver/report', Array, true)
+#8 C:\xampp-2\htdocs\market\app\Controllers\deliver.php(26): view('deliver/report', Array)
+#9 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\deliver->report()
+#10 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+#11 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-06-23 21:51:50 --> Unknown column 'value' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(61): CodeIgniter\Database\BaseConnection->query('SELECT value FROM payment WHERE user_id= \'1726854054\'')
+ 2 APPPATH\Views\deliver\report.php(38): App\Models\Comman_model->get_all_data_by_query('SELECT value FROM payment WHERE user_id= \'1726854054\'')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 6 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-23 21:51:51 --> mysqli_sql_exception: Unknown column 'value' in 'field list' in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT value FR...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value FR...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value FR...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(61): CodeIgniter\Database\BaseConnection->query('SELECT value FR...')
+#4 C:\xampp-2\htdocs\market\app\Views\deliver\report.php(38): App\Models\Comman_model->get_all_data_by_query('SELECT value FR...')
+#5 C:\xampp-2\htdocs\market\system\View\View.php(228): include('C:\\xampp-2\\htdo...')
+#6 C:\xampp-2\htdocs\market\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp-2\htdocs\market\system\Common.php(1190): CodeIgniter\View\View->render('deliver/report', Array, true)
+#8 C:\xampp-2\htdocs\market\app\Controllers\deliver.php(26): view('deliver/report', Array)
+#9 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\deliver->report()
+#10 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+#11 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-06-23 21:51:51 --> Unknown column 'value' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(61): CodeIgniter\Database\BaseConnection->query('SELECT value FROM payment WHERE user_id= \'1726854054\'')
+ 2 APPPATH\Views\deliver\report.php(38): App\Models\Comman_model->get_all_data_by_query('SELECT value FROM payment WHERE user_id= \'1726854054\'')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 6 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 22:25:59 --> Undefined variable $shop_id
+in APPPATH\Views\deliver\report.php on line 67.
+ 1 APPPATH\Views\deliver\report.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $shop_id', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php', 67)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\deliver\\report.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deliver/report', [], true)
+ 5 APPPATH\Controllers\deliver.php(26): view('deliver/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\deliver->report()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deliver))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 22:33:48 --> Undefined array key "deliver_to"
+in APPPATH\Language\arabic.php on line 734.
+ 1 APPPATH\Language\arabic.php(734): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deliver_to"', 'C:\\xampp-2\\htdocs\\market\\app\\Language\\arabic.php', 734)
+ 2 APPPATH\Views\theme\cart.php(53): langs('deliver_to')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\theme\\cart.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('theme/cart', [], true)
+ 6 APPPATH\Controllers\theme.php(809): view('theme/cart', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->cart()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 22:46:23 --> file_get_contents(src/theme.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/theme.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 61)
+ 2 APPPATH\Controllers\Home.php(61): file_get_contents('src/theme.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('theme', 'item')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 22:49:53 --> Undefined variable $user_id
+in APPPATH\Controllers\theme.php on line 929.
+ 1 APPPATH\Controllers\theme.php(929): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 929)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 22:51:15 --> Undefined variable $sid
+in APPPATH\Controllers\theme.php on line 906.
+ 1 APPPATH\Controllers\theme.php(906): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sid', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 906)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 22:52:53 --> file_get_contents(src/theme.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/theme.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 61)
+ 2 APPPATH\Controllers\Home.php(61): file_get_contents('src/theme.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('theme', 'item')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-23 22:53:15 --> file_get_contents(src/theme.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(src/theme.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 61)
+ 2 APPPATH\Controllers\Home.php(61): file_get_contents('src/theme.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->page('theme', 'item')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

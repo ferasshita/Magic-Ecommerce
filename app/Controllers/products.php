@@ -140,8 +140,16 @@ public function gift_card(){
 public function add_variant(){
 	$option_name = filter_var(htmlspecialchars($this->request->getPost('option_name')),FILTER_SANITIZE_STRING);
 	$id = filter_var(htmlspecialchars($this->request->getPost('id')),FILTER_SANITIZE_STRING);
+	if($option_name==NULL){
+		echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+		return false;
+	}
 	if(isset($_FILES['variant_image'])){
 	$image = file_upload('variant','variant_image','png|jpeg|jpg|ico','');
+	if(!filter_var(base_url().$image, FILTER_VALIDATE_URL)){
+		echo "$image";
+	return false;
+	}
 	}else{
 		$image = "";
 	}
@@ -163,6 +171,11 @@ public function add_purchase(){
 	$variant = filter_var(htmlspecialchars($this->request->getPost('variant')),FILTER_SANITIZE_STRING);
 	$quantity = filter_var(htmlspecialchars($this->request->getPost('quantity')),FILTER_SANITIZE_STRING);
 	$vendor = filter_var(htmlspecialchars($this->request->getPost('vendor')),FILTER_SANITIZE_STRING);
+
+	if($product==NULL){
+		echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+		return false;
+	}
 
 	$data = array(
 		'user_id' => $_SESSION['id'],
@@ -196,8 +209,17 @@ public function add_collection(){
 	$title = filter_var(htmlspecialchars($this->request->getPost('title')),FILTER_SANITIZE_STRING);
 	$description = filter_var(htmlspecialchars($this->request->getPost('description')),FILTER_SANITIZE_STRING);
 
+	if($title==NULL){
+		echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+		return false;
+	}
+
 if(isset($_FILES['images'])){
 $image = file_upload('collection','images','png|jpeg|jpg|ico','');
+if(!filter_var(base_url().$image, FILTER_VALIDATE_URL)){
+	echo "$image";
+return false;
+}
 }else{
 	$image = "";
 }
@@ -223,6 +245,10 @@ public function add_gift_card(){
 
 if(isset($_FILES['image'])){
 $image = file_upload('Asset/upload/collection','image','png|jpeg|jpg|ico','');
+if(!filter_var(base_url().$image, FILTER_VALIDATE_URL)){
+	echo "$image";
+return false;
+}
 }else{
 	$image = "";
 }
@@ -256,10 +282,11 @@ if($id == NULL) {
 public function add_product(){
 
 	$sid=$_SESSION['id'];
-$id=rand(0,9999999)+time();
 $title = filter_var(htmlspecialchars($this->request->getPost('title')),FILTER_SANITIZE_STRING);
 $price = filter_var(htmlspecialchars($this->request->getPost('price')),FILTER_SANITIZE_STRING);
-$description = filter_var(htmlspecialchars($this->request->getPost('description')),FILTER_SANITIZE_STRING);
+if(isset($_POST['description'])){
+	$description = $_POST['description'];
+}
 $compare_price = filter_var(htmlspecialchars($this->request->getPost('compare_price')),FILTER_SANITIZE_STRING);
 $track_quantity = filter_var(htmlspecialchars($this->request->getPost('track_quantity')),FILTER_SANITIZE_STRING);
 $out_stock = filter_var(htmlspecialchars($this->request->getPost('out_stock')),FILTER_SANITIZE_STRING);
@@ -270,12 +297,62 @@ $product_type = filter_var(htmlspecialchars($this->request->getPost('product_typ
 $vendor = filter_var(htmlspecialchars($this->request->getPost('vendor')),FILTER_SANITIZE_STRING);
 $collection = filter_var(htmlspecialchars($this->request->getPost('collection')),FILTER_SANITIZE_STRING);
 $tags = filter_var(htmlspecialchars($this->request->getPost('tags')),FILTER_SANITIZE_STRING);
-$item_id = filter_var(htmlspecialchars($this->request->getPost('id')),FILTER_SANITIZE_STRING);
+$id = filter_var(htmlspecialchars($this->request->getPost('id')),FILTER_SANITIZE_STRING);
+if($id == NULL){
+	$item_id=rand(0,9999999)+time();
 
-if($item_id == NULL) {
-$item_id =$id;
+}else{
+	$item_id=$id;
+}
+if($title==NULL ||$price==NULL){
+	echo "<p class='alertRed'>".langs('please_fill_required_fields')."</p>";
+	return false;
+}
+if(isset($_FILES['images'])){
+	$item_file = $_FILES['images'];
+
+	foreach($item_file['tmp_name'] as $key => $tmpName){
+		$item_file['name'][$key];
+
+		$post_fileName = $item_file["name"][$key];
+		$post_fileTmpLoc = $item_file["tmp_name"][$key];
+		$post_fileSize = $item_file["size"][$key];
+		$post_fileErrorMsg = $item_file["error"][$key];
+		$post_fileName = preg_replace('#[^a-z.0-9]#i', '', $post_fileName);
+		$post_kaboom = explode(".", $post_fileName);
+		$post_fileExt = end($post_kaboom);
+		$post_fileName = time().rand().".".$post_fileExt;
+
+		if (!$post_fileTmpLoc) {
+			echo '<p class="error_msg">'.langs('errorPost_n2').'</p>';
+			return false;
+		}else{
+				//================[ if image format not supported ]================
+				if (!preg_match("/.(png|jpg|jpeg)$/i", $post_fileName) ) {
+					echo '<p class="error_msg">'.langs('errorPost_n4').'</p>';
+					unlink($post_fileTmpLoc);
+					return false;
+				} else {
+					//================[ if an error was found ]================
+					if ($post_fileErrorMsg == 1) {
+						echo '<p class="error_msg">'.langs('errorPost_n5').'</p>';
+						return false;
+					}else{
+
+						move_uploaded_file($item_file["tmp_name"][$key], "Asset/upload/item/" .$post_fileName);
+						$img = "Asset/upload/item/" .$post_fileName;
+			$data = array(
+			'product_id'   => $item_id,
+			'location'   => $img,
+		);
+		$inserted = $this->comman_model->insert_entry("image",$data);
+	}
+					}}}
+}
+
+if($id == NULL) {
 	$data = array(
-		'id' => $id,
+		'id' => $item_id,
 		'user_id' => $sid,
 		'title' => $title,
 		'price' => $price,
@@ -310,44 +387,6 @@ $item_id =$id;
 	);
 	$where=array('id' => $item_id, 'user_id' => $sid);
 	$inserted=$this->comman_model->update_entry("product",$data,$where);
-}
-if(isset($_FILES['images'])){
-	$item_file = $_FILES['images'];
-
-	foreach($item_file['tmp_name'] as $key => $tmpName){
-		$item_file['name'][$key];
-
-		$post_fileName = $item_file["name"][$key];
-		$post_fileTmpLoc = $item_file["tmp_name"][$key];
-		$post_fileSize = $item_file["size"][$key];
-		$post_fileErrorMsg = $item_file["error"][$key];
-		$post_fileName = preg_replace('#[^a-z.0-9]#i', '', $post_fileName);
-		$post_kaboom = explode(".", $post_fileName);
-		$post_fileExt = end($post_kaboom);
-		$post_fileName = time().rand().".".$post_fileExt;
-
-		if (!$post_fileTmpLoc) {
-			echo '<p class="error_msg">'.langs('errorPost_n2').'</p>';
-		}else{
-				//================[ if image format not supported ]================
-				if (!preg_match("/.(png|jpg|jpeg)$/i", $post_fileName) ) {
-					echo '<p class="error_msg">'.langs('errorPost_n4').'</p>';
-					unlink($post_fileTmpLoc);
-				} else {
-					//================[ if an error was found ]================
-					if ($post_fileErrorMsg == 1) {
-						echo '<p class="error_msg">'.langs('errorPost_n5').'</p>';
-					}else{
-
-						move_uploaded_file($item_file["tmp_name"][$key], "Asset/upload/item/" .$post_fileName);
-						$img = "Asset/upload/item/" .$post_fileName;
-			$data = array(
-			'product_id'   => $item_id,
-			'location'   => $img,
-		);
-		$inserted = $this->comman_model->insert_entry("image",$data);
-	}
-					}}}
 }
 
 if (isset($inserted)) {
@@ -394,7 +433,8 @@ public function index(){
 						 $data['product_type'] = $postsfetch['product_type'];
 						 $data['vendor'] = $postsfetch['vendor'];
 						 $data['collection'] = $postsfetch['collection'];
-					 $data['tags'] = $postsfetch['tags'];
+						 $data['tags'] = $postsfetch['tags'];
+					 $data['number'] = $postsfetch['number'];
 				 }
 				 $uisql = "SELECT * FROM image WHERE product_id='".$data['pid']."'";
 			 	$data['fetchdatai']=$this->comman_model->get_all_data_by_query($uisql);

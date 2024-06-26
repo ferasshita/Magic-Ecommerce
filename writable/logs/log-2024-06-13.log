@@ -1,0 +1,2369 @@
+CRITICAL - 2024-06-13 16:40:31 --> Undefined variable $html
+in APPPATH\Controllers\Home.php on line 101.
+ 1 APPPATH\Controllers\Home.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 16:40:31 --> Undefined variable $html
+in APPPATH\Controllers\Home.php on line 101.
+ 1 APPPATH\Controllers\Home.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 17:10:47 --> Undefined variable $html
+in APPPATH\Controllers\Home.php on line 97.
+ 1 APPPATH\Controllers\Home.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 17:11:18 --> file_get_contents(missing/home.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(missing/home.html): Failed to open stream: No such file or directory', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Home.php', 99)
+ 2 APPPATH\Controllers\Home.php(99): file_get_contents('missing/home.html')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 21:08:57 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 21:08:57 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 21:15:48 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 21:15:49 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:36:57 --> Using $this when not in object context
+in APPPATH\Helpers\functions_zone_helper.php on line 31.
+ 1 APPPATH\Controllers\Home.php(106): cartFunctions('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+{%navbar_main%}
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+', '', '')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:39:22 --> Using $this when not in object context
+in APPPATH\Helpers\functions_zone_helper.php on line 31.
+ 1 APPPATH\Controllers\Home.php(106): cartFunctions('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+{%navbar_main%}
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+', '', '')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:39:42 --> Undefined variable $sid
+in APPPATH\Helpers\functions_zone_helper.php on line 255.
+ 1 APPPATH\Helpers\functions_zone_helper.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sid', 'C:\\xampp-2\\htdocs\\market\\app\\Helpers\\functions_zone_helper.php', 255)
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:54:53 --> Unsupported operand types: string << int
+in APPPATH\Helpers\functions_zone_helper.php on line 254.
+ 1 APPPATH\Helpers\functions_zone_helper.php(267): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:56:55 --> Undefined constant "FILTER_FLAG_NO_RES"
+in APPPATH\Helpers\functions_zone_helper.php on line 256.
+ 1 APPPATH\Helpers\functions_zone_helper.php(282): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:59:04 --> Undefined constant "FILTER_FLAG_NO_RES"
+in APPPATH\Helpers\functions_zone_helper.php on line 252.
+ 1 APPPATH\Helpers\functions_zone_helper.php(285): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:59:22 --> Undefined constant "FILTER_FLAG_NO_RES"
+in APPPATH\Helpers\functions_zone_helper.php on line 257.
+ 1 APPPATH\Helpers\functions_zone_helper.php(285): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:59:29 --> Unsupported operand types: string << int
+in APPPATH\Helpers\functions_zone_helper.php on line 259.
+ 1 APPPATH\Helpers\functions_zone_helper.php(285): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 22:59:48 --> Undefined constant "FILTER_FLAG_NO_RES"
+in APPPATH\Helpers\functions_zone_helper.php on line 252.
+ 1 APPPATH\Helpers\functions_zone_helper.php(285): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:01:21 --> Undefined constant "FILTER_FLAG_NO_RES"
+in APPPATH\Helpers\functions_zone_helper.php on line 264.
+ 1 APPPATH\Helpers\functions_zone_helper.php(298): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:01:46 --> Unsupported operand types: string << int
+in APPPATH\Helpers\functions_zone_helper.php on line 273.
+ 1 APPPATH\Helpers\functions_zone_helper.php(298): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:02:29 --> Undefined constant "FILTER_FLAG_NO_RES"
+in APPPATH\Helpers\functions_zone_helper.php on line 264.
+ 1 APPPATH\Helpers\functions_zone_helper.php(298): ip2bigint('::1')
+ 2 APPPATH\Controllers\Home.php(117): magicCodeReplace('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:05:12 --> syntax error, unexpected token ":", expecting ";"
+in APPPATH\Helpers\functions_zone_helper.php on line 281.
+ 1 APPPATH\Controllers\Home.php(25): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:07:52 --> Undefined variable $request
+in APPPATH\Controllers\theme.php on line 263.
+ 1 APPPATH\Controllers\theme.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:09:11 --> Undefined variable $request
+in APPPATH\Controllers\theme.php on line 263.
+ 1 APPPATH\Controllers\theme.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\theme.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->add_cart()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:09:38 --> Call to undefined function time_ago()
+in APPPATH\Helpers\functions_zone_helper.php on line 160.
+ 1 APPPATH\Controllers\Home.php(106): cartFunctions('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [{%items%}];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:10:51 --> Call to undefined function time_ago()
+in APPPATH\Helpers\functions_zone_helper.php on line 160.
+ 1 APPPATH\Controllers\Home.php(106): cartFunctions('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+<body class="light-skin sidebar-mini fixed theme-primary">
+<header class="main-header">
+	<div class="d-flex align-items-center logo-box pl-20">
+		<!-- Logo -->
+		<a href="http://localhost/market/public/" class="logo">
+			<!-- logo-->
+			<div class="logo-lg">
+        <span class="light-logo"><b style="font-size:30px;">Magic</b></span>
+        <span class="dark-logo"><b style="font-size:30px;">Magic</b></span>
+			</div>
+		</a>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top pl-10">
+
+		<!-- Sidebar toggle button-->
+		<div class="app-menu">
+			<ul class="header-megamenu nav">
+
+				<li id="cart_box" class="btn-group d-lg-inline-flex">
+																				<div class="app-menu cart-app-menu">
+											<div class="search-bx mx-5">
+												<a href="http://localhost/market/public/theme/cart">
+													<div class="input-group">
+														<input disabled style="cursor: inherit;width:135px" type="search" class="form-control cart_input_view" value="0د.ل" aria-label="Search" aria-describedby="button-addon2">
+														<div class="input-group-append">
+															<button class="btn" type="button" id="button-addon3"><img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/ecommerce.svg" class="img-fluid" alt="search"></button>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="btn-group nav-item">
+										<a href="javascript:void(0)" class="waves-effect waves-light nav-link rounded" onclick="mode()" accesskey="m" data-toggle="dropdown"
+											 title="mode">
+											<span class="fa fa-adjust aw-nav img-fluid svg-icon"></span>
+										</a>
+									</li>
+									<li class="btn-group nav-item">
+						<a href="javascript:void(0)" onclick="display_search()" data-provide="search"
+						   class="waves-effect waves-light nav-link rounded full-screen" title="Search">
+							<img src="http://localhost/market/public/Asset/imgs/main_icons/svg-icon/search.svg"
+								 class="img-fluid svg-icon" alt="">
+						</a>
+					</li>
+
+			</ul>
+		</div>
+		<!-- Button trigger modal -->
+			<div class="navbar-custom-menu r-side">
+		<ul class="nav navbar-nav">
+			<!-- User Account-->
+			<li class="btn-group nav-item">
+				<a href="javascript:void(0)" style="width:100px" class="waves-effect waves-light" data-toggle="dropdown"
+					 title="User">
+				Signup
+				</a>
+			</li>
+		</ul>
+	</div>
+		</nav>
+</header>
+</body>
+<!-- Left side column. contains the logo and sidebar -->
+
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+
+  <script>
+  	var array = [{%items%}];
+  	var edited = document.getElementById(\'cart_items\').innerHTML;
+  	document.getElementById(\'cart_items\').innerHTML=\'\';
+  array.forEach((data)=>{
+
+  	const edited_a = edited.replace(/{%items_id%}/g, data.id);
+  	const edited_b = edited_a.replace(/{%items_title%}/g, data.title);
+  	const edited_c = edited_b.replace(/{%items_description%}/g, data.description);
+  	const edited_d = edited_c.replace(/{%items_price%}/g, data.price);
+  	const edited_e = edited_d.replace(/{%items_compare_price%}/g, data.compare_price);
+  	const edited_f = edited_e.replace(/{%items_available%}/g, data.available);
+  	const edited_g = edited_f.replace(/{%product_type%}/g, data.product_type);
+  	const edited_h = edited_g.replace(/{%item_quantity%}/g, data.item_quantity);
+  	const edited_i = edited_h.replace(/{%product_catigory%}/g, data.product_catigory);
+  	const edited_j = edited_i.replace(/{%collection%}/g, data.collection);
+  	const edited_k = edited_j.replace(/{%item_image%}/g, data.item_image);
+
+  $(\'#cart_items\').append(edited_k);
+  });
+  if(array == \'\'){
+  	document.getElementById(\'body\').innerHTML = \'<div class="post loading-info" style="min-width: 99%;"><p style="color: #b1b1b1;text-align: center;padding: 15px;margin: 0px;font-size: 18px;">السلة فارغة</p></div>\';
+  }
+  	</script>
+  	<script>
+  				function start_count() {
+  					var date = "";
+  					if (date == "") {
+  						var countDownDatea = new Date().getTime();
+  					}else{
+  						var countDownDatea = Date.parse(date);
+  					}
+  					var countDownDate = countDownDatea + 60000 + 60000;
+  					var x = setInterval(function() {
+  						var now = new Date().getTime();
+  						var distance = countDownDate - now;
+  						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (60 * 1000));
+  						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  							$("#timer").text(minutes + ":" + seconds);
+  							if (distance < 0) {
+  								clearInterval(x);
+  								$("#order_button").attr("disabled", "true");
+  								$("#timer").text("");
+  							}
+  					}, 1000);
+  				}
+  			</script>', '', '')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 23:18:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 1726161172)' at line 4 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ite...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ite...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ite...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO ite...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(404): App\Models\Comman_model->run_query('INSERT INTO ite...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->item_like()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-13 23:18:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 1726161172)' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO item_like
+  (user_id, item_id)
+  VALUES
+  (, 1726161172)
+  ')
+ 2 APPPATH\Controllers\theme.php(404): App\Models\Comman_model->run_query('INSERT INTO item_like
+  (user_id, item_id)
+  VALUES
+  (, 1726161172)
+  ')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item_like()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 23:18:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 1726161172)' at line 4 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ite...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ite...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ite...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO ite...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(404): App\Models\Comman_model->run_query('INSERT INTO ite...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->item_like()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-13 23:18:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 1726161172)' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO item_like
+  (user_id, item_id)
+  VALUES
+  (, 1726161172)
+  ')
+ 2 APPPATH\Controllers\theme.php(404): App\Models\Comman_model->run_query('INSERT INTO item_like
+  (user_id, item_id)
+  VALUES
+  (, 1726161172)
+  ')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item_like()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 23:18:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 1726161172)' at line 4 in C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp-2\htdocs\market\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ite...', 0)
+#1 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ite...')
+#2 C:\xampp-2\htdocs\market\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ite...')
+#3 C:\xampp-2\htdocs\market\app\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO ite...')
+#4 C:\xampp-2\htdocs\market\app\Controllers\theme.php(404): App\Models\Comman_model->run_query('INSERT INTO ite...')
+#5 C:\xampp-2\htdocs\market\system\CodeIgniter.php(942): App\Controllers\theme->item_like()
+#6 C:\xampp-2\htdocs\market\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+#7 C:\xampp-2\htdocs\market\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-2\htdocs\market\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-13 23:18:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 1726161172)' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Comman_model.php(73): CodeIgniter\Database\BaseConnection->query('INSERT INTO item_like
+  (user_id, item_id)
+  VALUES
+  (, 1726161172)
+  ')
+ 2 APPPATH\Controllers\theme.php(404): App\Models\Comman_model->run_query('INSERT INTO item_like
+  (user_id, item_id)
+  VALUES
+  (, 1726161172)
+  ')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\theme->item_like()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\theme))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:20:24 --> Undefined variable $sid
+in APPPATH\Views\includes_site\navbar_main.php on line 4.
+ 1 APPPATH\Views\includes_site\navbar_main.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sid', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes_site\\navbar_main.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes_site\\navbar_main.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes_site/navbar_main', [], true)
+ 5 APPPATH\Helpers\functions_zone_helper.php(81): view('includes_site/navbar_main')
+ 6 APPPATH\Controllers\Home.php(106): cartFunctions('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+{%navbar_main%}
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:20:39 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\includes_site\navbar_main.php on line 5.
+ 1 APPPATH\Views\includes_site\navbar_main.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp-2\\htdocs\\market\\app\\Views\\includes_site\\navbar_main.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp-2\\htdocs\\market\\app\\Views\\includes_site\\navbar_main.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('includes_site/navbar_main', [], true)
+ 5 APPPATH\Helpers\functions_zone_helper.php(81): view('includes_site/navbar_main')
+ 6 APPPATH\Controllers\Home.php(106): cartFunctions('<head>
+  <body class="light-skin no-sidebar theme-primary sidebar-collapse fixed">
+  <div class="wrapper animate-bottom">
+  	<div id="loader"></div>
+{%navbar_main%}
+<div class="content-wrapper content-wrapper-50">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content-height">
+<div id="div_items">
+  <div class="box">
+    <div class="item-profile-grid">
+       <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+       <div style="background: url(\'{%items_image%}\') no-repeat center center;height: 100% !important;width: 97% !important;" class="tabs-vertical side-product">
+       </div>
+       </a>
+
+        <div class="padding-10">
+          <a href="http://localhost/market/public/home/page/theme/item?pid={%items_id%}">
+          <h4><span class="font-size-20">{%items_title%}</span> <span style="color:green">{%items_price%}</span> {%items_available%}</h4>
+      </a>
+      {%cart_button%}
+      {%like_button%}
+     </div>
+   </div>
+ </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+ </section>
+
+</div>
+</div>
+</div>
+
+</body>
+ </html>
+', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:21:35 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:21:36 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:23:09 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 251.
+ 1 APPPATH\Controllers\Includes.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:23:10 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 251.
+ 1 APPPATH\Controllers\Includes.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:23:54 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 251.
+ 1 APPPATH\Controllers\Includes.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:23:56 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 251.
+ 1 APPPATH\Controllers\Includes.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:24:33 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:24:34 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 23:24:44 --> Undefined array key "mode"
+in APPPATH\Controllers\Includes.php on line 249.
+ 1 APPPATH\Controllers\Includes.php(249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mode"', 'C:\\xampp-2\\htdocs\\market\\app\\Controllers\\Includes.php', 249)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Includes->mode()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Includes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
